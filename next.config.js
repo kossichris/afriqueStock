@@ -1,4 +1,13 @@
 module.exports = {
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/accueil',
+        permanent: true,
+      },
+    ]
+  },
   reactStrictMode: true,
   images: {
     domains: ["images.unsplash.com"],

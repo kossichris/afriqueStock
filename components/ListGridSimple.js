@@ -4,7 +4,7 @@ import ligStyles from '../components/css/ListImgGrid.css'
 const Listgridsimple = () => {
     return (
         <>
-            <div class="container mt-5">
+            <div className="container mt-5">
                 <div className="gallery">
                     <figure className="gallery__item gallery__item--1">
                         <img src="https://images.unsplash.com/photo-1556783900-2ebe375c20fd?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" className="gallery__img" alt="Image 1" />

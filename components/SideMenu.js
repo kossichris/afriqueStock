@@ -12,7 +12,7 @@ const Sidemenu = () => {
                 <div id="sidebar" >
                     <ul className="nav">
                         <div className="profile-container d-flex flex-row flex-wrap justify-content-center mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="88" height="88" viewBox="0 0 24 24" strokeWidth="1" stroke="#3B72C4" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-user-circle" width="88" height="88" viewBox="0 0 24 24" strokeWidth="1" stroke="#3B72C4" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                 <circle cx="12" cy="12" r="9" />
                                 <circle cx="12" cy="10" r="3" />

@@ -48,7 +48,7 @@ const Listimggridcategory = () => {
             </div>*/}
 
 
-            <div class="container mt-5">
+            <div className="container mt-5">
                 <div className="gallery">
                     <figure className="gallery__item gallery__item--1 d-flex flex-row justify-content-center">
                         <div className="read_more_cat d-none d-sm-block d-none d-sm-block">Restaurants</div>
