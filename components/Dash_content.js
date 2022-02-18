@@ -2,7 +2,6 @@ import React from 'react';
 import Styles from '../components/css/Sidebar.css'
 import ButtonSmall from './ButtonSmall';
 import { Chart } from "react-google-charts";
-import Buttonsmall from './ButtonSmall';
 import { colors } from '../constants/colors';
 import Footercopyrightwhitebg from './FooterCopyrightWhiteBg';
 

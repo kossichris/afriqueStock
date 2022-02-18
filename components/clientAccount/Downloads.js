@@ -1,7 +1,6 @@
 import React from 'react';
 import { colors } from '../../constants/colors';
 import Button from '../Button';
-import Buttonsmall from '../ButtonSmall';
 import downloadStyles from '../css/Download.css'
 
 const Downloads = () => {

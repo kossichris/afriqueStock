@@ -3,7 +3,7 @@ import Styles from '../components/css/Button.css'
 import { colors } from '../constants/colors';
 import { icons } from '../constants/icons';
 
-const Buttonsmall = ({ text, submitFunction, hasIcon, shape, color, bgColor, height, fontSize, isFlex, isTop, width }) => {
+const Buttonsmall = ({ text, hasIcon, shape, color, bgColor, height, fontSize, isFlex, isTop, width }) => {
     const borderShapper = (shape) => { return shape === 'round' ? '40px' : '0px' }
     const isFlexAndTopF = (isFlex) => { return isFlex === true ? "d-flex justify-content-center mt-4" : '' }
     const isTopF = (isTop) => { return isTop === true ? "mt-4" : '' }

@@ -1,6 +1,4 @@
 import React from 'react';
-import { colors } from '../../constants/colors';
-import Buttonsmall from '../ButtonSmall';
 import factureStyles from '../css/Facture.css'
 
 const Facture = () => {
