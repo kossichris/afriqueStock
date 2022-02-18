@@ -1,0 +1,53 @@
+
+.section {
+    position: relative;
+    width: 606px;
+    margin: 0 auto;
+    z-index: 0;
+    color: white;
+}
+
+
+
+.button {
+    cursor: pointer;
+    width: 199px;
+    display: inline-block;
+    background-color: #5E6B7F;
+    color: white;
+    text-align: center;
+    transition: .25s ease;
+    border: none;
+    padding: 10px;
+    background: brown;
+    border-radius: 50px;
+}
+
+.div:focus button, .button:focus {
+    background-color: #8DA1BF;
+    outline: none;
+}
+
+.button:focus + .p, .div:focus .P {
+    display: block;
+    position: absolute;
+    background-color: #8DA1BF;
+    height: 120px;
+    width: 100%;
+    left: 0;
+    z-index: 2;
+    outline: none;
+    top: 0px;
+    text-align: center;
+    padding-top: 48px;
+}
+
+.div {
+    display: inline-block;
+}
+
+.div:focus {
+    outline: none;
+}
+
+
