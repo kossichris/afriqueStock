@@ -5,6 +5,7 @@ import styles from './css/Navbar.module.css'
 import { colors } from '../constants/colors';
 import Dropdownbutton from './DropDownButton';
 import french from '/public/images/france.png'
+import Link from 'next/link';
 
 const flags = [
     "Français",
