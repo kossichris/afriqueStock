@@ -22,10 +22,7 @@ const Pricingtable = () => {
                         </div>
 
                         <div className={styles.tab__content}>
-                            <h3>Medium Section</h3>
-                            <p>Praesent nonummy mi in odio. Nullam accumsan lorem in dui. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Nullam accumsan lorem in dui. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
-
-                            <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Morbi mattis ullamcorper velit. Pellentesque posuere. Etiam ut purus mattis mauris sodales aliquam. Praesent nec nisl a purus blandit viverra.</p>
+                            <Tabs />
                         </div>
                     </div>
                 </div>

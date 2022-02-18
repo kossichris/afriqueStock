@@ -4,6 +4,7 @@ import logo from '/public/images/logo_footer.png'
 import Footerlang from './FooterLang';
 import Footercopyright from './footerCopyright';
 import styles from './css/Footer.css'
+import Link from 'next/link'
 
 const Footer = () => {
     return (
@@ -47,13 +48,40 @@ const Footer = () => {
                             EN SAVOIR PLUS
                         </summary>
                         <ul className="links">
-                            <li><a href="#0">Qui sommes-nous</a></li>
-                            <li><a href="#0">Nos formules & tarifs</a></li>
-                            <li><a href="#0">Nos partenaire</a></li>
-                            <li><a href="#0">Devenir contributeur</a></li>
-                            <li><a href="#0">Redevance</a></li>
-                            <li><a href="#0">Modèle photo</a></li>
+                            <li>
+                                <Link href="/about">
+                                    <a href="#0">Qui sommes-nous</a>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/formules">
+                                    <a href="#0">Nos formules & tarifs</a>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/accueil">
+                                    <a href="#0">Nos partenaire</a>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/register/contributeurs">
+                                    <a href="#0">Devenir contributeur</a>
+                                </Link >
+
+                            </li>
+                            <li>
+                                <Link href="/redevance">
+                                    <a href="#0">Redevance</a>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/photo">
+                                    <a href="#0">Modèle photo</a>
+                                </Link>
+
+                            </li>
                         </ul>
+
                     </details>
                     <details className="col-lg-3 col-md-6 col-sm-12 d-block d-sm-none">
                         <summary>
@@ -115,12 +143,38 @@ const Footer = () => {
                         <h3 data-target="#collapse_ft_1">EN SAVOIR PLUS</h3>
                         <div className="collapse dont-collapse-sm" id="collapse_ft_1">
                             <ul className="links">
-                                <li><a href="#0">Qui sommes-nous</a></li>
-                                <li><a href="#0">Nos formules & tarifs</a></li>
-                                <li><a href="#0">Nos partenaire</a></li>
-                                <li><a href="#0">Devenir contributeur</a></li>
-                                <li><a href="#0">Redevance</a></li>
-                                <li><a href="#0">Modèle photo</a></li>
+                                <li>
+                                    <Link href="/about">
+                                        <a href="#0">Qui sommes-nous</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/formules">
+                                        <a href="#0">Nos formules & tarifs</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/accueil">
+                                        <a href="#0">Nos partenaire</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/register/contributeurs">
+                                        <a href="#0">Devenir contributeur</a>
+                                    </Link >
+
+                                </li>
+                                <li>
+                                    <Link href="/redevance">
+                                        <a href="#0">Redevance</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/photo">
+                                        <a href="#0">Modèle photo</a>
+                                    </Link>
+
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -128,13 +182,43 @@ const Footer = () => {
                         <h3 data-target="#collapse_ft_2">INFOS LEGALES</h3>
                         <div className="collapse dont-collapse-sm" id="collapse_ft_2">
                             <ul className="links">
-                                <li><a href="#0">Conditions d'inscription</a></li>
-                                <li><a href="#0">Conditions d'utilisation</a></li>
-                                <li><a href="#0">Contrat de licence</a></li>
-                                <li><a href="#0">Informations sur le droit d'auteur</a></li>
-                                <li><a href="#0">Accord de fourniture</a></li>
-                                <li><a href="#0">Politique de confidentialité</a></li>
-                                <li><a href="#0">Politique relatives aux cookies</a></li>
+                                <li>
+                                    <Link href="/conditions">
+                                        <a href="#0">Conditions d'inscription</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/conditions">
+                                        <a href="#0">Conditions d'utilisation</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/license">
+                                        <a href="#0">Contrat de licence</a>
+                                    </Link>
+
+                                </li>
+                                <li>
+                                    <Link href="/droits">
+                                        <a href="#0">Informations sur le droit d'auteur</a>
+                                    </Link>
+
+                                </li>
+                                <li>
+                                    <Link href="/accueil">
+                                        <a href="#0">Accord de fourniture</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/privacy">
+                                        <a href="#0">Politique de confidentialité</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/cookies">
+                                        <a href="#0">Politique relatives aux cookies</a>
+                                    </Link>
+                                </li>
 
                             </ul>
                         </div>
@@ -162,7 +246,13 @@ const Footer = () => {
                                     <circle cx="12" cy="11" r="3" />
                                     <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
                                 </svg> <span className="ml-2">Cotonou - Benin BP 3205</span> </li>
-                                <li><a href="account.html" className="btn_add round-radius btn ml-2">CONTACTEZ LE SUPPORT</a></li>
+                                <li>
+                                    <Link href="/probleme">
+                                        <a href="account.html" className="btn_add round-radius btn ml-2">CONTACTEZ LE SUPPORT</a>
+                                    </Link>
+                                </li>
+
+
                             </ul>
 
                         </div>

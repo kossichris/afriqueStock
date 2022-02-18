@@ -67,7 +67,7 @@ const Stickynavbar = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/vendre">
+                            <Link href="/register/contributeurs">
                                 <a href="#0">Vendre</a>
                             </Link>
                         </li>
@@ -101,16 +101,75 @@ const Stickynavbar = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/dashboard">
-                                        <a href="#0">Mon profil</a>
+                                    <Link
+                                        href={{
+                                            pathname: '/clientAccount',
+                                            query: { name: 'PROFILE' },
+                                        }}
+                                    >
+                                        <a href="#0">Mon profile</a>
                                     </Link>
                                 </li>
-                                <li><a href="#">Mes téléchargements</a></li>
-                                <li><a href="#">Mes favoris</a></li>
-                                <li><a href="#">Mes factures</a></li>
-                                <li><a href="#">Mes formules d'abonnements</a></li>
-                                <li><a href="#">Mes détails de paiement</a></li>
-                                <li><a href="#">Mon équipe</a></li>
+                                <li>
+                                    <Link
+                                        href={{
+                                            pathname: '/clientAccount',
+                                            query: { name: 'DOWNLOAD' },
+                                        }}
+                                    >
+                                        <a href="#0">Mes téléchargements</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        href={{
+                                            pathname: '/clientAccount',
+                                            query: { name: 'FAVORITE' },
+                                        }}
+                                    >
+                                        <a href="#0">Mes favoris</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        href={{
+                                            pathname: '/clientAccount',
+                                            query: { name: 'FACTURE' },
+                                        }}
+                                    >
+                                        <a href="#0">Mes factures</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        href={{
+                                            pathname: '/clientAccount',
+                                            query: { name: 'FORMULE' },
+                                        }}
+                                    >
+                                        <a href="#0">Mes formules d'abonnements</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        href={{
+                                            pathname: '/clientAccount',
+                                            query: { name: 'PAYMENT' },
+                                        }}
+                                    >
+                                        <a href="#0">Mes détails de paiement</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        href={{
+                                            pathname: '/clientAccount',
+                                            query: { name: 'TEAM' },
+                                        }}
+                                    >
+                                        <a href="#0">Mon équipe</a>
+                                    </Link>
+                                </li>
                                 <div className="last-li text-center text-white" style={{ color: "white !important" }}><a href="#">Déconnexion</a></div>
 
 

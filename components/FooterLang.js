@@ -6,7 +6,7 @@ const Footerlang = () => {
         <>
             <div className="row">
                 <div className="col-lg-12 col-md-12 col-xs-12">
-                    <ul id="additional_links" className="mb-3 d-flex flex-row  flex-wrap justify-content-center">
+                    <ul id="additional_links" className="d-flex flex-row  flex-wrap justify-content-center">
                         <li><span>LANGUES </span></li>
                         <li><span style={{ color: "#49b620", fontWeight: "800" }}>| </span></li>
                         <li><a href="#0">English</a></li>

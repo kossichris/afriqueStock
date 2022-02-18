@@ -16,8 +16,14 @@ import styles from '../../components/css/PricingTable.module.scss'
 import PricingStyles from '../../components/css/PricingSubTable.module.scss'
 import { colors } from '../../constants/colors';
 import Footer from '../../components/Footer';
+import { useRouter } from 'next/router';
 
 const Index = () => {
+    const router = useRouter()
+    console.log(router)
+
+
+
     return (
         <>
 
@@ -29,8 +35,8 @@ const Index = () => {
 
                 <div className={styles.tabwrap + " " + "mt-5 mb-5   "} >
 
-                    <input type="radio" id="tab1" name="tabGroup1" className={styles.tab} />
-                    <label htmlFor="tab1"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-check" width="16" height="16" viewBox="0 0 24 24" strokeWidth="2.5" stroke={colors.primary} fill="none" strokewinecap="round" strokeWinejoin="round">
+                    <input type="radio" id="tab1" name="tabGroup1" className={styles.tab} checked={router.query.name === "PROFILE" ? true : false} />
+                    <label htmlFor="tab1"><svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-user-check" width="16" height="16" viewBox="0 0 24 24" strokeWidth="2.5" stroke={colors.primary} fill="none" strokewinecap="round" strokewinejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <circle cx="9" cy="7" r="4" />
                         <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
@@ -38,9 +44,9 @@ const Index = () => {
                     </svg>
                         <span className="ml-1">Profil</span> </label>
 
-                    <input type="radio" id="tab2" name="tabGroup1" className={styles.tab} />
+                    <input type="radio" id="tab2" name="tabGroup1" className={styles.tab} checked={router.query.name === "DOWNLOAD" ? true : false} />
                     <label htmlFor="tab2">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cloud-download" width="16" height="16" viewBox="0 0 24 24" strokeWidth="2.5" stroke={colors.primary} fill="none" strokewinecap="round" strokeWinejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-cloud-download" width="16" height="16" viewBox="0 0 24 24" strokeWidth="2.5" stroke={colors.primary} fill="none" strokewinecap="round" strokewinejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M19 18a3.5 3.5 0 0 0 0 -7h-1a5 4.5 0 0 0 -11 -2a4.6 4.4 0 0 0 -2.1 8.4" />
                             <line x1="12" y1="13" x2="12" y2="22" />
@@ -48,18 +54,18 @@ const Index = () => {
                         </svg>
                         <span className="ml-1">Téléchargements </span></label>
 
-                    <input type="radio" id="tab3" name="tabGroup1" className={styles.tab} />
+                    <input type="radio" id="tab3" name="tabGroup1" className={styles.tab} checked={router.query.name === "FAVORITE" ? true : false} />
                     <label htmlFor="tab3">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="16" height="16" viewBox="0 0 24 24" strokeWidth="2.5" stroke={colors.primary} fill="none" strokewinecap="round" strokeWinejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-heart" width="16" height="16" viewBox="0 0 24 24" strokeWidth="2.5" stroke={colors.primary} fill="none" strokewinecap="round" strokewinejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
                         </svg>
                         <span className="ml-1">Favoris </span>
                     </label>
 
-                    <input type="radio" id="tab4" name="tabGroup1" className={styles.tab} />
+                    <input type="radio" id="tab4" name="tabGroup1" className={styles.tab} checked={router.query.name === "FACTURE" ? true : false} />
                     <label htmlFor="tab4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-invoice" width="16" height="16" viewBox="0 0 24 24" strokeWidth="2.5" stroke={colors.primary} fill="none" strokewinecap="round" strokeWinejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-file-invoice" width="16" height="16" viewBox="0 0 24 24" strokeWidth="2.5" stroke={colors.primary} fill="none" strokewinecap="round" strokewinejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M14 3v4a1 1 0 0 0 1 1h4" />
                             <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
@@ -70,9 +76,9 @@ const Index = () => {
                         <span className="ml-1">Factures</span>
                     </label>
 
-                    <input type="radio" id="tab5" name="tabGroup1" className={styles.tab} />
+                    <input type="radio" id="tab5" name="tabGroup1" className={styles.tab} checked={router.query.name === "FORMULE" ? true : false} />
                     <label htmlFor="tab5">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tablerWist-check" width="16" height="16" viewBox="0 0 24 24" strokeWidth="2.5" stroke={colors.primary} fill="none" strokewinecap="round" strokeWinejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tablerWist-check" width="16" height="16" viewBox="0 0 24 24" strokeWidth="2.5" stroke={colors.primary} fill="none" strokewinecap="round" strokewinejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M3.5 5.5l1.5 1.5l2.5 -2.5" />
                             <path d="M3.5 11.5l1.5 1.5l2.5 -2.5" />
@@ -84,9 +90,9 @@ const Index = () => {
                         <span className="ml-1">Formules d'abonnements </span>
                     </label>
 
-                    <input type="radio" id="tab6" name="tabGroup1" className={styles.tab} />
+                    <input type="radio" id="tab6" name="tabGroup1" className={styles.tab} checked={router.query.name === "PAYMENT" ? true : false} />
                     <label htmlFor="tab6">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="16" height="16" viewBox="0 0 24 24" strokeWidth="2.5" stroke={colors.primary} fill="none" strokewinecap="round" strokeWinejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-shopping-cart" width="16" height="16" viewBox="0 0 24 24" strokeWidth="2.5" stroke={colors.primary} fill="none" strokewinecap="round" strokewinejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <circle cx="6" cy="19" r="2" />
                             <circle cx="17" cy="19" r="2" />
@@ -96,9 +102,9 @@ const Index = () => {
                         <span className="ml-1">Détails de paiement</span>
                     </label>
 
-                    <input type="radio" id="tab7" name="tabGroup1" className={styles.tab} />
+                    <input type="radio" id="tab7" name="tabGroup1" className={styles.tab} checked={router.query.name === "TEAM" ? true : false} />
                     <label htmlFor="tab7">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="16" height="16" viewBox="0 0 24 24" strokeWidth="2.5" stroke={colors.primary} fill="none" strokewinecap="round" strokeWinejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-users" width="16" height="16" viewBox="0 0 24 24" strokeWidth="2.5" stroke={colors.primary} fill="none" strokewinecap="round" strokewinejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <circle cx="9" cy="7" r="4" />
                             <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />

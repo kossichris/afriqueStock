@@ -34,7 +34,7 @@ const Button = ({ text, submitFunction, hasIcon, iconName, iconColor, shape, hei
                     <path d="M14 13h2v2" />
                     <path d="M10 13h-2v-2" />
                 </svg>}
-                <input style={{ background: bgColor, border: hasBorder ? getBorder() : null, color: color ? color + " !important" : "#fffff !important", fontWeight: '400', fontSize: fontSize, borderRadius: borderShapper(shape), height: height, fontWeight: fontWeight, width: width }} type="submit" value={text} className={"btn_1 load-image-input" + className + isTopF(isTop)} />
+                <input style={{ background: bgColor, border: hasBorder ? getBorder() : null, color: color ? color : "#fff !important", fontWeight: '400', fontSize: fontSize, borderRadius: borderShapper(shape), height: height, fontWeight: fontWeight, width: width }} type="submit" value={text} className={"btn_1 load-image-input" + className + isTopF(isTop)} />
             </div>
         </>
 

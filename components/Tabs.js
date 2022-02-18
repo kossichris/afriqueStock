@@ -9,9 +9,9 @@ const Tabs = () => {
                 <div className="wrapper">
                     <div className="cctabs">
                         <input checked id="one" name="tabs" type="radio" />
-                        <label className="label" for="one"><i className="fa fa-pencil-square-o"></i> Content</label>
-                        <input id="two" name="tabs" type="radio" value="Two" />
-                        <label className="label" for="two"><i className="fa fa-magic"></i> Services</label>
+                        <label className="label" for="one"><i className="fa fa-pencil-square-o"></i> Par mois</label>
+                        <input id="two" name="tabs" type="radio" readOnly value="Two" />
+                        <label className="label" for="two"><i className="fa fa-magic"></i> Par an</label>
 
                         <div className="panels mt-5">
                             <div className="panel container">

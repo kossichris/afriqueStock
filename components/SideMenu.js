@@ -26,7 +26,7 @@ const Sidemenu = () => {
                             </div>
                         </div>
                         <li className="li-1-btn">
-                            <Button text="Importer des contenues" color="#ffff" bgColor={colors.blue_light_3x} fontSize="12px" fontWeight="300" shape="round" />
+                            <Button text="Importer des contenues" color="#fff" bgColor={colors.blue_light_3x} fontSize="12px" fontWeight="300" shape="round" />
                         </li>
                         <li>
                             <a href="#">

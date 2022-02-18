@@ -67,13 +67,24 @@ const Navbar = () => {
                         <li>
                             <Buttonbadge />
                         </li>
-                        <li><span><a href="#0">Vendez vos oeuvres</a></span>
+                        <li>
+                            <Link href="/register/contributeurs">
+                                <span>
+                                    <a href="#0">Vendez vos oeuvres</a>
+                                </span>
+                            </Link>
+
                         </li>
-                        <li><span><a href="#0">Formules & tarifs</a></span>
+                        <li>
+                            <Link href="/formules">
+                                <span>
+                                    <a href="#0">Formules & tarifs</a>
+                                </span>
+                            </Link>
                         </li>
                         <li>
                             <Link href="/auth">
-                                <Button text="Connexion" color="#ffff" bgColor={colors.primary} shape="round" />
+                                <Button text="Connexion" color="#fff" bgColor={colors.primary} shape="round" />
                             </Link>
                         </li>
                         <li>

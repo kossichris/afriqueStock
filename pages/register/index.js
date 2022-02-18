@@ -44,7 +44,11 @@ const Index = () => {
                             <form>
                                 <h2 style={{ fontWeight: "700" }}> Créez un compte </h2>
                                 <div className="divider"><span></span></div>
-                                <small className="form-sm-title mb-4"> <small> Avez-vous un compte?  </small><a className="register_link" href="">Connectez-vous maintenant</a> </small>
+                                <small className="form-sm-title mb-4"> <small> Avez-vous un compte?  </small>
+                                    <Link href="/register"><a className="login_link" href="">Connectez-vous maintenant</a>
+                                    </Link>
+
+                                </small>
                                 <div className="form-group mt-3">
                                     <input type="email" readOnly className="form-control" placeholder="Email adress" style={{ borderRadius: "30px" }} name="email" id="email" />
                                 </div>

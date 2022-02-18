@@ -66,7 +66,7 @@ const Accueil = () => {
                                     />
 
                                     <span className="play-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-play" width="28" height="28" viewBox="0 0 24 24" strokeWidth="2" stroke="#ffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-player-play" width="28" height="28" viewBox="0 0 24 24" strokeWidth="2" stroke="#ffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                             <path d="M7 4v16l13 -8z" />
                                         </svg>
@@ -81,7 +81,7 @@ const Accueil = () => {
                                         height={250}
                                     />
                                     <span className="play-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-play" width="28" height="28" viewBox="0 0 24 24" strokeWidth="2" stroke="#ffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-player-play" width="28" height="28" viewBox="0 0 24 24" strokeWidth="2" stroke="#ffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                             <path d="M7 4v16l13 -8z" />
                                         </svg>
@@ -96,7 +96,7 @@ const Accueil = () => {
                                         height={250}
                                     />
                                     <span className="play-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-play" width="28" height="28" viewBox="0 0 24 24" strokeWidth="2" stroke="#ffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-player-play" width="28" height="28" viewBox="0 0 24 24" strokeWidth="2" stroke="#ffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                             <path d="M7 4v16l13 -8z" />
                                         </svg>
@@ -114,7 +114,7 @@ const Accueil = () => {
                                     />
 
                                     <span className="play-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-play" width="28" height="28" viewBox="0 0 24 24" strokeWidth="2" stroke="#ffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-player-play" width="28" height="28" viewBox="0 0 24 24" strokeWidth="2" stroke="#ffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                             <path d="M7 4v16l13 -8z" />
                                         </svg>
@@ -130,7 +130,7 @@ const Accueil = () => {
                                     />
 
                                     <span className="play-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-play" width="28" height="28" viewBox="0 0 24 24" strokeWidth="2" stroke="#ffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-player-play" width="28" height="28" viewBox="0 0 24 24" strokeWidth="2" stroke="#ffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                             <path d="M7 4v16l13 -8z" />
                                         </svg>
@@ -144,7 +144,7 @@ const Accueil = () => {
                                         height={250}
                                     />
                                     <span className="play-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-play" width="28" height="28" viewBox="0 0 24 24" strokeWidth="2" stroke="#ffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-player-play" width="28" height="28" viewBox="0 0 24 24" strokeWidth="2" stroke="#ffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                             <path d="M7 4v16l13 -8z" />
                                         </svg>
@@ -159,13 +159,13 @@ const Accueil = () => {
                 </div>
                 <Offerhome />
 
-                <div class="bg_color_1">
-                    <div class="container margin_60_35">
+                <div className="bg_color_1">
+                    <div className="container margin_60_35">
                         <h5 className="text-center mt-5 mb-3" >Découvrez nos Categories d'images</h5>
 
-                        <div class="row">
+                        <div className="row">
                             <div className="ul-container mb-5">
-                                <ul class="links">
+                                <ul className="links">
                                     <li><a href="#0">Eouvres d'art</a></li>
                                     <li><a href="#0">Ville</a></li>
                                     <li><a href="#0">Village</a></li>
@@ -173,7 +173,7 @@ const Accueil = () => {
                                     <li><a href="#0">Tourisme</a></li>
                                     <li><a href="#0">Sports</a></li>
                                 </ul>
-                                <ul class="links">
+                                <ul className="links">
                                     <li><a href="#0">Restaurants</a></li>
                                     <li><a href="#0">Réligion endogène </a></li>
                                     <li><a href="#0">Photographe</a></li>
@@ -181,7 +181,7 @@ const Accueil = () => {
                                     <li><a href="#0">Personne</a></li>
                                     <li><a href="#0">Nourriture/Repas</a></li>
                                 </ul>
-                                <ul class="links">
+                                <ul className="links">
                                     <li><a href="#0">Nature</a></li>
                                     <li><a href="#0">Mode/beauté</a></li>
                                     <li><a href="#0">Macanicien</a></li>
@@ -189,7 +189,7 @@ const Accueil = () => {
                                     <li><a href="#0">Informatique</a></li>
                                     <li><a href="#0">Hôtellerie</a></li>
                                 </ul>
-                                <ul class="links">
+                                <ul className="links">
                                     <li><a href="#0">Enfant Africain</a></li>
                                     <li><a href="#0">Education</a></li>
                                     <li><a href="#0">Cyclisme</a></li>
@@ -198,7 +198,7 @@ const Accueil = () => {
                                     <li><a href="#0">Célébrités</a></li>
 
                                 </ul>
-                                <ul class="links">
+                                <ul className="links">
                                     <li><a href="#0">Amour</a></li>
                                     <li><a href="#0">Agriculture</a></li>
 

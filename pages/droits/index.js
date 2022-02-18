@@ -16,7 +16,7 @@ const Index = () => {
                     <div className="row">
                         <div className="col-lg-1" ></div>
                         <div className="col-lg-10" id="contrat">
-                            <h4 className="nomargin_top  text-center mb-3">INhtmlForMATIONS SUR LE DROIT D'AUTEUR</h4>
+                            <h4 className="nomargin_top  text-center mb-3">INFORMATIONS SUR LE DROIT D'AUTEUR</h4>
                             <div className="tabs">
                                 <div className="tab">
                                     <input type="checkbox" id="chck1" />
