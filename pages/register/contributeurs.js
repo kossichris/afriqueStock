@@ -3,7 +3,7 @@ import Button from '../../components/Button';
 import Footercopyrightwhitebg from '../../components/FooterCopyrightWhiteBg';
 import Stickynavbar from '../../components/stickyNavbar';
 import { colors } from '../../constants/colors';
-import registerStyles from './style.css'
+import registerStyles from '../../ComponentsStyled/register.css'
 import Image from 'next/image'
 import visa from '/public/images/visa_transparent.png'
 import mc from '/public/images/master_card.png'

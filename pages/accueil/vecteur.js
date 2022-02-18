@@ -4,7 +4,7 @@ import Navbar from '../../components/Navbar';
 import Stickynavbar from '../../components/stickyNavbar';
 import Banner from '../../components/Banner';
 import Footer from '../../components/Footer';
-import accueilStyles from './accueil.css'
+import accueilStyles from '../../ComponentsStyled/accueil.css'
 import Button from '../../components/Button';
 import Listimggridcategory from '../../components/ListGridCategory';
 import { colors } from '../../constants/colors';

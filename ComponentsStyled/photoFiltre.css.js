@@ -1,21 +1,18 @@
 
 
-// styles/global.js
 import css from 'styled-jsx/css'
-import { colors } from '../../constants/colors'
+import { colors } from '../constants/colors'
 
 export default css.AccueilContributeurs`
-
-
 #sidebar{
-position: relative; overflow: visible; box-sizing: border-box; min-height: 1px;
+position: relative; overflow: visible; box-sizing: border-box; min-height: 1px
 }
 .range{
 position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;
 }
 
 .theiaStickySidebar{
-padding-top: 0px; padding-bottom: 1px; position: static; transform: none; left: 66px; top: 0px;"
+padding-top: 0px; padding-bottom: 1px; position: static; transform: none; left: 66px; top: 0px;
 
 }
 

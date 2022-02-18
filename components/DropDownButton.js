@@ -6,7 +6,7 @@ const Dropdownbutton = ({ page, title, flag, arrowColor, list = [] }) => {
 
     return (
         <>
-            <div className="dropdown">
+            <div className="dropdown d-flex">
                 <button className="dropbtn " style={{ fontSize: page ? '8px' : '13px' }}>{title}
                     {flag &&
                         <span className="mr-1 mt-2">

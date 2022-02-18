@@ -19,15 +19,18 @@ const Stickynavbar = () => {
         <div>
             <header className="header sticky">
                 <div id="logo">
-                    <a href="index.html" title="Sparker - Directory and listings template">
-                        <Image
-                            src={logo_sticky}
-                            alt="Picture of the author"
-                            width={165}
-                            height={35}
-                            className="logo_sticky"
-                        />
-                    </a>
+                    <Link href="/accueil">
+                        <a href="index.html" title="Sparker - Directory and listings template">
+                            <Image
+                                src={logo_sticky}
+                                alt="Picture of the author"
+                                width={165}
+                                height={35}
+                                className="logo_normal"
+                            />
+
+                        </a>
+                    </Link>
                 </div>
 
                 <nav id="menu" className="main-menu mt-1 left ml-5 stickynav-font">

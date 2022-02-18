@@ -1,4 +1,3 @@
-// styles/global.js
 import css from 'styled-jsx/css'
 import { colors } from '../../constants/colors'
 import { imagesUrl } from '../../constants/images'

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Abonnements from '../../components/clientAccount/Abonnements';
 import Canceling from '../../components/clientAccount/canceling';
 import Detailpaiement from '../../components/clientAccount/DetailPaiement';
@@ -20,9 +20,17 @@ import { useRouter } from 'next/router';
 
 const Index = () => {
     const router = useRouter()
-    console.log(router)
+    const [tab1, setTab1] = useState(false);
+    const [tab2, setTab2] = useState(false);
+    const [tab3, setTab3] = useState(false);
+    const [tab4, setTab4] = useState(false);
+    const [tab5, setTab5] = useState(false);
+    const [tab6, setTab6] = useState(false);
+    const [tab7, setTab7] = useState(false);
 
-
+    const toggleTab = (tab) => {
+        router.query.name = tab
+    }
 
     return (
         <>
@@ -35,7 +43,7 @@ const Index = () => {
 
                 <div className={styles.tabwrap + " " + "mt-5 mb-5   "} >
 
-                    <input type="radio" id="tab1" name="tabGroup1" className={styles.tab} checked={router.query.name === "PROFILE" ? true : false} />
+                    <input type="radio" id="tab1" name="tabGroup1" onChange={() => toggleTab("PROFILE")} className={styles.tab} checked={router.query.name === "PROFILE" ? true : false} />
                     <label htmlFor="tab1"><svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-user-check" width="16" height="16" viewBox="0 0 24 24" strokeWidth="2.5" stroke={colors.primary} fill="none" strokewinecap="round" strokewinejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <circle cx="9" cy="7" r="4" />
@@ -44,7 +52,7 @@ const Index = () => {
                     </svg>
                         <span className="ml-1">Profil</span> </label>
 
-                    <input type="radio" id="tab2" name="tabGroup1" className={styles.tab} checked={router.query.name === "DOWNLOAD" ? true : false} />
+                    <input type="radio" id="tab2" name="tabGroup2" onChange={() => toggleTab("DOWNLOAD")} className={styles.tab} checked={router.query.name === "DOWNLOAD" ? true : false} />
                     <label htmlFor="tab2">
                         <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-cloud-download" width="16" height="16" viewBox="0 0 24 24" strokeWidth="2.5" stroke={colors.primary} fill="none" strokewinecap="round" strokewinejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -54,7 +62,7 @@ const Index = () => {
                         </svg>
                         <span className="ml-1">Téléchargements </span></label>
 
-                    <input type="radio" id="tab3" name="tabGroup1" className={styles.tab} checked={router.query.name === "FAVORITE" ? true : false} />
+                    <input type="radio" id="tab3" name="tabGroup3" onChange={() => toggleTab("FAVORITE")} className={styles.tab} checked={router.query.name === "FAVORITE" ? true : false} />
                     <label htmlFor="tab3">
                         <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-heart" width="16" height="16" viewBox="0 0 24 24" strokeWidth="2.5" stroke={colors.primary} fill="none" strokewinecap="round" strokewinejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -63,7 +71,7 @@ const Index = () => {
                         <span className="ml-1">Favoris </span>
                     </label>
 
-                    <input type="radio" id="tab4" name="tabGroup1" className={styles.tab} checked={router.query.name === "FACTURE" ? true : false} />
+                    <input type="radio" id="tab4" name="tabGroup4" onChange={() => toggleTab("FACTURE")} className={styles.tab} checked={router.query.name === "FACTURE" ? true : false} />
                     <label htmlFor="tab4">
                         <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-file-invoice" width="16" height="16" viewBox="0 0 24 24" strokeWidth="2.5" stroke={colors.primary} fill="none" strokewinecap="round" strokewinejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -76,7 +84,7 @@ const Index = () => {
                         <span className="ml-1">Factures</span>
                     </label>
 
-                    <input type="radio" id="tab5" name="tabGroup1" className={styles.tab} checked={router.query.name === "FORMULE" ? true : false} />
+                    <input type="radio" id="tab5" name="tabGroup5" onChange={() => toggleTab("FORMULE")} className={styles.tab} checked={router.query.name === "FORMULE" ? true : false} />
                     <label htmlFor="tab5">
                         <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tablerWist-check" width="16" height="16" viewBox="0 0 24 24" strokeWidth="2.5" stroke={colors.primary} fill="none" strokewinecap="round" strokewinejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -90,7 +98,7 @@ const Index = () => {
                         <span className="ml-1">Formules d'abonnements </span>
                     </label>
 
-                    <input type="radio" id="tab6" name="tabGroup1" className={styles.tab} checked={router.query.name === "PAYMENT" ? true : false} />
+                    <input type="radio" id="tab6" name="tabGroup6" onChange={() => toggleTab("PAYMENT")} className={styles.tab} checked={router.query.name === "PAYMENT" ? true : false} />
                     <label htmlFor="tab6">
                         <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-shopping-cart" width="16" height="16" viewBox="0 0 24 24" strokeWidth="2.5" stroke={colors.primary} fill="none" strokewinecap="round" strokewinejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -102,7 +110,7 @@ const Index = () => {
                         <span className="ml-1">Détails de paiement</span>
                     </label>
 
-                    <input type="radio" id="tab7" name="tabGroup1" className={styles.tab} checked={router.query.name === "TEAM" ? true : false} />
+                    <input type="radio" id="tab7" name="tabGroup7" onChange={() => toggleTab("TEAM")} className={styles.tab} checked={router.query.name === "TEAM" ? true : false} />
                     <label htmlFor="tab7">
                         <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-users" width="16" height="16" viewBox="0 0 24 24" strokeWidth="2.5" stroke={colors.primary} fill="none" strokewinecap="round" strokewinejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />

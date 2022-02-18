@@ -15,16 +15,18 @@ const Stickywhitenavbar = () => {
         <div>
             <header className="header sticky white_bg">
                 <div id="logo">
-                    <a href="index.html" title="Sparker - Directory and listings template">
+                    <Link href="/accueil">
+                        <a href="index.html" title="Sparker - Directory and listings template">
+                            <Image
+                                src={logo_white_bg}
+                                alt="Picture of the author"
+                                width={165}
+                                height={35}
+                                className="logo_sticky"
+                            />
 
-                        <Image
-                            src={logo_white_bg}
-                            alt="Picture of the author"
-                            width={165}
-                            height={35}
-                            className="logo_sticky"
-                        />
-                    </a>
+                        </a>
+                    </Link>
                 </div>
 
                 <nav id="menu" className="main-menu">

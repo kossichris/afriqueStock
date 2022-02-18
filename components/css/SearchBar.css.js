@@ -1,4 +1,3 @@
-// styles/global.js
 import css from 'styled-jsx/css'
 import { colors } from '../../constants/colors'
 
@@ -8,6 +7,9 @@ export default css.offer`
 }
 form{
     width: 70%;
+}
+.dropdown{
+    padding: 5px;
 }
 .submit{
     border-radius: 0px !important
@@ -19,6 +21,7 @@ form{
 
 .inner{
     width: 83%;
+    height: 43px;
 }
 .btn_1_prime{
     height: 41px;

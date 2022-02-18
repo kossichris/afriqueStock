@@ -13,7 +13,7 @@ import fond_12 from '/public/images/Illustration/fond-12.png';
 import photo from '/public/images/access_bg.jpg'
 
 
-import Styles from './styles.css'
+import Styles from '../../ComponentsStyled/contributeursAccueil.css'
 
 
 import Image from 'next/image'

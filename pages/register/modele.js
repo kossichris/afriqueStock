@@ -5,7 +5,7 @@ import Footercopyrightdarkblue from '../../components/FooterCopyrightDarkBlue';
 import Footerlangwhitebg from '../../components/FooterLangWhiteBg';
 import Stickywhitenavbar from '../../components/StickyWhiteNavbar';
 import { colors } from '../../constants/colors';
-import registerModeleStyles from './modele.style.css'
+import registerModeleStyles from '../../ComponentsStyled/modele.style.css'
 
 const Modele = () => {
     return (

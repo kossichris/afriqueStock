@@ -5,7 +5,7 @@ import Navbar from '../../components/Navbar';
 import Stickynavbar from '../../components/stickyNavbar';
 import Banner from '../../components/Banner';
 import Footer from '../../components/Footer';
-import accueilStyles from './accueil.css'
+import accueilStyles from '../../ComponentsStyled/accueil.css'
 import Offerhome from '../../components/OfferHome';
 import Button from '../../components/Button';
 import Listgridsimple from '../../components/ListGridSimple';

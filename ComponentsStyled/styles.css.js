@@ -1,7 +1,6 @@
 
-// styles/global.js
 import css from 'styled-jsx/css'
-import { colors } from '../../constants/colors'
+import { colors } from '../constants/colors'
 
 export default css.styles`
 .img-container{

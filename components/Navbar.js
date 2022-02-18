@@ -20,16 +20,19 @@ const Navbar = () => {
         <div>
             <header className="header menu_fixed">
                 <div id="logo">
-                    <a href="index.html" title="Sparker - Directory and listings template">
-                        <Image
-                            src={logo_sticky}
-                            alt="Picture of the author"
-                            width={165}
-                            height={35}
-                            className="logo_normal"
-                        />
+                    <Link href="/accueil">
+                        <a href="index.html" title="Sparker - Directory and listings template">
+                            <Image
+                                src={logo_sticky}
+                                alt="Picture of the author"
+                                width={165}
+                                height={35}
+                                className="logo_normal"
+                            />
 
-                    </a>
+                        </a>
+                    </Link>
+
                 </div>
 
                 <nav id="menu" className="main-menu mt-1 left ml-5 stickynav-font">

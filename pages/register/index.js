@@ -3,7 +3,7 @@ import Button from '../../components/Button';
 import Footercopyrightwhitebg from '../../components/FooterCopyrightWhiteBg';
 import Stickywhitenavbar from '../../components/StickyWhiteNavbar';
 import { colors } from '../../constants/colors';
-import registerStyles from './style.css'
+import registerStyles from '../../ComponentsStyled/register.css'
 import Link from 'next/link'
 
 

@@ -3,7 +3,7 @@ import Button from '../../components/Button';
 import Footercopyrightwhitebg from '../../components/FooterCopyrightWhiteBg';
 import Stickynavbar from '../../components/stickyNavbar';
 import { colors } from '../../constants/colors';
-import Styles from './styles.css'
+import Styles from '../../ComponentsStyled/formulaire.css'
 
 const Index = () => {
     return (

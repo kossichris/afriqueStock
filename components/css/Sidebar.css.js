@@ -197,7 +197,6 @@ a:hover{
     color: #49b620;
     font-size: 25px;
 }
-// chart bar
 
 
 

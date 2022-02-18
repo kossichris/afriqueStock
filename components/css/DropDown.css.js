@@ -1,5 +1,4 @@
 
-// styles/global.js
 import css from 'styled-jsx/css'
 import { colors } from '../../constants/colors'
 
@@ -18,6 +17,7 @@ export default css.dropdown`
   position: relative;
   display: inline-block;
 padding: 11px;
+
 }
 
 /* Dropdown Content (Hidden by Default) */

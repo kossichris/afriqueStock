@@ -3,7 +3,7 @@ import Button from '../../components/Button';
 import Footercopyrightwhitebg from '../../components/FooterCopyrightWhiteBg';
 import Stickywhitenavbar from '../../components/StickyWhiteNavbar';
 import { colors } from '../../constants/colors';
-import loginStyles from './style.css'
+import loginStyles from '../../ComponentsStyled/style.css'
 import Link from 'next/link'
 
 const Index = () => {

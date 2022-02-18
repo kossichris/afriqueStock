@@ -4,7 +4,7 @@ import Footer from '../../components/Footer';
 import Searchbar from '../../components/SearchBar';
 import Stickynavbar from '../../components/stickyNavbar';
 import { colors } from '../../constants/colors';
-import Styles from './styles.css'
+import Styles from '../../ComponentsStyled/detailsDownload.css'
 
 const Index = () => {
     return (
