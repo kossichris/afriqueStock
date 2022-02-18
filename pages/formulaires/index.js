@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../../components/Button';
 import Footercopyrightwhitebg from '../../components/FooterCopyrightWhiteBg';
-import Stickynavbar from '../../components/stickyNavbar';
+import Stickynavbar from '../../components/StickyNavbar';
 import { colors } from '../../constants/colors';
 import Styles from '../../ComponentsStyled/formulaire.css'
 

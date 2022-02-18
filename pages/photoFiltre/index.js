@@ -3,7 +3,7 @@ import Button from '../../components/Button';
 import Footer from '../../components/Footer';
 import Listimggrid from '../../components/ListImgGrid';
 import Searchbar from '../../components/SearchBar';
-import Stickynavbar from '../../components/stickyNavbar';
+import Stickynavbar from '../../components/StickyNavbar';
 import { colors } from '../../constants/colors';
 
 const Index = () => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from '../../components/Footer';
 import Searchbar from '../../components/SearchBar';
-import Stickynavbar from '../../components/stickyNavbar';
+import Stickynavbar from '../../components/StickyNavbar';
 import Styles from '../../components/css/Accordeon.css'
 
 const Index = () => {

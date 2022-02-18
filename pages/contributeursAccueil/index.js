@@ -1,6 +1,6 @@
 import React from 'react';
 import Banneraccueilcontributeurs from '../../components/BannerAccueilContributeurs';
-import Stickynavbar from '../../components/stickyNavbar';
+import Stickynavbar from '../../components/StickyNavbar';
 import photographes_ill from '/public/images/Illustration/fond-photographe.png';
 import designers_ill from '/public/images/Illustration/fond-designers.png';
 import illustrators_ill from '/public/images/Illustration/fond-illustrators.png';

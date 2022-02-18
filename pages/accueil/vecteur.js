@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useScrollDirection } from 'react-use-scroll-direction'
 import Navbar from '../../components/Navbar';
-import Stickynavbar from '../../components/stickyNavbar';
+import Stickynavbar from '../../components/StickyNavbar';
 import Banner from '../../components/Banner';
 import Footer from '../../components/Footer';
 import accueilStyles from '../../ComponentsStyled/accueil.css'

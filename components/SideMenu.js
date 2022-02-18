@@ -2,7 +2,7 @@ import React from 'react';
 import Styles from '../components/css/Sidebar.css'
 import { colors } from '../constants/colors';
 import Button from './Button';
-import Stickynavbar from './stickyNavbar';
+import Stickynavbar from './StickyNavbar';
 
 const Sidemenu = () => {
     return (

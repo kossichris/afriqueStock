@@ -1,7 +1,7 @@
 import React from 'react';
 import Pricingtable from '../../components/PricingTable';
 import Searchbar from '../../components/SearchBar';
-import Stickynavbar from '../../components/stickyNavbar';
+import Stickynavbar from '../../components/StickyNavbar';
 
 const Index = () => {
     return (

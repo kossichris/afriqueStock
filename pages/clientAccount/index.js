@@ -11,7 +11,7 @@ import Invitationsent from '../../components/clientAccount/InvitationSent';
 import InvitationsentPrime from '../../components/clientAccount/InvitationSentPrime';
 import Profile from '../../components/clientAccount/Profile';
 import Searchbar from '../../components/SearchBar';
-import Stickynavbar from '../../components/stickyNavbar';
+import Stickynavbar from '../../components/StickyNavbar';
 import styles from '../../components/css/PricingTable.module.scss'
 import PricingStyles from '../../components/css/PricingSubTable.module.scss'
 import { colors } from '../../constants/colors';

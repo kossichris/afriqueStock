@@ -2,7 +2,7 @@ import React from 'react';
 import Footer from '../../components/Footer';
 import ListImagegrid from '../../components/ListImgGrid';
 import Searchbar from '../../components/SearchBar';
-import Stickynavbar from '../../components/stickyNavbar';
+import Stickynavbar from '../../components/StickyNavbar';
 
 const Index = () => {
     return (

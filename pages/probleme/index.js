@@ -3,7 +3,7 @@ import Bannertext from '../../components/BannerText';
 import Button from '../../components/Button';
 import Footercopyright from '../../components/footerCopyright';
 import Footerlang from '../../components/FooterLang';
-import Stickynavbar from '../../components/stickyNavbar';
+import Stickynavbar from '../../components/StickyNavbar';
 import { colors } from '../../constants/colors';
 
 const Index = () => {

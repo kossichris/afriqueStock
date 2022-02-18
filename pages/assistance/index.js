@@ -1,7 +1,7 @@
 import React from 'react';
 import Bannertext from '../../components/BannerText';
 import Footer from '../../components/Footer';
-import Stickynavbar from '../../components/stickyNavbar';
+import Stickynavbar from '../../components/StickyNavbar';
 
 const Index = () => {
     return (

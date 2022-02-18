@@ -2,7 +2,7 @@ import React from 'react';
 import Buttonsmall from '../../components/ButtonSmall';
 import Footer from '../../components/Footer';
 import Searchbar from '../../components/SearchBar';
-import Stickynavbar from '../../components/stickyNavbar';
+import Stickynavbar from '../../components/StickyNavbar';
 import { colors } from '../../constants/colors';
 import Styles from '../../ComponentsStyled/detailsDownload.css'
 

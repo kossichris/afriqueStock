@@ -2,7 +2,7 @@ import React from 'react';
 import Bannertext from '../../components/BannerText';
 import Footercopyright from '../../components/footerCopyright';
 import Footerlang from '../../components/FooterLang';
-import Stickynavbar from '../../components/stickyNavbar';
+import Stickynavbar from '../../components/StickyNavbar';
 
 const Index = () => {
     return (
