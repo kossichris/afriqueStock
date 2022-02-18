@@ -60,7 +60,7 @@ const Modele = () => {
                                     <div>
                                         <div className="btn_home_align mt-4 d-flex flex-column justify-content-">
                                             <div className="rounded-btn">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-upload" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                                <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-upload" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                                     <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
                                                     <polyline points="7 9 12 4 17 9" />
@@ -103,7 +103,7 @@ const Modele = () => {
                                                             <option value="" selected="">Homme*</option>
                                                             <option value="Europe">Femme</option>
                                                         </select>
-                                                        <div className="nice-select wide add_bottom_10" tabindex="0"><span className="current">Country*</span>
+                                                        <div className="nice-select wide add_bottom_10" tabIndex="0"><span className="current">Country*</span>
                                                             <ul className="list"><li className="option selected">Homme*</li>
                                                                 <li data-value="Europe" className="option">Femme</li>
                                                             </ul></div>

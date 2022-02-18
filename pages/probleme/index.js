@@ -17,7 +17,7 @@ const Index = () => {
                         <div className="col-xl-8 col-lg-8 pr-xl-5  mt-5">
 
                             <div id="message-contact"></div>
-                            <form method="post" id="contactform" className="d-flex flex-column justify-content-center" autocomplete="off">
+                            <form method="post" id="contactform" className="d-flex flex-column justify-content-center" >
                                 <div className="row">
                                     <div className="col-md-6">
                                         <div className="form-group">

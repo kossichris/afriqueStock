@@ -32,7 +32,7 @@ const Equipe = () => {
                                     <td>
 
                                         <span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="16" height="16" viewBox="0 0 24 24" strokeWidth="2.5" stroke={colors.grey_dark} fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                            <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-pencil" width="16" height="16" viewBox="0 0 24 24" strokeWidth="2.5" stroke={colors.grey_dark} fill="none" strokeLinecap="round" strokeLinejoin="round">
                                                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                                 <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4" />
                                                 <line x1="13.5" y1="6.5" x2="17.5" y2="10.5" />
@@ -40,7 +40,7 @@ const Equipe = () => {
                                         </span>
 
                                         <span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-trash" width="16" height="16" viewBox="0 0 24 24" strokeWidth="2.5" stroke={colors.blue} fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                            <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-trash" width="16" height="16" viewBox="0 0 24 24" strokeWidth="2.5" stroke={colors.blue} fill="none" strokeLinecap="round" strokeLinejoin="round">
                                                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                                 <line x1="4" y1="7" x2="20" y2="7" />
                                                 <line x1="10" y1="11" x2="10" y2="17" />
@@ -59,7 +59,7 @@ const Equipe = () => {
                                     <td>
 
                                         <span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="16" height="16" viewBox="0 0 24 24" strokeWidth="2.5" stroke={colors.grey_dark} fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                            <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-pencil" width="16" height="16" viewBox="0 0 24 24" strokeWidth="2.5" stroke={colors.grey_dark} fill="none" strokeLinecap="round" strokeLinejoin="round">
                                                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                                 <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4" />
                                                 <line x1="13.5" y1="6.5" x2="17.5" y2="10.5" />
@@ -67,7 +67,7 @@ const Equipe = () => {
                                         </span>
 
                                         <span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-trash" width="16" height="16" viewBox="0 0 24 24" strokeWidth="2.5" stroke={colors.blue} fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                            <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-trash" width="16" height="16" viewBox="0 0 24 24" strokeWidth="2.5" stroke={colors.blue} fill="none" strokeLinecap="round" strokeLinejoin="round">
                                                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                                 <line x1="4" y1="7" x2="20" y2="7" />
                                                 <line x1="10" y1="11" x2="10" y2="17" />
@@ -87,7 +87,7 @@ const Equipe = () => {
                                     <td>
 
                                         <span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="16" height="16" viewBox="0 0 24 24" strokeWidth="2.5" stroke={colors.grey_dark} fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                            <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-pencil" width="16" height="16" viewBox="0 0 24 24" strokeWidth="2.5" stroke={colors.grey_dark} fill="none" strokeLinecap="round" strokeLinejoin="round">
                                                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                                 <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4" />
                                                 <line x1="13.5" y1="6.5" x2="17.5" y2="10.5" />
@@ -95,7 +95,7 @@ const Equipe = () => {
                                         </span>
 
                                         <span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-trash" width="16" height="16" viewBox="0 0 24 24" strokeWidth="2.5" stroke={colors.blue} fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                            <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-trash" width="16" height="16" viewBox="0 0 24 24" strokeWidth="2.5" stroke={colors.blue} fill="none" strokeLinecap="round" strokeLinejoin="round">
                                                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                                 <line x1="4" y1="7" x2="20" y2="7" />
                                                 <line x1="10" y1="11" x2="10" y2="17" />
@@ -175,9 +175,9 @@ const Equipe = () => {
 
                     </div>
                     <section className="mt-5">
-                        <div class="row add_bottom_30">
-                            <div class="col-md-6">
-                                <ul class="bullets">
+                        <div className="row add_bottom_30">
+                            <div className="col-md-6">
+                                <ul className="bullets">
                                     <li>Modification du compte principal</li>
                                     <li>Voir et gérer les contacts</li>
                                     <li>Voir et modifier les mots de passe </li>
@@ -187,8 +187,8 @@ const Equipe = () => {
                                     <li>Pouvoir contacter le support</li>
                                 </ul>
                             </div>
-                            <div class="col-md-6">
-                                <ul class="bullets">
+                            <div className="col-md-6">
+                                <ul className="bullets">
                                     <li>10 téléchargements par mois </li>
                                     <li>50 téléchargements par mois </li>
                                     <li>60 téléchargements par mois </li>
