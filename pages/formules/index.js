@@ -10,9 +10,7 @@ const Index = () => {
             <div className="searchbar-container">
                 <Searchbar />
             </div>
-            <main>
-                <Pricingtable />
-            </main>
+            <Pricingtable />
         </>
     );
 }

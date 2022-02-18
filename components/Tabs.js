@@ -5,49 +5,264 @@ import Styles from '../components/css/Tabs.css'
 const Tabs = () => {
     return (
         <>
-
             <div className="container">
+                <div className="wrapper">
+                    <div className="cctabs">
+                        <input checked id="one" name="tabs" type="radio" />
+                        <label className="label" for="one"><i className="fa fa-pencil-square-o"></i> Content</label>
+                        <input id="two" name="tabs" type="radio" value="Two" />
+                        <label className="label" for="two"><i className="fa fa-magic"></i> Services</label>
 
-                <h1>Tabby Tabs</h1>
+                        <div className="panels mt-5">
+                            <div className="panel container">
+                                <div className="grid cc-text-center row justify-content-center">
+                                    <div className="table col-lg-3 col-md-12 col-sm-12 col-xs-12 d-flex flex-column justify-content-around mr-2">
+                                        <strong>10 Vidéos/mois <br />
+                                            <small> 50% de réduction soit 33$ par vidéo </small>
+                                        </strong>
 
-                <div className="tabs">
-                    <div className="tabby-tab">
-                        <input type="radio" id="tab-1" name="tabby-tabs" checked />
-                        <label for="tab-1">Tabby Tab 1</label>
-                        <div className="tabby-content">
-                            <img src="http://i64.tinypic.com/20qrlc.png" />
-                            <p>Purr while eating meowing non stop for food or chase laser sleep on dog bed, force dog to sleep on floor, so play riveting piece on synthesizer keyboard hiss at vacuum cleaner.Stares at human while pushing stuff off a table spot something, big eyes, big eyes, crouch, shake butt, prepare to pounce so refuse to leave cardboard box.</p>
+
+                                        <div className="h3-text">180$</div>
+                                        <strong >Forfait mensuel F1</strong>
+                                    </div>
+                                    <div className="table col-lg-3 col-md-12 col-sm-12 col-xs-12 d-flex flex-column justify-content-around mr-2">
+                                        <strong>10 Vidéos/mois <br />
+                                            <small> 50% de réduction soit 33$ par vidéo </small>
+                                        </strong>
+
+
+                                        <div className="h3-text">330$</div>
+                                        <strong >Forfait mensuel F2</strong>
+                                    </div>
+                                    <div className="table col-lg-3 col-md-12 col-sm-12 col-xs-12 d-flex flex-column justify-content-around">
+                                        <strong>10 Vidéos/mois <br />
+                                            <small> 50% de réduction soit 33$ par vidéo </small>
+                                        </strong>
+
+
+                                        <div className="h3-text">480$</div>
+                                        <strong >Forfait mensuel F3</strong>
+
+
+                                    </div>
+
+                                    <div className="container mt-5">
+                                        <div className="row">
+                                            <div className="col-lg-4 text-left ">
+                                                <div className="bottom-text">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-check" width="22" height="22" viewBox="0 0 24 24" strokeWidth="3" stroke="#49B521" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                        <path d="M5 12l5 5l10 -10" />
+                                                    </svg>
+                                                    <span className="ml-1"> Droits de modifier ou dans le but de créer des oeuvres dérivées</span>
+                                                </div>
+                                                <div className="bottom-text mt-3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-check" width="22" height="22" viewBox="0 0 24 24" strokeWidth="3" stroke="#49B521" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                        <path d="M5 12l5 5l10 -10" />
+                                                    </svg>
+                                                    <span className="ml-1">
+                                                        Utilisation personnelle et commerciaux
+                                                    </span>
+                                                </div>
+                                                <div className="bottom-text mt-3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-check" width="22" height="22" viewBox="0 0 24 24" strokeWidth="3" stroke="#49B521" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                        <path d="M5 12l5 5l10 -10" />
+                                                    </svg>
+                                                    <span className="ml-1">Utilisation imprimée ou numerique </span>
+                                                </div>
+                                                <div className="bottom-text mt-3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-check" width="22" height="22" viewBox="0 0 24 24" strokeWidth="3" stroke="#49B521" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                        <path d="M5 12l5 5l10 -10" />
+                                                    </svg>
+                                                    <span className="ml-1">Utilisation pour marketing et publicité </span>
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-4 text-left ">
+                                                <div className="bottom-text">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-check" width="22" height="22" viewBox="0 0 24 24" strokeWidth="3" stroke="#49B521" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                        <path d="M5 12l5 5l10 -10" />
+                                                    </svg>
+                                                    <span className="ml-1"> Droits d'utilisation à vie</span>
+                                                </div>
+                                                <div className="bottom-text mt-3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-check" width="22" height="22" viewBox="0 0 24 24" strokeWidth="3" stroke="#49B521" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                        <path d="M5 12l5 5l10 -10" />
+                                                    </svg>
+                                                    <span className="ml-1">
+                                                        Utiliser depuis n'importe où dans le monde
+                                                    </span>
+                                                </div>
+                                                <div className="bottom-text mt-3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-check" width="22" height="22" viewBox="0 0 24 24" strokeWidth="3" stroke="#49B521" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                        <path d="M5 12l5 5l10 -10" />
+                                                    </svg>
+                                                    <span className="ml-1">Nombre d'utilisateurs 4  </span>
+                                                </div>
+                                                <div className="bottom-text mt-3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-check" width="22" height="22" viewBox="0 0 24 24" strokeWidth="3" stroke="#49B521" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                        <path d="M5 12l5 5l10 -10" />
+                                                    </svg>
+                                                    <span className="ml-1">Pas de limite de téléchargement quotidien  </span>
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-4 text-left ">
+                                                <div className="bottom-text">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-check" width="22" height="22" viewBox="0 0 24 24" strokeWidth="3" stroke="#49B521" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                        <path d="M5 12l5 5l10 -10" />
+                                                    </svg>
+                                                    <span className="ml-1"> Renouvellement automatique avec désactivation simplifiée</span>
+                                                </div>
+                                                <div className="bottom-text mt-3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-check" width="22" height="22" viewBox="0 0 24 24" strokeWidth="3" stroke="#49B521" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                        <path d="M5 12l5 5l10 -10" />
+                                                    </svg>
+                                                    <span className="ml-1">
+                                                        Forfait non utilisé sera expirée à échéance
+                                                    </span>
+                                                </div>
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="panel container">
+                                <div className="grid cc-text-center row justify-content-center">
+                                    <div className="table col-lg-3 col-md-12 col-sm-12 col-xs-12 d-flex flex-column justify-content-around mr-2">
+                                        <strong>10 Vidéos/mois <br />
+                                            <small> 50% de réduction soit 33$ par vidéo </small>
+                                        </strong>
+
+
+                                        <div className="h3-text">180$</div>
+                                        <strong >Forfait mensuel F1</strong>
+                                    </div>
+                                    <div className="table col-lg-3 col-md-12 col-sm-12 col-xs-12 d-flex flex-column justify-content-around mr-2">
+                                        <strong>10 Vidéos/mois <br />
+                                            <small> 50% de réduction soit 33$ par vidéo </small>
+                                        </strong>
+
+
+                                        <div className="h3-text">330$</div>
+                                        <strong >Forfait mensuel F2</strong>
+                                    </div>
+                                    <div className="table col-lg-3 col-md-12 col-sm-12 col-xs-12 d-flex flex-column justify-content-around">
+                                        <strong>10 Vidéos/mois <br />
+                                            <small> 50% de réduction soit 33$ par vidéo </small>
+                                        </strong>
+
+
+                                        <div className="h3-text">480$</div>
+                                        <strong >Forfait mensuel F3</strong>
+
+
+                                    </div>
+
+                                    <div className="container mt-5">
+                                        <div className="row">
+                                            <div className="col-lg-4 text-left ">
+                                                <div className="bottom-text">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-check" width="22" height="22" viewBox="0 0 24 24" strokeWidth="3" stroke="#49B521" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                        <path d="M5 12l5 5l10 -10" />
+                                                    </svg>
+                                                    <span className="ml-1"> Droits de modifier ou dans le but de créer des oeuvres dérivées</span>
+                                                </div>
+                                                <div className="bottom-text mt-3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-check" width="22" height="22" viewBox="0 0 24 24" strokeWidth="3" stroke="#49B521" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                        <path d="M5 12l5 5l10 -10" />
+                                                    </svg>
+                                                    <span className="ml-1">
+                                                        Utilisation personnelle et commerciaux
+                                                    </span>
+                                                </div>
+                                                <div className="bottom-text mt-3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-check" width="22" height="22" viewBox="0 0 24 24" strokeWidth="3" stroke="#49B521" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                        <path d="M5 12l5 5l10 -10" />
+                                                    </svg>
+                                                    <span className="ml-1">Utilisation imprimée ou numerique </span>
+                                                </div>
+                                                <div className="bottom-text mt-3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-check" width="22" height="22" viewBox="0 0 24 24" strokeWidth="3" stroke="#49B521" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                        <path d="M5 12l5 5l10 -10" />
+                                                    </svg>
+                                                    <span className="ml-1">Utilisation pour marketing et publicité </span>
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-4 text-left ">
+                                                <div className="bottom-text">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-check" width="22" height="22" viewBox="0 0 24 24" strokeWidth="3" stroke="#49B521" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                        <path d="M5 12l5 5l10 -10" />
+                                                    </svg>
+                                                    <span className="ml-1"> Droits d'utilisation à vie</span>
+                                                </div>
+                                                <div className="bottom-text mt-3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-check" width="22" height="22" viewBox="0 0 24 24" strokeWidth="3" stroke="#49B521" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                        <path d="M5 12l5 5l10 -10" />
+                                                    </svg>
+                                                    <span className="ml-1">
+                                                        Utiliser depuis n'importe où dans le monde
+                                                    </span>
+                                                </div>
+                                                <div className="bottom-text mt-3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-check" width="22" height="22" viewBox="0 0 24 24" strokeWidth="3" stroke="#49B521" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                        <path d="M5 12l5 5l10 -10" />
+                                                    </svg>
+                                                    <span className="ml-1">Nombre d'utilisateurs 4  </span>
+                                                </div>
+                                                <div className="bottom-text mt-3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-check" width="22" height="22" viewBox="0 0 24 24" strokeWidth="3" stroke="#49B521" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                        <path d="M5 12l5 5l10 -10" />
+                                                    </svg>
+                                                    <span className="ml-1">Pas de limite de téléchargement quotidien  </span>
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-4 text-left ">
+                                                <div className="bottom-text">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-check" width="22" height="22" viewBox="0 0 24 24" strokeWidth="3" stroke="#49B521" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                        <path d="M5 12l5 5l10 -10" />
+                                                    </svg>
+                                                    <span className="ml-1"> Renouvellement automatique avec désactivation simplifiée</span>
+                                                </div>
+                                                <div className="bottom-text mt-3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-check" width="22" height="22" viewBox="0 0 24 24" strokeWidth="3" stroke="#49B521" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                        <path d="M5 12l5 5l10 -10" />
+                                                    </svg>
+                                                    <span className="ml-1">
+                                                        Forfait non utilisé sera expirée à échéance
+                                                    </span>
+                                                </div>
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-
-                    <div className="tabby-tab">
-                        <input type="radio" id="tab-2" name="tabby-tabs" />
-                        <label for="tab-2">Tabby Tab 2</label>
-                        <div className="tabby-content">
-                            <img src="http://i63.tinypic.com/wtykg4.png" />
-                            <p>Cats go for world domination if it fits, i sits, meowwww but claw drapes, or sleep in the bathroom sink.Missing until dinner time under the bed, or eat from dog's food hide from vacuum cleaner kick up litter but lie on your belly and purr when you are asleep.</p>
-                        </div>
-                    </div>
-
-                    <div className="tabby-tab">
-                        <input type="radio" id="tab-3" name="tabby-tabs" />
-                        <label for="tab-3">Tabby Tab 3</label>
-                        <div className="tabby-content">
-                            <img src="http://i66.tinypic.com/wuhy7b.png" />
-                            <p>Throwup on your pillow wake up human for food at 4am and hide when guests come over, yet inspect anything brought into the house.</p>
-                        </div>
-                    </div>
-
-                    <div className="tabby-tab">
-                        <input type="radio" id="tab-4" name="tabby-tabs" />
-                        <label for="tab-4">Tabby Tab 4</label>
-                        <div className="tabby-content">
-                            <img src="http://i63.tinypic.com/kakc9i.png" />
-                            <p>Use lap as chair love to play with owner's hair tie pooping rainbow while flying in a toasted bread costume in space. Run in circles loves cheeseburgers, nap all day kick up litter. Stick butt in face hide when guests come over.</p>
-
-                        </div>
-                    </div>
-
                 </div>
             </div>
 

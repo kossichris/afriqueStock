@@ -4,116 +4,116 @@ import css from 'styled-jsx/css'
 import { colors } from '../../constants/colors'
 
 export default css.tabs`
+/* Wrapper Style */
 
-h1 { font-size: 32px; }
-h2 { font-size: 26px; }
-h3 { font-size: 18px; }
-p { margin: 0 0 15px; line-height: 24px; color: gainsboro; }
-a { color: dodgerblue; text-decoration: none; border-bottom: 1px dotted; }
-a:hover { color: tomato; }
-
-.container {
-  max-width: 960px;
-  height: 100%;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* ------------------- */
-/* PEN STYLES      -- */
-/* ----------------- */
-
-/* MAKE IT CUTE ----- */
-.tabs {
-  position: relative;
-  display: flex;
-  min-height: 300px;
-  border-radius: 8px 8px 0 0;
-  overflow: hidden;
-}
-
-.tabby-tab {
-  flex: 1;
-}
-
-.tabby-tab label {
-  display: block;
-  box-sizing: border-box;
-  /* tab content must clear this */
-    height: 40px;
-
-  padding: 10px;
-  text-align: center;
-  background: #9768D1;
-  cursor: pointer;
-  transition: background 0.5s ease;
+.wrapper{
+  margin:0 auto;
+  padding-left:12%;
+  padding-right:12%;
+    width: 100%;
 
 }
 
-.tabby-tab label:hover {
-  background: #7B52AB;
+.cctabs {
+    width: 100%;
+    margin: auto;
 }
-
-.tabby-content {
-  position: absolute;
-
-  left: 0; bottom: 0; right: 0;
-  /* clear the tab labels */
-    top: 40px;
-
-  padding: 20px;
-  border-radius: 0 0 8px 8px;
-  background: #553285;
-
-  transition:
-    opacity 0.8s ease,
-    transform 0.8s ease   ;
-
-  /* show/hide */
+.cctabs input[type="radio"] {
     opacity: 0;
-    transform: scale(0.1);
-    transform-origin: top left;
-
 }
-
-.tabby-content img {
-  float: left;
-  margin-right: 20px;
-  border-radius: 8px;
+.cctabs .fa{
+  margin-right:10px;
 }
-
-
-/* MAKE IT WORK ----- */
-
-.tabby-tab [type=radio] { display: none; }
-[type=radio]:checked ~ label {
-  background: #553285;
-  z-index: 2;
+.cctabs .label {
+     color: #000;
+    cursor: pointer;
+    float: left;
+    margin-right: 2px;
+    padding:  9px 34px 9px 26px;
+    font-size: 16px;
+    font-weight: 400;
+    background: #d8f4f4;
+    border-radius: 40px;
 }
-
-[type=radio]:checked ~ label ~ .tabby-content {
-  z-index: 1;
-
-  /* show/hide */
+.cctabs .label:hover {
+       background: #e7f8f8;
+}
+.cctabs input:checked + .label {
+       background: #49b620;
+    color: #fff;
+    display: inline-block;
+    border-radius: 50px;
+}
+.cctabs input:nth-of-type(1):checked ~ .panels .panel:first-child, .cctabs input:nth-of-type(2):checked ~ .panels .panel:nth-child(2), .cctabs input:nth-of-type(3):checked ~ .panels .panel:nth-child(3), .cctabs input:nth-of-type(4):checked ~ .panels .panel:last-child {
     opacity: 1;
-    transform: scale(1);
+    -webkit-transition: .3s;
+  /*position:relative;*/
+  z-index:999;
+}
+.cctabs .panels {
+    clear: both;
+    position: relative;
+    width: 100%;
+    background: #fff;
+}
+.cctabs .panel {
+    width: 100%;
+    opacity: 0;
+    position: absolute;
+    background: #fff;
+    padding: 4%;
+    box-sizing: border-box;
+    border: 1px solid #e0dede;
+border-top: 2px solid #4ab71f;
+}
+.cctabs .panel h2 {
+    margin: 0;
+    font-family: Arial;
 }
 
-/* BREAKPOINTS ----- */
-@media screen and (max-width: 767px) {
-  .tabs { min-height: 400px;}
+.cctabs .panel i{
+  color:#ebb704;
+  cursor:pointer;
+}
+.cctabs .panel i:hover{
+  color:#f4cc42;
 }
 
-@media screen and (max-width: 480px) {
-  .tabs { min-height: 580px; }
-  .tabby-tab label {
-    height: 60px;
-  }
-  .tabby-content { top: 60px; }
-  .tabby-content img {
-    float: none;
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
+
+.table{
+    border: 1px solid #4ab71f;
+    box-sizing: border-box;
+    color: #475f72;
+    background: #f4f9f9;
+    height: 400px;
 }
+
+h3{
+    font-weight: 900;
+}
+
+.h3-text{
+font-weight: 900;
+    font-size: 33px;
+}
+.table:hover{
+    color: #fff;
+    background: ${colors.primary};
+}
+
+
+/* GRID*/
+.cc-text-center{
+  text-align:center;
+}
+.cc-mt-20{
+  margin-top:50px;
+}
+
+.bottom-text{
+    font-size: 11px;
+}
+}
+
+
 `

@@ -14,7 +14,7 @@ const Pricingtable = () => {
                         <input type="radio" id="tab1" name="tabGroup1" readOnly className={styles.tab} />
                         <label htmlFor="tab1">Images</label>
 
-                        <input type="radio" id="tab2" name="tabGroup1" readOnly className={styles.tab} />
+                        <input type="radio" id="tab2" name="tabGroup1" readOnly className={styles.tab} checked />
                         <label htmlFor="tab2">Vidéos 4K,HD,SD </label>
 
                         <div className={styles.tab__content}>
