@@ -2,7 +2,7 @@ import React from 'react';
 import Bannertext from '../../components/BannerText';
 import Footer from '../../components/Footer';
 import Stickynavbar from '../../components/stickyNavbar';
-import Styles from './styles.css'
+import Styles from '../../ComponentsStyled/redevance.css'
 
 const Index = () => {
     return (

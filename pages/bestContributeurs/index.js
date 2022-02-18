@@ -1,6 +1,6 @@
 import React from 'react';
 import Stickynavbar from '../../components/stickyNavbar';
-import styles from '../../ComponentsStyled/styles.css'
+import styles from '../../ComponentsStyled/bestContributeurs.css'
 import Image from 'next/image'
 import photo from '/public/images/access_bg.jpg'
 
