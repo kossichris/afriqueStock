@@ -34,7 +34,6 @@ const Index = () => {
                             <Link href="/accueil">
                                 <Button text="Connexion" color="#fff" bgColor={colors.primary} shape="round" width="100%" />
                             </Link>
-
                         </div>
                         <div className="float-right mt-1"><a id="forgot" href="javascript:void(0);">Mot de passe oublié?</a></div>
 

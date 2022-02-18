@@ -1,6 +1,5 @@
 import React from 'react';
 import Styles from '../components/css/Button.css'
-import { colors } from '../constants/colors';
 import { icons } from '../constants/icons';
 
 const Buttonsmall = ({ text, hasIcon, shape, color, bgColor, height, fontSize, isFlex, isTop, width }) => {
