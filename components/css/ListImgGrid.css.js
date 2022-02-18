@@ -4,7 +4,7 @@ import { colors } from '../../constants/colors'
 
 export default css.lig`
 .container {
-  width: 60%;
+  width: 100%;
   margin: 2rem auto;
 }
 

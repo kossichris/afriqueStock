@@ -17,7 +17,7 @@ export default css.dropdown`
 .dropdown {
   position: relative;
   display: inline-block;
-padding: 8px;
+padding: 11px;
 }
 
 /* Dropdown Content (Hidden by Default) */
