@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Abonnements from '../../components/clientAccount/Abonnements';
-import Canceling from '../../components/clientAccount/canceling';
 import Detailpaiement from '../../components/clientAccount/DetailPaiement';
 import Downloads from '../../components/clientAccount/Downloads';
 import Equipe from '../../components/clientAccount/Equipe';
