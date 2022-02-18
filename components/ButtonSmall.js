@@ -10,7 +10,7 @@ const Buttonsmall = ({ text, hasIcon, shape, color, bgColor, height, fontSize, i
 
     return (
         <>
-            <div className={"text-center " + isFlexAndTopF(isFlex)} className="d-flex flex-row justify-content-between">
+            <div className={"text-center d-flex flex-row justify-content-between " + isFlexAndTopF(isFlex)} >
                 {hasIcon && <svg xmlns="http://www.w3.org/2000/svg" className={`icon icon-tabler icon-tabler-${icons.user}`} style={{
                     position: "relative",
                     left: "21%",
