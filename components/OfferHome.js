@@ -1,5 +1,5 @@
 import React from 'react';
-import offerStyles from '../components/css/offer.css'
+import offerStyles from '../components/css/Offer.css'
 import Buttonsmall from './ButtonSmall';
 
 const Offerhome = () => {

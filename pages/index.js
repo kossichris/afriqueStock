@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Script from "next/Script";
 
 export default function Home() {
   return (
