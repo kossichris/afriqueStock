@@ -1,9 +1,9 @@
 import React from 'react';
 import Styles from '../components/css/Sidebar.css'
-import ButtonSmall from './ButtonSmall';
 import { Chart } from "react-google-charts";
 import { colors } from '../constants/colors';
 import Footercopyrightwhitebg from './FooterCopyrightWhiteBg';
+import Buttonsmall from './ButtonSmall';
 
 
 const DashContent = () => {
@@ -80,7 +80,7 @@ const DashContent = () => {
                                         </h4>
                                     </div>
                                     <div className="mt-3">
-                                        <ButtonSmall text="Demander un paiement" height="33px" color="#ffff" />
+                                        <Buttonsmall text="Demander un paiement" height="33px" color="#ffff" />
                                     </div>
                                 </div>
                             </div>

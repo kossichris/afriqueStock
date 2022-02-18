@@ -32,7 +32,7 @@ const Index = () => {
                         </div>
                         <div className="btn_auth mb-3">
                             <Link href="/accueil">
-                                <Button text="Connexion" color="#ffff" bgColor={colors.primary} shape="round" width="100%" />
+                                <Button text="Connexion" color="#fff" bgColor={colors.primary} shape="round" width="100%" />
                             </Link>
 
                         </div>
