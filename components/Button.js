@@ -18,7 +18,7 @@ const Button = ({ text, submitFunction, hasIcon, iconName, iconColor, shape, hei
     const getBorder = () => { return "1px solid #49b620" }
     return (
         <>
-            <div className={"text-center " + isFlexAndTopF(isFlex)}>
+            <div className={"text-center d-none d-sm-block" + isFlexAndTopF(isFlex)}>
                 {hasIcon && <svg xmlns="http://www.w3.org/2000/svg"
 
                     className={`icon icon-tabler icon-tabler-${iconName}`}

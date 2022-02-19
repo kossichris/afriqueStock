@@ -1,8 +1,7 @@
 import React from 'react';
 import searchStyles from '../components/css/SearchBar.css'
+import Head from 'next/head'
 import { colors } from '../constants/colors';
-import Button from './Button';
-import Dropdownbutton from './DropDownButton';
 
 const styles = {
     top: {
@@ -20,46 +19,69 @@ const Searchbar = ({ page, hasFilter }) => {
 
     console.log(page)
     return (
-        <>
-            <div id="results" className={page === "home" ? "no-background" : null}>
-                <div className="container">
-                    {/*hasFilter && <div className={`col-lg-2`}>
-                            <Button text='Filtre' width="163px" hasBorder={true} isFlex={false} bgColor="#ffff" color='#00000' height='42px' fontSize="9px" fontWeight="300" shape='square' />
-                        </div>*/}
+        <div>
+            <Head>
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+                <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet" />
+            </Head>
+            <div className="container">
                     <div className="row">
-                        <div className="search-cont col-lg-12 col-md-12 col-sm-12 col-xl-12">
-                            <div className="row custom-search-input-2 inner">
-                                <div className="col-lg-2 col-xl-2 col-xs-12">
-                                    <Dropdownbutton title="Vidéos" page="home" arrowColor={colors.primary} list={list} />
+                    <div className="search-container  mt-5">
+                        <form className=" d-flex flex-row justify-content-center">
+                            <div className="box d-block d-sm-none col-xs-2">
+                                <select className="mobile-select">
+                                    <option></option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                    <option>Option 4</option>
+                                    <option>Option 5</option>
+                                </select>
+                            </div>
+                            <div className=" d-flex flex-row col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                <div className="box  d-none d-sm-block">
+                                    <select>
+                                        <option>Toutes les images</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                        <option>Option 4</option>
+                                        <option>Option 5</option>
+                                    </select>
                                 </div>
-
-                                <div className="col-lg-10 col-xl-10 col-xs-12 search-input">
-                                    <div className="form-group d-flex flex-row">
-                                        <input className="form-control" type="text" placeholder="Rechercher des oeuvres créatives Photos Vecteurs Illustrations et Videos..." />
-                                        <button className={hasFilter ? `btn_1 btn_1_prime` : `btn_1 btn_1_second`}>
-                                            <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-search" width="22" height="22" viewBox="0 0 24 24" strokeWidth="1" stroke="#ffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                                <circle cx="10" cy="10" r="7" />
-                                                <line x1="21" y1="21" x2="15" y2="15" />
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
+                                <input type="text" placeholder="Rechercher des oeuvres créatives Photos Vecteurs Illustrations et Vidéos.." name="search" />
+                                <button type="submit" className="btn_1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="38" height="38" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <circle cx="10" cy="10" r="7" />
+                                        <line x1="21" y1="21" x2="15" y2="15" />
+                                    </svg>
+                                </button>
 
                             </div>
-                            <div className="load-image">
-                                <Button text='Chargez avec une image' hasIcon={true} iconName="camera-rotate" iconColor={colors.primary} hasBorder={true} isFlex={false} bgColor="#ffff" color='black' height='43px' fontSize="9px" fontWeight="300" shape='square' className="btn_2_2" />
-                            </div>
+                            <div className="col-lg-3 col-md-3 col-sm-3 col-xs-12 d-none d-sm-block ">
+                                <button type="submit" className="btn_2 d-flex flex-row justify-content-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-camera-rotate mt-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke={colors.primary} fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M5 7h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2" />
+                                        <path d="M11.245 15.904a3 3 0 0 0 3.755 -2.904m-2.25 -2.905a3 3 0 0 0 -3.75 2.905" />
+                                        <path d="M14 13h2v2" />
+                                        <path d="M10 13h-2v-2" />
+                                    </svg>
+                                    <span className="ml-2 mt-3 d-sm-none d-none d-md-none d-lg-block"> Cherchez avec une image</span>
+                                </button>
+                                </div>
+                        </form>
+
+
                         </div>
 
                     </div>
 
-                </div>
                 <style jsx>
                     {searchStyles}
                 </style>
             </div>
-        </>
+        </div>
     );
 }
 

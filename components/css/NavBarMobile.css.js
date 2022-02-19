@@ -56,7 +56,6 @@ nav {
   -webkit-user-select: none;
   user-select: none;
 
-    background: #0000004f;
     padding: 17px 15px 15px 15px;
     border-radius: 48px;
     width: 100%;

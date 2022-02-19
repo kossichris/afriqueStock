@@ -9,6 +9,7 @@ import accueilStyles from '../../ComponentsStyled/accueil.css'
 import Offerhome from '../../components/OfferHome';
 import Button from '../../components/Button';
 import Listgridsimple from '../../components/ListGridSimple';
+import Head from 'next/head'
 
 const myLoader = ({ src, width, quality }) => {
     return `https://example.com/${src}?w=${width}&q=${quality || 75}`
@@ -33,11 +34,15 @@ const Accueil = () => {
 
     return (
 
-        <>
+        <div>
 
-
+            <Head>
+                <link
+                    href="https://fonts.googleapis.com/css2?family=Inter&display=optional"
+                    rel="stylesheet"
+                />
+            </Head>
             {top > 0 ? <Stickynavbar /> : <Navbar />}
-            <main className="pattern">
                 <Banner title="Les meilleures photos, d'images vectorielles et de vidéos libres de droits 100% africain avec licence" />
 
                 <h5 className="text-center mt-5 mb-5" >Les contenues les plus inspirantes de nos auteurs</h5>
@@ -223,12 +228,11 @@ const Accueil = () => {
                     </div>
                 </div>
 
-            </main>
             <Footer />
             <style jsx>
                 {accueilStyles}
             </style>
-        </>
+        </div>
 
     )
 

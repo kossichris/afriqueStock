@@ -1,155 +1,133 @@
 import css from 'styled-jsx/css'
 import { colors } from '../../constants/colors'
 
-export default css.offer`
-.subtitle{
- color: #ffff
+export default css.searchBar`
+
+.box{
+    position: relative;
+    width: 20%;
+    box-sizing: border-box;
 }
+
 form{
-    width: 70%;
-}
-.dropdown{
-    padding: 5px;
-}
-.submit{
-    border-radius: 0px !important
-}
-.form-control{
-    border-radius: 0px !important;
-    font-size: 12px
+    margin: 24px;
+    width: 100%;
+
 }
 
-.inner{
-    width: 83%;
-    height: 43px;
+.mobile-select{
+  width: 87%;
 }
-.btn_1_prime{
-    height: 41px;
-    padding:  0px 18px;
-    border-radius: 0
+
+.search-container{
+    width: 100%;
+margin-right: 65px;
 }
-.btn_1_second{
-    height: 41.99px;
-    padding: 0px 11px;
+select{
+    padding: 13px;
+    height: 30px;
+    border: 1px solid #49b620;
+    border-right: none;
+    background: white;
+    font-size: 12px;
+    color: #7a6868;
+
+}
+
+.btn_1{
+    padding: 8px 19px;
+border-radius: 0;
+}
+
+.btn_2{
+    font-size: 12px;
+    height: 40px;
+    width: 95%;
+    padding: 8px 19px;
     border-radius: 0;
-}
-.search-input {
-padding-right: 0;
-}
-.no-background{
-      background: none !important;
+    background: #fff;
+    color: #745f5f;
+    border: 1px solid #49b620;
 }
 
-.search-cont{
+* {box-sizing: content-box;
+    font-family: "Poppins", Helvetica, sans-serif;
+    outline: none;
+}
+input{
+    height: 42px;
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 43px;
-}
-
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (min-width: 497px) {
-
-.custom-search-input-2.inner input{
-         width: 82%;
-}
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-.inner{
-    width: 100%;
-}
-
-.dropdown{
-    width: 464px
-}
-btn_1_second{
-    height: 40px;
-}
-.dropbtn{
-    font-size: 13px;
-}
-.custom-search-input-2.inner input{
-         width: 87%;
-}
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-.inner{
-    width: 100%;
-}
-.custom-search-input-2.inner input{
-         width: 87%;
-}
-.btn_1_second{
-    height: 40px;
-}
-
-.dropdown{
-    width: 464px;
-    font-size: 13px;
-}
-}
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 780px) {
-
-.inner{
-    width: 100%;
-}
-.custom-search-input-2.inner input{
-         width: 91%;
-}
-.btn_1_second{
-    height: 40px;
-}
-
-.dropdown{
-    width: 464px;
+    border: 1px solid #49b620;
+    border-left: none;
+    padding: 7px;
     font-size: 13px;
 }
 
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-.inner{
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
     width: 100%;
-}
-.btn_1_second{
-    height: 40px;
-}
-.dropdown{
-    width: 464px;
-    font-size: 13px;
-}
-}
-
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-.inner{
-    width: 79%;
-}
-.dropdown{
-    width: 464px;
-    font-size: 13px;
-}
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1000px) {
-
-.custom-search-input-2.inner input{
-        width: 94%;
-}
-
-.btn_1_second {
-    height: 41px;
-}
-
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
 }
 `
