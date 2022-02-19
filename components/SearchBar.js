@@ -39,7 +39,7 @@ const Searchbar = ({ page, hasFilter }) => {
                                         <option>Toutes les images</option>
                                         <option>Option 2</option>
                                         <option>Option 3</option>
-                                        <option>Option 4</option>
+                                        <option>Option 4</option> 
                                         <option>Option 5</option>
                                     </select>
                                 </div>
