@@ -34,7 +34,7 @@ export default css.lig`
   /* grid-row: 1 / span 2; */
 }
 
-
+ 
 
 .gallery__item--3 {
     grid-row-start: 1;
