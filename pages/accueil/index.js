@@ -79,7 +79,7 @@ const Accueil = () => {
                                 </div>
 
                             <div className="image-container ">
-                                    <Image
+                                <Image 
                                         src={"https://images.unsplash.com/photo-1548506923-99f6e89852fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"}
                                         alt="Picture of the author"
                                         width={400}
