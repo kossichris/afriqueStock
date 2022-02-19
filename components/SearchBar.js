@@ -53,7 +53,7 @@ const Searchbar = ({ page, hasFilter }) => {
                                 </button>
 
                             </div>
-                            <div className="col-lg-3 col-md-3 col-sm-3 col-xs-12 d-none d-sm-block ">
+                            <div className="col-lg-3 col-md-3 col-sm-3 col-xs-12 d-none d-sm-block btn_2_container">
                                 <button type="submit" className="btn_2 d-flex flex-row justify-content-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-camera-rotate mt-2" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke={colors.primary} fill="none" strokeLinecap="round" strokeLinejoin="round">
                                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />

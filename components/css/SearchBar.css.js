@@ -2,6 +2,15 @@ import css from 'styled-jsx/css'
 import { colors } from '../../constants/colors'
 
 export default css.searchBar`
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+form{
+    margin: 24px !important;
+    width: 100%;
+
+}
+}
 
 .box{
     position: relative;
@@ -39,6 +48,9 @@ select{
 border-radius: 0;
 }
 
+.btn_2_container{
+    width: 93%;
+}
 .btn_2{
     font-size: 12px;
     height: 40px;

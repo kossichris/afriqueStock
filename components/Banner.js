@@ -9,8 +9,8 @@ const Banner = ({ title, bgColor }) => {
     return (
         <section className="hero_single version_2">
             <div className="wrapper">
-                        <h4 className="mt-5"> {title} </h4>
-                <Searchbar page={"home"} />
+                <h4 className="mt-5"> {title} </h4>
+                <Searchbar page="home" />
                 <Button text='Demande Personnalisée' isFlex={true} color="#ffff" height="43px" isTop={false} shape='round' />
                 <div className="bottom_nav">
                     <Bottomnav bgColor={bgColor} />

@@ -10,6 +10,10 @@ export default css.bannerAccueilContributeurs`
 h4{
     color: white;
     margin-bottom: -28px;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .bottom_nav{
@@ -21,8 +25,14 @@ h4{
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
+h4{
+    width: 90% !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 .container{
-margin-bottom: 21%;
+    margin-bottom: 21%;
 }
 }
 

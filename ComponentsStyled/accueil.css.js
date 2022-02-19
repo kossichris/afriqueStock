@@ -21,54 +21,63 @@ color: ${colors.primary};
     height: 25vw;
 }
 
-.gallery__img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
+.containeur{
+    width: 94%;
+    margin: 2rem auto;
 }
 
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(4, 0fr);
-  grid-template-rows: repeat(4, 0fr);
-  gap: 4rem;
-  grid-auto-rows: minmax(100px, auto);
-
+.video-gallery{
+   display: grid; 
+   grid-template-rows: 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 8px;
+   height: 100%;
 }
 
-.gallery__item--1 {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 3;
-
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+.video-gallery{
+   display: grid; 
+   grid-template-rows: 1fr 1fr;
+   grid-template-columns: 1fr 1fr;
+   gap: 8px;
+   height: 100%;
+}
+.containeur{
+    width: 84%;
+    margin: 2rem auto;
 }
 
-.gallery__item--2 {
-  grid-column-start: 4;
-  grid-column-end: 9;
-  grid-row-start: 1;
-  grid-row-end: 9;
-
+p{
+    text-align: center
 }
 
-.gallery__item--3 {
+.play-icon{
+    left: 42% !important;
+    top: 35%  !important;
+}
 
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 4;
-    grid-row-end: 4;
+.ul-container{
+     display: grid  !important;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr  !important;
+    grid-template-columns: 1fr  !important;
+    gap: 41px  !important;
+    margin: auto
+}
+
+.links{
+    margin-bottom: 45px;
+}
 
 }
 
 .ul-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 36px 151px 69px 151px;
+     display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 41px;
+    height: 100%;
+    padding: 2em;
     flex-wrap: wrap;
     line-height: 39px;
 }
@@ -89,13 +98,21 @@ h4 , h6{
         position: relative;
 }
 .play-icon{
+    width: 34px;
+    height: 35px;
     position: absolute;
     left: 45%;
     top: 40%;
     box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%);
-    background: #f0f8ff57;
-    border-radius: 40px;
-    padding: 5px;
+    background: #f0f8ff00;
+    border-radius: 50%;
+    border: 2px solid white;
+    padding: 4px;
+}
+
+.play-icon svg{
+margin-top: -2px;
+    margin-left: 1px;
 }
 
 .clock-icon{

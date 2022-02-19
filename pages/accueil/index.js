@@ -58,11 +58,11 @@ const Accueil = () => {
                         </div>
 
                     </div>
-                    <div className="row">
+                <div className="containeur ">
                         <p> Des <a>photos</a> qui expriment la culture africaine  </p>
-                        <div className="video-gallery row mb-5 ">
-                            <div className="d-flex col-lg-12 col-md-12 flex-row flex-wrap justify-content-between">
-                                <div className="image-container col-lg-4 col-md-4 col-sm-12 col-xs-12 m-auto">
+                    <div className=" row mb-5 ">
+                        <div className="video-gallery ">
+                            <div className="image-container ">
                                     <Image
                                         src={"https://images.unsplash.com/photo-1548407260-da850faa41e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"}
                                         alt="Picture of the author"
@@ -71,14 +71,14 @@ const Accueil = () => {
                                     />
 
                                     <span className="play-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-player-play" width="28" height="28" viewBox="0 0 24 24" strokeWidth="2" stroke="#ffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-player-play" width="20" height="20" viewBox="0 0 24 24" strokeWidth="2" stroke="#ffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                             <path d="M7 4v16l13 -8z" />
                                         </svg>
                                     </span>
                                 </div>
 
-                                <div className="image-container col-lg-4 col-md-4 col-sm-12 col-xs-12 m-auto">
+                            <div className="image-container ">
                                     <Image
                                         src={"https://images.unsplash.com/photo-1548506923-99f6e89852fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"}
                                         alt="Picture of the author"
@@ -86,77 +86,74 @@ const Accueil = () => {
                                         height={250}
                                     />
                                     <span className="play-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-player-play" width="28" height="28" viewBox="0 0 24 24" strokeWidth="2" stroke="#ffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-player-play" width="20" height="20" viewBox="0 0 24 24" strokeWidth="2" stroke="#ffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                             <path d="M7 4v16l13 -8z" />
                                         </svg>
                                     </span>
 
                                 </div>
-                                <div className="image-container col-lg-4 col-md-4 col-sm-12 col-xs-12 m-auto">
+                            <div className="image-container  ">
                                     <Image
-                                        src={"https://images.unsplash.com/photo-1547903006-2845abe6e3c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"}
+                                    src={"https://images.unsplash.com/photo-1547903006-2045abe6e3c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"}
                                         alt="Picture of the author"
                                         width={400}
                                         height={250}
                                     />
                                     <span className="play-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-player-play" width="28" height="28" viewBox="0 0 24 24" strokeWidth="2" stroke="#ffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-player-play" width="20" height="20" viewBox="0 0 24 24" strokeWidth="2" stroke="#ffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                             <path d="M7 4v16l13 -8z" />
                                         </svg>
                                     </span>
                                 </div>
+                            <div className="image-container ">
+                                <Image
+                                    src={"https://images.unsplash.com/photo-1548407260-da850faa41e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"}
+                                    alt="Picture of the author"
+                                    width={400}
+                                    height={250}
+                                />
+
+                                <span className="play-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-player-play" width="20" height="20" viewBox="0 0 24 24" strokeWidth="2" stroke="#ffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M7 4v16l13 -8z" />
+                                    </svg>
+                                </span>
+                            </div>
+
+                            <div className="image-container ">
+                                <Image
+                                    src={"https://images.unsplash.com/photo-1548506923-99f6e89852fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"}
+                                    alt="Picture of the author"
+                                    width={400}
+                                    height={250}
+                                />
+                                <span className="play-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-player-play" width="20" height="20" viewBox="0 0 24 24" strokeWidth="2" stroke="#ffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M7 4v16l13 -8z" />
+                                    </svg>
+                                </span>
 
                             </div>
-                            <div className="col-lg-12 col-md-12 d-flex  flex-row flex-wrap justify-content-between mt-4">
-                                <div className="image-container col-lg-4 col-md-4 col-sm-12 col-xs-12 m-auto">
-                                    <Image
-                                        src={"https://images.unsplash.com/photo-1545862434-853c6375b9f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"}
-                                        alt="Picture of the author"
-                                        width={400}
-                                        height={250}
-                                    />
-
-                                    <span className="play-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-player-play" width="28" height="28" viewBox="0 0 24 24" strokeWidth="2" stroke="#ffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                            <path d="M7 4v16l13 -8z" />
-                                        </svg>
-                                    </span>
-                                </div>
-
-                                <div className="image-container col-lg-4 col-md-4 col-sm-12 col-xs-12 m-auto">
-                                    <Image
-                                        src={"https://images.unsplash.com/photo-1545862434-853c6375b9f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"}
-                                        alt="Picture of the author"
-                                        width={400}
-                                        height={250}
-                                    />
-
-                                    <span className="play-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-player-play" width="28" height="28" viewBox="0 0 24 24" strokeWidth="2" stroke="#ffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                            <path d="M7 4v16l13 -8z" />
-                                        </svg>
-                                    </span>
-                                </div>
-                                <div className="image-container col-lg-4 col-md-4 col-sm-12 col-xs-12 m-auto">
-                                    <Image
-                                        src={"https://images.unsplash.com/photo-1545862434-853c6375b9f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"}
-                                        alt="Picture of the author"
-                                        width={400}
-                                        height={250}
-                                    />
-                                    <span className="play-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-player-play" width="28" height="28" viewBox="0 0 24 24" strokeWidth="2" stroke="#ffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                            <path d="M7 4v16l13 -8z" />
-                                        </svg>
-                                    </span>
-                                </div>
-
+                            <div className="image-container  ">
+                                <Image
+                                    src={"https://images.unsplash.com/photo-1547903006-2045abe6e3c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"}
+                                    alt="Picture of the author"
+                                    width={400}
+                                    height={250}
+                                />
+                                <span className="play-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-player-play" width="20" height="20" viewBox="0 0 24 24" strokeWidth="2" stroke="#ffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M7 4v16l13 -8z" />
+                                    </svg>
+                                </span>
                             </div>
+
+                        </div>
 
                         </div>
 
