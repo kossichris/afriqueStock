@@ -15,7 +15,6 @@ const Banner = ({ title, bgColor }) => {
                 <div className="bottom_nav">
                     <Bottomnav bgColor={bgColor} />
                 </div>
-
             </div>
 
             <style jsx>

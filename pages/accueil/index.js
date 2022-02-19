@@ -49,11 +49,11 @@ const Accueil = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 col-md-6">
-                            <p> Des <a>photos</a> qui expriment la culture africaine  </p>
+                        <p className="ml-3"> Des <a>photos</a> qui expriment la culture africaine  </p>
                             <Listgridsimple />
                         </div>
                         <div className="col-lg-6 col-md-6">
-                            <p> Des <a>Vecteurs&illustrations</a> qui font ressortir la beauté de l'Afrique  </p>
+                        <p className="ml-3"> Des <a>Vecteurs&illustrations</a> qui font ressortir la beauté de l'Afrique  </p>
                             <Listgridsimple />
                         </div>
 
