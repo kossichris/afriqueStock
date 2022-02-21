@@ -31,7 +31,7 @@ const Index = () => {
                     </div>
 
                     <div className="rev-text">
-                        <Buttonsmall text="Economisez 60% des maintenant" height="32px" fontSize="12px" color="white" fontSize="10px" bgColor={colors.primary} shape="round" />
+                        <Buttonsmall text="Economisez 60% des maintenant" height="32px" fontSize="11px" color="white" bgColor={colors.primary} shape="round" />
                     </div>
 
                 </div>
