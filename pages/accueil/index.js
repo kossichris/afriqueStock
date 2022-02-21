@@ -39,8 +39,8 @@ const Accueil = () => {
             {top > 0 ? <Stickynavbar /> : <Navbar />}
             <Banner title="Les meilleures photos, d'images vectorielles et de vidéos libres de droits 100% africain avec licence" dropDownText="Images" />
 
-                <h5 className="text-center mt-5 mb-5" >Les contenues les plus inspirantes de nos auteurs</h5>
-                <div className="container">
+            <h5 className="text-center mb-5 mt-5" >Les contenues les plus inspirantes de nos auteurs</h5>
+            <div className="container contener mb-4">
                     <div className="row">
                         <div className="col-lg-6 col-md-6">
                         <p className="ml-3"> Des <a>photos</a> qui expriment la culture africaine  </p>
@@ -52,7 +52,7 @@ const Accueil = () => {
                         </div>
 
                 </div>
-                <div className="col-lg-12">
+                <div className="col-lg-12 mt-4">
                     <p> Des séquences <a>Vidéos</a> 100% africain qui stimuleront votre créativité  </p>
                 </div>
                 <div className="containeur ">
@@ -215,7 +215,7 @@ const Accueil = () => {
                                 <h4>ÊTES VOUS PHOTOGRAPHE , ILLUSTRATEUR, OU VIDEOGRAPHE</h4>
                                 <h6 className="mt-3 subtitle">Rejoignez notre communauté et gagnez de l'argent en faisant ce que vous aimez</h6>
                             </div>
-                        <div className="col-md-4 col-sm-4 col-lg-4 col-xs-12">
+                        <div className="col-md-4 col-sm-4 col-lg-4 col-xs-12 d-flex flex-row justify-content-end">
                                 <Button text='Rejoignez-nous' height='52px' color="#ffff" isFlex={true} shape='round' />
                             </div>
                         </div>

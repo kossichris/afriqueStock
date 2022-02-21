@@ -39,10 +39,9 @@ const Searchbar = ({ page, hasFilter, dropDownText }) => {
                                         <polyline points="6 9 12 15 18 9" />
                                     </svg>
                                 </span>
-
                             </div>
-                            <div className=" d-flex flex-row col-lg-9 col-md-9 col-sm-9 col-xs-12">
-                                <div className="box  d-none d-sm-block">
+                            <div className="back d-flex flex-row col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                <div className="box  d-none d-sm-block ">
                                     <select>
                                         <option>{dropDownText}</option>
                                         <option>Option 2</option>
@@ -51,6 +50,7 @@ const Searchbar = ({ page, hasFilter, dropDownText }) => {
                                         <option>Option 5</option>
                                     </select>
                                 </div>
+                                <div className='line-v'></div>
                                 <input type="text" placeholder="Rechercher des oeuvres créatives Photos Vecteurs Illustrations et Vidéos.." name="search" />
                                 <Link href="/photo">
                                     <button type="submit" className="btn_1">

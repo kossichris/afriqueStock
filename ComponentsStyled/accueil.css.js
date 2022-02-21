@@ -3,8 +3,17 @@ import css from 'styled-jsx/css'
 import { colors } from '../constants/colors'
 
 export default css.accueil`
+
+.contener{
+    width: 100%
+}
 h5, h2{
 color: ${colors.primary};
+}
+
+h5{
+    font-weight: 600;
+    font-size: 24px;
 }
 
 h2{

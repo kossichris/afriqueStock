@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image'
 import logo from '/public/images/logo_footer.png'
+import cards from '/public/images/cards.png'
 import Footerlang from './FooterLang';
 import Footercopyright from './footerCopyright';
 import styles from './css/Footer.css'
@@ -53,6 +54,160 @@ const Footer = () => {
                                 </ul>
                             </div>
                         </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-6 col-sm-6 d-none d-sm-block">
+                        <h3 data-target="#collapse_ft_1">EN SAVOIR PLUS</h3>
+                        <div className='line-h'></div>
+                        <div className="collapse dont-collapse-sm" id="collapse_ft_1">
+                            <ul className="links">
+                                <li>
+                                    <Link href="/about">
+                                        <a href="#0">Qui sommes-nous</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/formules">
+                                        <a href="#0">Nos formules & tarifs</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/accueil">
+                                        <a href="#0">Nos partenaire</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/register/contributeurs">
+                                        <a href="#0">Devenir contributeur</a>
+                                    </Link >
+
+                                </li>
+                                <li>
+                                    <Link href="/redevance">
+                                        <a href="#0">Redevance</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/photo">
+                                        <a href="#0">Modèle photo</a>
+                                    </Link>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="col-lg-3 col-md-6 col-sm-6 d-none d-sm-block">
+                        <h3 data-target="#collapse_ft_2">INFOS LEGALES</h3>
+                        <div className='line-h'></div>
+                        <div className="collapse dont-collapse-sm" id="collapse_ft_2">
+                            <ul className="links">
+                                <li>
+                                    <Link href="/conditions">
+                                        <a href="#0">Conditions d'inscription</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/conditions">
+                                        <a href="#0">Conditions d'utilisation</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/license">
+                                        <a href="#0">Contrat de licence</a>
+                                    </Link>
+
+                                </li>
+                                <li>
+                                    <Link href="/droits">
+                                        <a href="#0">Informations sur le droit d'auteur</a>
+                                    </Link>
+
+                                </li>
+                                <li>
+                                    <Link href="/accueil">
+                                        <a href="#0">Accord de fourniture</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/privacy">
+                                        <a href="#0">Politique de confidentialité</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/cookies">
+                                        <a href="#0">Politique relatives aux cookies</a>
+                                    </Link>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="col-lg-3 col-md-6 col-sm-6 contact_ass d-none d-sm-block">
+                        <h3 data-target="#collapse_ft_3">CONTACTS & ASSISTANCE</h3>
+                        <div className='line-h'></div>
+                        <div className="collapse dont-collapse-sm" id="collapse_ft_2">
+                            <ul className="contacts">
+                                <li><svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-phone-call" width="25" height="25" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#49B521" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                                    <path d="M15 7a2 2 0 0 1 2 2" />
+                                    <path d="M15 3a6 6 0 0 1 6 6" />
+                                </svg>
+                                    <span className="ml-3">(00229) 96509364 / 95409620 </span>
+                                </li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-mail" width="28" height="28" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#49B521" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                                    <polyline points="3 7 12 13 21 7" />
+                                </svg> <span className="ml-2">contact@afriquestock.com</span>
+                                </li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-map-pin" width="28" height="28" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#49B521" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <circle cx="12" cy="11" r="3" />
+                                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                                </svg> <span className="ml-2">Cotonou - Benin BP 3205</span> </li>
+                                <li>
+                                    <Link href="/probleme">
+                                        <a href="account.html" className="btn_add round-radius btn ml-2">CONTACTEZ LE SUPPORT</a>
+                                    </Link>
+                                </li>
+
+
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div className="col-lg-12 col-md-12">
+                        <ul id="footer-selector">
+                            <li>
+                                <div className="select-dropdown mt-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-world" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#fff" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <circle cx="12" cy="12" r="9" />
+                                        <line x1="3.6" y1="9" x2="20.4" y2="9" />
+                                        <line x1="3.6" y1="15" x2="20.4" y2="15" />
+                                        <path d="M11.5 3a17 17 0 0 0 0 18" />
+                                        <path d="M12.5 3a17 17 0 0 1 0 18" />
+                                    </svg>
+                                    <select>
+                                        <option value="Option 1">Français</option>
+                                        <option value="Option 2">Anglais</option>
+                                        <option value="Option 3">Espagnol</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li>
+                                <div className="mt-2">
+                                    <Image
+                                        src={cards}
+                                        alt="Picture of the author"
+                                        width={300}
+                                        height={40}
+                                    />
+                                </div>
+
+                            </li>
+                        </ul>
                     </div>
 
                     <details className="col-lg-3 col-md-6 col-sm-12 d-block d-sm-none">
@@ -143,7 +298,7 @@ const Footer = () => {
                                 <path d="M15 7a2 2 0 0 1 2 2" />
                                 <path d="M15 3a6 6 0 0 1 6 6" />
                             </svg>
-                                <span >(00229) 96509364 / 95409620 </span>
+                                <span className="ml-3">(00229) 96509364 / 95409620 </span>
                             </li>
                             <li><svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-mail" width="28" height="28" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#49B521" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -159,126 +314,6 @@ const Footer = () => {
                             <li><a href="account.html" className="btn_add round-radius btn ml-2">CONTACTEZ LE SUPPORT</a></li>
                         </ul>
                     </details>
-
-
-                    <div className="col-lg-3 col-md-6 col-sm-6 d-none d-sm-block">
-                        <h3 data-target="#collapse_ft_1">EN SAVOIR PLUS</h3>
-                        <div className="collapse dont-collapse-sm" id="collapse_ft_1">
-                            <ul className="links">
-                                <li>
-                                    <Link href="/about">
-                                        <a href="#0">Qui sommes-nous</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/formules">
-                                        <a href="#0">Nos formules & tarifs</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/accueil">
-                                        <a href="#0">Nos partenaire</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/register/contributeurs">
-                                        <a href="#0">Devenir contributeur</a>
-                                    </Link >
-
-                                </li>
-                                <li>
-                                    <Link href="/redevance">
-                                        <a href="#0">Redevance</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/photo">
-                                        <a href="#0">Modèle photo</a>
-                                    </Link>
-
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-6 col-sm-6 d-none d-sm-block">
-                        <h3 data-target="#collapse_ft_2">INFOS LEGALES</h3>
-                        <div className="collapse dont-collapse-sm" id="collapse_ft_2">
-                            <ul className="links">
-                                <li>
-                                    <Link href="/conditions">
-                                        <a href="#0">Conditions d'inscription</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/conditions">
-                                        <a href="#0">Conditions d'utilisation</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/license">
-                                        <a href="#0">Contrat de licence</a>
-                                    </Link>
-
-                                </li>
-                                <li>
-                                    <Link href="/droits">
-                                        <a href="#0">Informations sur le droit d'auteur</a>
-                                    </Link>
-
-                                </li>
-                                <li>
-                                    <Link href="/accueil">
-                                        <a href="#0">Accord de fourniture</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/privacy">
-                                        <a href="#0">Politique de confidentialité</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/cookies">
-                                        <a href="#0">Politique relatives aux cookies</a>
-                                    </Link>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-6 col-sm-6 contact_ass d-none d-sm-block">
-                        <h3 data-target="#collapse_ft_3">CONTACTS & ASSISTANCE</h3>
-                        <div className="collapse dont-collapse-sm" id="collapse_ft_2">
-                            <ul className="contacts">
-                                <li><svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-phone-call" width="25" height="25" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#49B521" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
-                                    <path d="M15 7a2 2 0 0 1 2 2" />
-                                    <path d="M15 3a6 6 0 0 1 6 6" />
-                                </svg>
-                                    <span >(00229) 96509364 / 95409620 </span>
-                                </li>
-                                <li><svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-mail" width="28" height="28" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#49B521" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <rect x="3" y="5" width="18" height="14" rx="2" />
-                                    <polyline points="3 7 12 13 21 7" />
-                                </svg> <span className="ml-2">contact@afriquestock.com</span>
-                                </li>
-                                <li><svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-map-pin" width="28" height="28" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#49B521" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <circle cx="12" cy="11" r="3" />
-                                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
-                                </svg> <span className="ml-2">Cotonou - Benin BP 3205</span> </li>
-                                <li>
-                                    <Link href="/probleme">
-                                        <a href="account.html" className="btn_add round-radius btn ml-2">CONTACTEZ LE SUPPORT</a>
-                                    </Link>
-                                </li>
-
-
-                            </ul>
-
-                        </div>
-                    </div>
 
                 </div>
 

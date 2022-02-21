@@ -5,13 +5,20 @@ import Button from './Button';
 import { colors } from '../constants/colors';
 import Dropdownbutton from './DropDownButton';
 import french from '/public/images/france.png'
+import english from '/public/images/united-kingdom.png'
 import Navbarmobile from './NavBarMobile';
 import Link from 'next/link'
 import Buttonbadge from './ButtonBadge';
 
 const flags = [
-    "Français",
-    "Anglais"
+    {
+        flag: english,
+        title: "Anglais"
+    },
+    {
+        flag: french,
+        title: "Français"
+    },
 ]
 
 
@@ -96,7 +103,7 @@ const Navbar = () => {
                             </Link>
                         </li>
                         <li>
-                            <Dropdownbutton flag={french} list={flags} arrowColor="white" />
+                            <Dropdownbutton flag={french} list={["Français", "Anglais"]} arrowColor="white" />
                         </li>
                     </ul>
                 </nav>

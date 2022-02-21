@@ -27,4 +27,6 @@ footer ul li .rs{
 details{
     color: white
 }
+
+
 `

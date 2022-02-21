@@ -4,7 +4,8 @@ import { colors } from '../../constants/colors'
 
 export default css.offer`
 .subtitle{
- color: #ffff
+ color: #ffff;
+font-weight: 300;
 }
 form{
     width: 70%;

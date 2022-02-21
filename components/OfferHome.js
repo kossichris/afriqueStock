@@ -9,7 +9,7 @@ const Offerhome = () => {
                 <div className="container margin_80_55">
                     <div className="main_title_2">
                         <h2>Avez-vous besoin d'une offre personnalisée</h2>
-                        <h6 className="mt-3 subtitle">Expliquez clairement votre demande</h6>
+                        <h5 className="mt-3 subtitle">Expliquez clairement votre demande</h5>
                     </div>
                     <div className="row justify-content-center">
                         <form>
