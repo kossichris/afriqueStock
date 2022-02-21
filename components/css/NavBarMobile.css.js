@@ -26,8 +26,6 @@ ul {
   list-style-type: none;
 }
 
-
-
 .container {
   margin-top: 50px;
   Display: flex;
@@ -147,7 +145,10 @@ box-shadow: 0 0 8px #111112;
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
-
+hr{
+margin-left: -41px;
+    width: 469px;
+}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

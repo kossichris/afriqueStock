@@ -48,6 +48,10 @@ const Navbarmobile = () => {
                                             <a href="#0">Editorial</a>
                                         </Link>
                                     </li>
+
+                                    <hr />
+                                    <li>
+                                    </li>
                                     <li>
                                         <Link href="/formules">
                                             <a href="#0">Formules & tarifs</a>
@@ -58,10 +62,7 @@ const Navbarmobile = () => {
                                             <a href="#0">Vendre</a>
                                         </Link>
                                     </li>
-                                    <li>
-                                        <a href="account.html" className="btn_add round-radius btn mr-4"><span className="badge mr-2 round-radius">14</span>Fichier Disponible</a>
-                                    </li>
-                                    <li className="d-flex"><Button text="Connexion" shape="round" color="white" bgColor={colors.primary} /></li>
+
                                 </ul>
 
                             </div>
