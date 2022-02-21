@@ -58,6 +58,7 @@ nav {
     border-radius: 48px;
     width: 100%;
     height: 51px;
+margin-left: -17px;
 }
 
 #menuToggle input

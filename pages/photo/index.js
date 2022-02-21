@@ -19,7 +19,7 @@ const Index = () => {
         <>
             <Stickynavbar />
             <div className="mt-5 mb-5 mx-auto" style={styles.searchBarContainer}>
-                <Searchbar />
+                <Searchbar dropDownText="Images" />
             </div>
             <div className="review-box clearfix promo-bar mt-4">
                 <div className="rev-content  d-flex flex-row flex-wrap justify-content-around ">
