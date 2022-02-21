@@ -52,12 +52,10 @@ const Accueil = () => {
                         </div>
 
                 </div>
-                <div className="col-lg-12 mt-4">
-                    <p> Des séquences <a>Vidéos</a> 100% africain qui stimuleront votre créativité  </p>
-                </div>
+
                 <div className="containeur ">
                     <div className=" row mb-5 ">
-
+                        <p> Des séquences <a>Vidéos</a> 100% africain qui stimuleront votre créativité  </p>
                         <div className="video-gallery ">
 
                             <div className="image-container ">
@@ -160,11 +158,11 @@ const Accueil = () => {
                 <Offerhome />
 
                 <div className="bg_color_1">
-                    <div className="container margin_60_35">
-                        <h5 className="text-center mt-5 mb-3" >Découvrez nos Categories d'images</h5>
+                <div className="container ">
+                    <h5 className="text-center mt-5" >Découvrez nos Categories d'images</h5>
 
                         <div className="row">
-                            <div className="ul-container mb-5">
+                        <div className="ul-container">
                                 <ul className="links">
                                     <li><a href="#0">Eouvres d'art</a></li>
                                     <li><a href="#0">Ville</a></li>

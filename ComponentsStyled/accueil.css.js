@@ -184,7 +184,13 @@ margin-top: -2px;
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+.links{
+    margin-bottom: 0;
+}
 
+ul{
+    height: 225px;
+}
 
 }
 

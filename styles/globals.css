@@ -442,9 +442,11 @@ ul, ol {
   list-style: none;
   margin: 0 0 25px 0;
   padding: 0;
-    margin-bottom: -1rem;
 }
 
+select option {
+  color: #000 !important;
+}
 .main_title {
   text-align: center;
   margin-bottom: 45px;
@@ -1483,8 +1485,8 @@ ul#additional_links {
   font-size: 13px;
   font-size: 0.8125rem;
     background: #031339;
-    height: 79px;
     font-weight: 300;
+  align-items: center;
  
   
 }
@@ -1501,16 +1503,14 @@ ul#additional_links li {
   margin-right: 35px;
 
 }
-ul#additional_links li:first-child {
-  margin-right: 20px;
-}
+
 ul#additional_links li:last-child:after {
   content: "";
 }
 ul#additional_links li span {
   color: #ffff;
   opacity: 0.8;
-    font-weight: 700;
+    font-weight: 300;
 }
 
 
@@ -1552,6 +1552,8 @@ ul#additional_links li:after {
     border: 1px solid white;
     padding-left: 12px;
     padding-bottom: 3px;
+    width: 65%;
+    margin-top: 23%;
 }
 .select-dropdown select {
   font-size: 1rem;
@@ -7532,6 +7534,13 @@ a.btn_3, .btn_3 {
 }
 .call_section.image_bg {
   background: #004dda url('../public/images/fond-01.jpg') center center no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.call_section.image_bg.offer {
+  background: #004dda url('../public/images/offer_bg.jpg') center center no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

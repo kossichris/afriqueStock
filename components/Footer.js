@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image'
 import logo from '/public/images/logo_footer.png'
-import cards from '/public/images/cards.png'
 import Footerlang from './FooterLang';
 import Footercopyright from './footerCopyright';
 import styles from './css/Footer.css'
@@ -31,12 +30,17 @@ const Footer = () => {
                             <div className="follow_us">
                                 <h5>Suivez-nous sur</h5>
                                 <ul className="mt-3">
-                                    <li><a className="rs mr-2" href="#0"><svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-brand-pinterest" width="32" height="32" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#49B521" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <line x1="8" y1="20" x2="12" y2="11" />
-                                        <path d="M10.7 14c.437 1.263 1.43 2 2.55 2c2.071 0 3.75 -1.554 3.75 -4a5 5 0 1 0 -9.7 1.7" />
-                                        <circle cx="12" cy="12" r="9" />
-                                    </svg></a></li>
+                                    <li><a className="rs mr-2" href="#0">
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="32" height="32" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#49B521" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <rect x="4" y="4" width="16" height="16" rx="2" />
+                                            <line x1="8" y1="11" x2="8" y2="16" />
+                                            <line x1="8" y1="8" x2="8" y2="8.01" />
+                                            <line x1="12" y1="16" x2="12" y2="11" />
+                                            <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                                        </svg>
+                                    </a></li>
                                     <li><a className="rs mr-2" href="#0"><svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-brand-instagram" width="32" height="32" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#49B521" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                         <rect x="4" y="4" width="16" height="16" rx="4" />
@@ -171,44 +175,29 @@ const Footer = () => {
                                         <a href="account.html" className="btn_add round-radius btn ml-2">CONTACTEZ LE SUPPORT</a>
                                     </Link>
                                 </li>
-
+                                <li>
+                                    <div className="select-dropdown">
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-world" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#fff" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <circle cx="12" cy="12" r="9" />
+                                            <line x1="3.6" y1="9" x2="20.4" y2="9" />
+                                            <line x1="3.6" y1="15" x2="20.4" y2="15" />
+                                            <path d="M11.5 3a17 17 0 0 0 0 18" />
+                                            <path d="M12.5 3a17 17 0 0 1 0 18" />
+                                        </svg>
+                                        <select>
+                                            <option value="Option 1">Français</option>
+                                            <option value="Option 2">Anglais</option>
+                                            <option value="Option 3">Espagnol</option>
+                                        </select>
+                                    </div>
+                                </li>
 
                             </ul>
 
                         </div>
                     </div>
-                    <div className="col-lg-12 col-md-12">
-                        <ul id="footer-selector">
-                            <li>
-                                <div className="select-dropdown mt-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-world" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#fff" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <circle cx="12" cy="12" r="9" />
-                                        <line x1="3.6" y1="9" x2="20.4" y2="9" />
-                                        <line x1="3.6" y1="15" x2="20.4" y2="15" />
-                                        <path d="M11.5 3a17 17 0 0 0 0 18" />
-                                        <path d="M12.5 3a17 17 0 0 1 0 18" />
-                                    </svg>
-                                    <select>
-                                        <option value="Option 1">Français</option>
-                                        <option value="Option 2">Anglais</option>
-                                        <option value="Option 3">Espagnol</option>
-                                    </select>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="mt-2">
-                                    <Image
-                                        src={cards}
-                                        alt="Picture of the author"
-                                        width={300}
-                                        height={40}
-                                    />
-                                </div>
 
-                            </li>
-                        </ul>
-                    </div>
 
                     <details className="col-lg-3 col-md-6 col-sm-12 d-block d-sm-none">
                         <summary>
@@ -312,6 +301,23 @@ const Footer = () => {
                                 <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
                             </svg> <span className="ml-2">Cotonou - Benin BP 3205</span> </li>
                             <li><a href="account.html" className="btn_add round-radius btn ml-2">CONTACTEZ LE SUPPORT</a></li>
+                            <li>
+                                <div className="select-dropdown">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-world" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#fff" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <circle cx="12" cy="12" r="9" />
+                                        <line x1="3.6" y1="9" x2="20.4" y2="9" />
+                                        <line x1="3.6" y1="15" x2="20.4" y2="15" />
+                                        <path d="M11.5 3a17 17 0 0 0 0 18" />
+                                        <path d="M12.5 3a17 17 0 0 1 0 18" />
+                                    </svg>
+                                    <select>
+                                        <option value="Option 1">Français</option>
+                                        <option value="Option 2">Anglais</option>
+                                        <option value="Option 3">Espagnol</option>
+                                    </select>
+                                </div>
+                            </li>
                         </ul>
                     </details>
 

@@ -42,9 +42,9 @@ const Navbar = () => {
 
                 </div>
 
-                <nav id="menu" className="main-menu mt-1 left ml-5 stickynav-font">
+                <nav id="menu" className="main-menu mt-1 left ml-4 stickynav-font">
                     <ul >
-                        <li>
+                        <li className='ml-4'>
                             <Link href="/accueil/photo">
                                 <span>
                                     <a href="#0">Photos</a>
@@ -52,14 +52,14 @@ const Navbar = () => {
                             </Link>
 
                         </li>
-                        <li>
+                        <li className='ml-4'>
                             <span>
                                 <Link href="/accueil/vecteur">
                                     <a href="#0">Vecteurs & illustration</a>
                                 </Link>
                             </span>
                         </li>
-                        <li>
+                        <li className='ml-4'>
                             <Link href="/accueil/video">
                                 <span>
                                     <a href="#0">Vidéos</a>
@@ -67,7 +67,7 @@ const Navbar = () => {
 
                             </Link>
                         </li>
-                        <li>
+                        <li className='ml-4'>
                             <Link href="/accueil/editorial">
                                 <span>
                                     <a href="#0">Editorial</a>
@@ -79,18 +79,18 @@ const Navbar = () => {
                 <Navbarmobile />
                 <nav id="menu" className="main-menu">
                     <ul>
-                        <li>
+                        <li className='mr-4'>
                             <Buttonbadge />
                         </li>
-                        <li>
-                            <Link href="/register/contributeurs">
+                        <li className='mr-4'>
+                            <Link href="/contributeursAccueil">
                                 <span>
                                     <a href="#0">Vendez vos oeuvres</a>
                                 </span>
                             </Link>
 
                         </li>
-                        <li>
+                        <li className='mr-4'>
                             <Link href="/formules">
                                 <span>
                                     <a href="#0">Formules & tarifs</a>

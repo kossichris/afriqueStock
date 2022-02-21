@@ -4,7 +4,7 @@ import Buttonsmall from './ButtonSmall';
 
 const Offerhome = () => {
     return (
-        <div className="call_section image_bg">
+        <div className="call_section image_bg offer">
             <div className="wrapper">
                 <div className="container margin_80_55">
                     <div className="main_title_2">

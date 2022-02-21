@@ -44,7 +44,7 @@ const Stickynavbar = () => {
 
                             </Link>
                         </li>
-                        <li>
+                        <li className='ml-4'>
                             <Link href="/accueil/vecteur">
                                 <span>
                                     <a href="#0">Vecteurs & illustration</a>
@@ -52,7 +52,7 @@ const Stickynavbar = () => {
 
                             </Link>
                         </li>
-                        <li>
+                        <li className='ml-4'>
                             <Link href="/accueil/video">
                                 <span>
                                     <a href="#0">Vidéos</a>
@@ -60,7 +60,7 @@ const Stickynavbar = () => {
 
                             </Link>
                         </li>
-                        <li>
+                        <li className='ml-4'>
                             <Link href="/accueil/editorial">
                                 <span>
                                     <a href="#0">Editorial</a>
@@ -75,10 +75,10 @@ const Stickynavbar = () => {
 
                 <nav id="menu" className="main-menu stickynav-font">
                     <ul>
-                        <li>
+                        <li className='mr-4'>
                             <Buttonbadge />
                         </li>
-                        <li>
+                        <li className='mr-4'>
                             <Link href="/formules">
                                 <span>
                                     <a href="#0">Formules & tarifs</a>
@@ -87,7 +87,7 @@ const Stickynavbar = () => {
                             </Link>
                         </li>
 
-                        <li>
+                        <li className='mr-4'>
                             <Link href="/dashboard">
                                 <span>
                                     <a href="#0">Vendre</a>
@@ -114,10 +114,10 @@ const Stickynavbar = () => {
                                             <circle cx="12" cy="10" r="3" />
                                             <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
                                         </svg>
-                                        <div className="d-flex flex-column justify-content-between">
-                                            <div> Hermann Schintzel</div><br />
-                                            <small> dieubeni@gmail.com </small>
-                                        </div>
+                                        <span className="ml-3  mt-2 d-flex flex-column justify-content-evenly">
+                                            <strong> Hermann Schintzel</strong>
+                                            <small className='mt-1'> dieubeni@gmail.com </small>
+                                        </span>
 
                                     </a>
                                 </li>
@@ -203,12 +203,12 @@ const Stickynavbar = () => {
 
                             </ul>
                         </li>
-                        <li>
+                        <li className='mr-4'>
                             <Link href="/auth">
                                 <Buttonsmall text="Connexion" height="27px" fontSize="12px" fontWeight="300" padding="7px" paddingLeft="12px" paddingRight="13px" shape="round" color="#fff" bgColor={colors.primary} />
                             </Link>
                         </li>
-                        <li>
+                        <li >
                             <Dropdownbutton flag={french} list={flags} arrowColor="white" />
                         </li>
                     </ul>
