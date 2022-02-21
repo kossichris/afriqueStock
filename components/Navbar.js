@@ -19,7 +19,7 @@ const Navbar = () => {
     return (
         <div>
             <header className="header menu_fixed">
-                <div id="logo">
+                <div id="logo" className="logoSticky">
                     <Link href="/accueil">
                         <a href="index.html" title="Sparker - Directory and listings template">
                             <Image
@@ -38,7 +38,7 @@ const Navbar = () => {
                 <nav id="menu" className="main-menu mt-1 left ml-5 stickynav-font">
                     <ul >
                         <li>
-                            <Link href="/photo">
+                            <Link href="/accueil/photo">
                                 <span>
                                     <a href="#0">Photos</a>
                                 </span>
@@ -54,12 +54,17 @@ const Navbar = () => {
                         </li>
                         <li>
                             <Link href="/accueil/video">
-                                <a href="#0">Vidéos</a>
+                                <span>
+                                    <a href="#0">Vidéos</a>
+                                </span>
+
                             </Link>
                         </li>
                         <li>
                             <Link href="/accueil/editorial">
-                                <a href="#0">Editorial</a>
+                                <span>
+                                    <a href="#0">Editorial</a>
+                                </span>
                             </Link>
                         </li>
                     </ul>

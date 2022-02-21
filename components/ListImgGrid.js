@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image'
-import ligStyles from '../components/css/ListImgGrid.css'
+import ligStyles from '../components/css/ListGridImgWith.css'
 
 const Listimggrid = () => {
     return (
@@ -102,6 +102,16 @@ const Listimggrid = () => {
                         <img src="https://images.unsplash.com/photo-1547707981-eeb6a7ac3c25?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" className="gallery__img" alt="Image 5" />
                     </figure>
                     <figure className="gallery__item gallery__item--6">
+                        <a href="#0" className="wish_bt d-none d-sm-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-heart" width="18" height="18" viewBox="0 0 24 24" strokeWidth="2" stroke="#ffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                            </svg>
+                        </a>
+                        <div className="read_more d-none d-sm-block">Gratuit</div>
+                        <img src="https://images.unsplash.com/photo-1546260863-51e27ff43c68?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" className="gallery__img" alt="Image 6" />
+                    </figure>
+                    <figure className="gallery__item gallery__item--7">
                         <a href="#0" className="wish_bt d-none d-sm-block">
                             <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-heart" width="18" height="18" viewBox="0 0 24 24" strokeWidth="2" stroke="#ffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />

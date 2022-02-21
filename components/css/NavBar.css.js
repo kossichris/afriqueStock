@@ -4,6 +4,12 @@ import { colors } from '../../constants/colors'
 
 export default css.style`
 
+.user-circle{
+    background: white;
+    border-radius: 50%;
+    margin-right: 5px;
+    border: 1px solid #49b620;
+}
 .badge{
     background: #49b620;
     border-radius: 40px;

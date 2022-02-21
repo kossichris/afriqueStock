@@ -9,6 +9,7 @@ import accueilStyles from '../../ComponentsStyled/accueil.css'
 import Offerhome from '../../components/OfferHome';
 import Button from '../../components/Button';
 import Listgridsimple from '../../components/ListGridSimple';
+import { colors } from '../../constants/colors';
 
 const myLoader = ({ src, width, quality }) => {
     return `https://example.com/${src}?w=${width}&q=${quality || 75}`
@@ -35,134 +36,88 @@ const Editorial = () => {
         <>
             {top > 0 ? <Stickynavbar /> : <Navbar />}
             <main className="pattern">
-                <Banner />
+                <Banner title="Images éditoriales pleines d'émotions de dirigeants du passé et du présent" dropDownText="Editorial" h4ClassName="h6-photo" showBtn={false} bgColor={colors.transparent_blue} />
 
-                <h5 className="text-center mt-5 mb-5" >Les contenues les plus inspirantes de nos auteurs</h5>
+                <h2 className="text-center mt-5 editorial-text" >Des images éditoriales récentes</h2>
+                <h3 className="text-center mb-5" >
+                    <span>
+                        Faites vivre vos actualités avec des fichiers éditoriaux en haute qualité exposant les évènements les plus captivants du monde entier
+                    </span>
+                </h3>
+
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-6 col-md-6">
-                            <p> Des <a>photos</a> qui expriment la culture africaine  </p>
-                            <Listgridsimple />
+                        <div className="col-lg-4 col-md-4">
+                            <a href="#0" className="boxed_list a">
+                                <span>
+                                    <h3>Titre</h3><p >Description</p>
+                                </span>
+                            </a>
                         </div>
-                        <div className="col-lg-6 col-md-6">
-                            <p> Des <a>Vecteurs&illustrations</a> qui font ressortir la beauté de l'Afrique  </p>
-                            <Listgridsimple />
+                        <div className="col-lg-4 col-md-4">
+                            <a href="#0" className="boxed_list a">
+                                <span>
+                                    <h3>Titre</h3><p >Description</p>
+                                </span>
+                            </a>
                         </div>
-
-                    </div>
-                    <div className="row">
-
-                        <div className="video-gallery row mt-3 mb-5 ">
-                            <div className="col-lg-12">
-                                <p> Des <a>photos</a> qui expriment la culture africaine  </p>
-                            </div>
-
-                            <div className="d-flex col-lg-12 col-md-12 flex-row justify-content-between">
-                                <div className="image-container mr-3">
-                                    <Image
-                                        src={"https://images.unsplash.com/photo-1548407260-da850faa41e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"}
-                                        alt="Picture of the author"
-                                        width={400}
-                                        height={250}
-                                    />
-
-                                    <span className="play-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-player-play" width="28" height="28" viewBox="0 0 24 24" strokeWidth="2" stroke="#ffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                            <path d="M7 4v16l13 -8z" />
-                                        </svg>
-                                    </span>
-                                </div>
-
-                                <div className="image-container mr-3">
-                                    <Image
-                                        src={"https://images.unsplash.com/photo-1548506923-99f6e89852fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"}
-                                        alt="Picture of the author"
-                                        width={400}
-                                        height={250}
-                                    />
-                                    <span className="play-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-player-play" width="28" height="28" viewBox="0 0 24 24" strokeWidth="2" stroke="#ffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                            <path d="M7 4v16l13 -8z" />
-                                        </svg>
-                                    </span>
-
-                                </div>
-                                <div className="image-container">
-                                    <Image
-                                        src={"https://images.unsplash.com/photo-1547903006-2845abe6e3c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"}
-                                        alt="Picture of the author"
-                                        width={400}
-                                        height={250}
-                                    />
-                                    <span className="play-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-player-play" width="28" height="28" viewBox="0 0 24 24" strokeWidth="2" stroke="#ffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                            <path d="M7 4v16l13 -8z" />
-                                        </svg>
-                                    </span>
-                                </div>
-
-                            </div>
-                            <div className="col-lg-12 col-md-12 d-flex  flex-row justify-content-between mt-2">
-                                <div className="image-container mr-3">
-                                    <Image
-                                        src={"https://images.unsplash.com/photo-1545862434-853c6375b9f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"}
-                                        alt="Picture of the author"
-                                        width={400}
-                                        height={250}
-                                    />
-
-                                    <span className="play-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-player-play" width="28" height="28" viewBox="0 0 24 24" strokeWidth="2" stroke="#ffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                            <path d="M7 4v16l13 -8z" />
-                                        </svg>
-                                    </span>
-                                </div>
-
-                                <div className="image-container mr-3">
-                                    <Image
-                                        src={"https://images.unsplash.com/photo-1545862434-853c6375b9f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"}
-                                        alt="Picture of the author"
-                                        width={400}
-                                        height={250}
-                                    />
-
-                                    <span className="play-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-player-play" width="28" height="28" viewBox="0 0 24 24" strokeWidth="2" stroke="#ffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                            <path d="M7 4v16l13 -8z" />
-                                        </svg>
-                                    </span>
-                                </div>
-                                <div className="image-container">
-                                    <Image
-                                        src={"https://images.unsplash.com/photo-1545862434-853c6375b9f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"}
-                                        alt="Picture of the author"
-                                        width={400}
-                                        height={250}
-                                    />
-                                    <span className="play-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-player-play" width="28" height="28" viewBox="0 0 24 24" strokeWidth="2" stroke="#ffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                            <path d="M7 4v16l13 -8z" />
-                                        </svg>
-                                    </span>
-                                </div>
-
-                            </div>
-
+                        <div className="col-lg-4 col-md-4">
+                            <a href="#0" className="boxed_list a">
+                                <span>
+                                    <h3>Titre</h3><p >Description</p>
+                                </span>
+                            </a>
+                        </div>
+                        <div className="col-lg-4 col-md-4">
+                            <a href="#0" className="boxed_list a">
+                                <span>
+                                    <h3>Titre</h3><p >Description</p>
+                                </span>
+                            </a>     
+                        </div>
+                        <div className="col-lg-4 col-md-4">
+                            <a href="#0" className="boxed_list a">
+                                <span>
+                                    <h3>Titre</h3><p >Description</p>
+                                </span>
+                            </a>
+                        </div>
+                        <div className="col-lg-4 col-md-4">
+                            <a href="#0" className="boxed_list a">
+                                <span>
+                                    <h3>Titre</h3><p >Description</p>
+                                </span>
+                            </a>
+                        </div>
+                        <div className="col-lg-4 col-md-4">
+                            <a href="#0" className="boxed_list a">
+                                <span>
+                                    <h3>Titre</h3><p >Description</p>
+                                </span>
+                            </a>
+                        </div>
+                        <div className="col-lg-4 col-md-4">
+                            <a href="#0" className="boxed_list a">
+                                <span>
+                                    <h3>Titre</h3><p >Description</p>
+                                </span>
+                            </a>
+                        </div>
+                        <div className="col-lg-4 col-md-4">
+                            <a href="#0" className="boxed_list a">
+                                <span>
+                                    <h3>Titre</h3><p >Description</p>
+                                </span>
+                            </a>
                         </div>
 
                     </div>
+
                 </div>
-                <Offerhome />
 
                 <div className="bg_color_1">
                     <div className="container margin_60_35">
-                        <h5 className="text-center mt-5 mb-3" >Découvrez nos Categories d'images</h5>
+                        <h5 className="text-center mt-5 mb-3" >Les recherches populaires d'images éditoriales</h5>
 
                         <div className="row">
                             <div className="ul-container mb-5">

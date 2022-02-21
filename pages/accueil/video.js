@@ -6,9 +6,8 @@ import Stickynavbar from '../../components/StickyNavbar';
 import Banner from '../../components/Banner';
 import Footer from '../../components/Footer';
 import accueilStyles from '../../ComponentsStyled/accueil.css'
-import Offerhome from '../../components/OfferHome';
 import Button from '../../components/Button';
-import Listgridsimple from '../../components/ListGridSimple';
+import ListGridVideo from '../../components/ListGridVideo';
 import { colors } from '../../constants/colors';
 
 const myLoader = ({ src, width, quality }) => {
@@ -39,105 +38,31 @@ const Video = () => {
             {top > 0 ? <Stickynavbar /> : <Navbar />}
             <main className="pattern">
                 <div className="d-flex flex-row justify-content-center">
-                    <Banner title="Des vidéos authentiques qui réflètent toute la diversité de l'Afrique" bgColor={colors.transparent_gray} />
+                    <Banner title="Des vidéos authentiques qui réflètent toute la diversité de l'Afrique" dropDownText="Vidéo" h4ClassName="h6-photo" showBtn={false} bgColor={colors.transparent_blue} />
                 </div>
 
                 <h2 className="text-center mt-5 mb-5" ><strong> Nos Catégories de vidéos</strong></h2>
                 <div className="container">
                     <div className="row">
-                        <div className="video-gallery row mt-3 mb-5 ">
+                        <div className="row mt-3 mb-5 ">
                             <div className="col-lg-12">
                                 <p> Des <a>vidéos</a> qui expriment la culture africaine  </p>
                             </div>
-                            <div className="d-flex col-lg-12 col-md-12 flex-row justify-content-between">
-                                <div className="image-container mr-3">
-                                    <Image
-                                        src={"https://images.unsplash.com/photo-1548407260-da850faa41e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"}
-                                        alt="Picture of the author"
-                                        width={400}
-                                        height={250}
-                                    />
-
-                                    <span className="clock-icon">
-                                        <span> 3:49 </span>
-                                    </span>
-                                </div>
-
-                                <div className="image-container mr-3">
-                                    <Image
-                                        src={"https://images.unsplash.com/photo-1548506923-99f6e89852fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"}
-                                        alt="Picture of the author"
-                                        width={400}
-                                        height={250}
-                                    />
-                                    <span className="clock-icon">
-                                        <span> 3:49 </span>
-                                    </span>
-
-                                </div>
-                                <div className="image-container">
-                                    <Image
-                                        src={"https://images.unsplash.com/photo-1547903006-2845abe6e3c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"}
-                                        alt="Picture of the author"
-                                        width={400}
-                                        height={250}
-                                    />
-                                    <span className="clock-icon">
-                                        <span> 3:49 </span>
-                                    </span>
-                                </div>
-
+                            <ListGridVideo />
+                        </div>
+                        <div className="row mt-3 mb-5 ">
+                            <div className="col-lg-12">
+                                <p> Des <a>vidéos</a> qui expriment la culture africaine  </p>
                             </div>
-                            <div className="col-lg-12 col-md-12 d-flex  flex-row justify-content-between mt-2">
-                                <div className="image-container mr-3">
-                                    <Image
-                                        src={"https://images.unsplash.com/photo-1545862434-853c6375b9f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"}
-                                        alt="Picture of the author"
-                                        width={400}
-                                        height={250}
-                                    />
-
-                                    <span className="clock-icon">
-                                        <span> 3:49 </span>
-
-                                    </span>
-                                </div>
-
-                                <div className="image-container mr-3">
-                                    <Image
-                                        src={"https://images.unsplash.com/photo-1545862434-853c6375b9f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"}
-                                        alt="Picture of the author"
-                                        width={400}
-                                        height={250}
-                                    />
-
-                                    <span className="clock-icon">
-                                        <span> 3:49 </span>
-                                    </span>
-                                </div>
-                                <div className="image-container">
-                                    <Image
-                                        src={"https://images.unsplash.com/photo-1545862434-853c6375b9f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"}
-                                        alt="Picture of the author"
-                                        width={400}
-                                        height={250}
-                                    />
-                                    <span className="clock-icon">
-                                        <span> 3:49 </span>
-                                    </span>
-                                </div>
-
-                            </div>
-
+                            <ListGridVideo />
                         </div>
 
                     </div>
                 </div>
-                <Offerhome />
 
                 <div className="bg_color_1">
                     <div className="container margin_60_35">
-                        <h5 className="text-center mt-5 mb-3" >Découvrez nos Categories de vidéos</h5>
+                        <h5 className="text-center mt-5 mb-3" >Les recherches populaires de vidéos</h5>
 
                         <div className="row">
                             <div className="ul-container mb-5">

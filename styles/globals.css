@@ -40,17 +40,16 @@ html, body {
 }
 
 .promo-bar{
-  background: #222 url('https://images.unsplash.com/photo-1547297355-7d839b27ffb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60') no-repeat center center;
-
+  background: #222 url('../public/images/promo.png') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-position: center;
-    height: 101px;
-    width: 95%;
-    margin: auto;
-    padding: 29px
+  height: 101px;
+  width: 95%;
+  margin: auto;
+  padding: 29px
 }
 
 .form-sm-title{margin-bottom: 23px;}
@@ -193,8 +192,8 @@ float:left
     color: #fff;
     padding: 0 8px 15px 8px;
     font-size: 14px;
-    font-size: 0.875rem;
-    font-weight: 500;
+    font-size: 0.71rem;
+    font-weight: 300;
   }
   .main-menu > ul > li span:hover > a {
     opacity: 0.7;
@@ -235,6 +234,7 @@ float:left
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     border-radius: 3px;
+    font-weight: 300;
   }
   .main-menu ul ul:before {
     bottom: 100%;
@@ -321,7 +321,7 @@ float:left
   content: "\35";
   float: right;
   font-size: 16px;
-  font-size: 1rem;
+  font-size: 0.7rem;
   margin-top: -2px;
 }
 
@@ -910,7 +910,7 @@ header {
   left: 0;
   top: 0;
   width: 100%;
-  padding: 20px 30px;
+  padding: 2px 0px;
   z-index: 99999999;
   border-bottom: 1px solid rgba(255, 255, 255, 0);
 }
@@ -1101,8 +1101,19 @@ header.sticky .hamburger-inner, header.sticky .hamburger-inner::before, header.s
 
 #logo {
   float: left;
-    margin-left: 30px;
-    margin-top: 6px;
+    margin-left: 17px;
+    margin-top: 10px;
+}
+
+.logoSticky{
+    margin-left: 20px !important;
+    margin-top: 9px !important;
+}
+
+.badge{
+  padding: 0.4em 0.4em;
+    padding: 3px;
+    padding-top: 4px;
 }
 @media (max-width: 991px) {
   #logo {
@@ -1197,6 +1208,7 @@ footer ul li a {
   color: #E4E9EC;
     text-decoration: none;
   font-size: 13px;
+    font-weight: 300;
 
 
 }
@@ -1206,13 +1218,15 @@ footer .follow_us h5{ color: #409920;}
 footer p, footer li span {
   color: #E4E9EC;
   font-size: 13px;
+    font-weight: 200;
 }
 footer h3 {
   color: #ffffff;
 }
 footer ul li a:hover {
-  color: #3B97CA;
+  color: #49B521;
   opacity: 1;
+  text-decoration: none;
 
 }
 footer ul li a i {
@@ -1268,7 +1282,6 @@ footer ul.links li a:after {
 
 }
 footer ul.contacts li {
-  padding-left: 30px;
   position: relative;
   margin-bottom: 20px;
     color: #dce1e5;
@@ -1428,7 +1441,7 @@ ul#additional_links {
   font-size: 0.8125rem;
     background: #031339;
     height: 79px;
-
+    font-weight: 300;
  
   
 }
@@ -1610,7 +1623,7 @@ ul#additional_links li:after {
 }
 .hero_single.version_2 {
   height: 620px;
-  background: #222 url("https://images.unsplash.com/photo-1545844895-1bf88a0213a8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60") center center no-repeat;
+  background: #222 url("../public/images/promo.jpg") center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

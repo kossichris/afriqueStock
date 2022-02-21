@@ -4,6 +4,7 @@ import { colors } from '../constants/colors';
 import Button from './Button';
 import { useRouter } from 'next/router';
 import { route } from 'next/dist/server/router';
+import Link from 'next/link';
 
 
 const flags = [
@@ -26,12 +27,37 @@ const Navbarmobile = () => {
                                 <span></span>
                                 <span></span>
                                 <ul id="menu">
-                                    <li><a href="#">Photos</a></li>
-                                    <li><a href="#">Vecteurs&Illustrations</a></li>
-                                    <li><a href="#">Videos</a></li>
-                                    <li><a href="#">Editorial</a></li>
-                                    <li><a href="#">Formules&Tarifs</a></li>
-                                    <li><a href="#">Vendre</a></li>
+                                    <li>
+                                        <Link href="/accueil/photo">
+                                            <a href="#0">Photos</a>
+                                        </Link>
+                                    </li>
+
+                                    <li>
+                                        <Link href="/accueil/vecteur">
+                                            <a href="#0">Vecteurs & illustration</a>
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/accueil/video">
+                                            <a href="#0">Vidéos</a>
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/accueil/editorial">
+                                            <a href="#0">Editorial</a>
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/formules">
+                                            <a href="#0">Formules & tarifs</a>
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/accueil">
+                                            <a href="#0">Vendre</a>
+                                        </Link>
+                                    </li>
                                     <li>
                                         <a href="account.html" className="btn_add round-radius btn mr-4"><span className="badge mr-2 round-radius">14</span>Fichier Disponible</a>
                                     </li>

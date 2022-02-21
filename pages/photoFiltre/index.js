@@ -125,7 +125,6 @@ const Index = () => {
                             <div className="rev-text">
                                 <Button text="Economisez 60% des maintenant" color="white" fontSize="10px" bgColor={colors.primary} shape="round" />
                             </div>
-
                         </div>
 
                     </div>

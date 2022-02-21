@@ -7,6 +7,46 @@ h5, h2{
 color: ${colors.primary};
 }
 
+h2{
+font-weight: 600
+}
+
+h3 p{
+    color: ${colors.grey};
+font-weight: 300
+
+}
+
+.boxed_list span{
+    margin-left: -18px;
+    margin-bottom: -18px;
+}
+span p{
+    font-size: 21px;
+}
+.a{
+    background: #D4D9DE!important;
+    padding: 3em;
+    width: 100%;
+    height: 218px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: start;
+}
+.editorial-text{
+    font-size: 35px;
+}
+h3 span{
+    width: 69%;
+    margin: auto;
+    font-weight: 300;
+    color: #687178;
+    font-size: 20px;
+
+}
+
 .text-black{
 color: ${colors.grey};
 font-weight: 300
@@ -24,6 +64,11 @@ color: ${colors.primary};
 .containeur{
     width: 94%;
     margin: 2rem auto;
+}
+
+.block{
+    background: lightgrey;
+    box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%);
 }
 
 .video-gallery{

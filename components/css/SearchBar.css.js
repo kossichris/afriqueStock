@@ -2,6 +2,11 @@ import css from 'styled-jsx/css'
 import { colors } from '../../constants/colors'
 
 export default css.searchBar`
+
+input::placeholder {
+    color: ${colors.grey_dark};
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
@@ -10,11 +15,16 @@ form{
     width: 100%;
 
 }
+input{
+    font-size: 8px !important;
+}
+
+
 }
 
 .box{
     position: relative;
-    width: 20%;
+    width: 15%;
     box-sizing: border-box;
 }
 
@@ -26,7 +36,23 @@ form{
 
 .mobile-select{
   width: 87%;
+     -webkit-appearance: none;
+        -moz-appearance: none;
+        -o-appearance: none;
+        appearance: none; 
+        background-color: #fff!important;
 }
+
+    .mobile-select::-ms-expand {
+        display: none;
+    }
+
+   .caret-d-container {
+      position: absolute;
+        top: 0;
+        margin-top: 17px;
+       
+    }
 
 .search-container{
     width: 100%;
@@ -40,7 +66,7 @@ select{
     background: white;
     font-size: 12px;
     color: #7a6868;
-
+    text-align: center;
 }
 
 .btn_1{
@@ -60,6 +86,7 @@ border-radius: 0;
     background: #fff;
     color: #745f5f;
     border: 1px solid #49b620;
+    margin-left: -21px;
 }
 
 * {box-sizing: content-box;

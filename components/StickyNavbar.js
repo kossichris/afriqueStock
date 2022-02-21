@@ -8,6 +8,7 @@ import { colors } from '../constants/colors';
 import Navbarmobile from './NavBarMobile';
 import Link from 'next/link';
 import Buttonbadge from './ButtonBadge';
+import Buttonsmall from '../components/ButtonSmall';
 
 const flags = [
     "Français",
@@ -33,26 +34,38 @@ const Stickynavbar = () => {
                     </Link>
                 </div>
 
-                <nav id="menu" className="main-menu mt-1 left ml-5 stickynav-font">
+                <nav id="menu" className="main-menu mt-2 left ml-5 stickynav-font">
                     <ul >
                         <li>
-                            <Link href="/photo">
-                                <a href="#0">Photos</a>
+                            <Link href="/accueil/photo">
+                                <span>
+                                    <a href="#0">Photos</a>
+                                </span>
+
                             </Link>
                         </li>
                         <li>
                             <Link href="/accueil/vecteur">
-                                <a href="#0">Vecteurs & illustration</a>
+                                <span>
+                                    <a href="#0">Vecteurs & illustration</a>
+                                </span>
+
                             </Link>
                         </li>
                         <li>
                             <Link href="/accueil/video">
-                                <a href="#0">Vidéos</a>
+                                <span>
+                                    <a href="#0">Vidéos</a>
+                                </span>
+
                             </Link>
                         </li>
                         <li>
                             <Link href="/accueil/editorial">
-                                <a href="#0">Editorial</a>
+                                <span>
+                                    <a href="#0">Editorial</a>
+                                </span>
+
                             </Link>
                         </li>
                     </ul>
@@ -66,117 +79,26 @@ const Stickynavbar = () => {
                         </li>
                         <li>
                             <Link href="/formules">
-                                <a href="#0">Formules & tarifs</a>
+                                <span>
+                                    <a href="#0">Formules & tarifs</a>
+                                </span>
+
                             </Link>
                         </li>
+
                         <li>
-                            <Link href="/register/contributeurs">
-                                <a href="#0">Vendre</a>
+                            <Link href="/dashboard">
+                                <span>
+                                    <a href="#0">Vendre</a>
+                                </span>
+
                             </Link>
                         </li>
-                        <li><span><a href="#0">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-user-circle" width="28" height="28" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#49B521" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <circle cx="12" cy="12" r="9" />
-                                <circle cx="12" cy="10" r="3" />
-                                <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
-                            </svg>
-                            @Dieubeni</a></span>
-                            <ul className="infos">
-                                <li className="profile-info">
-                                    <a className="d-flex flex-row" href="grid-listings-filterscol-search-aside.html">
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-user-circle" width="38" height="38" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#49B521" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                            <circle cx="12" cy="12" r="9" />
-                                            <circle cx="12" cy="10" r="3" />
-                                            <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
-                                        </svg>
-                                        <div className="d-flex flex-column justify-content-between">
-                                            <div> Hermann Schintzel</div><br />
-                                            <small> dieubeni@gmail.com </small>
-                                        </div>
 
-                                    </a>
-                                </li>
-                                <li>
-                                    <Link href="/dashboard">
-                                        <a href="#0">Mon Dashboard</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        href={{
-                                            pathname: '/clientAccount',
-                                            query: { name: 'PROFILE' },
-                                        }}
-                                    >
-                                        <a href="#0">Mon profile</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        href={{
-                                            pathname: '/clientAccount',
-                                            query: { name: 'DOWNLOAD' },
-                                        }}
-                                    >
-                                        <a href="#0">Mes téléchargements</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        href={{
-                                            pathname: '/clientAccount',
-                                            query: { name: 'FAVORITE' },
-                                        }}
-                                    >
-                                        <a href="#0">Mes favoris</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        href={{
-                                            pathname: '/clientAccount',
-                                            query: { name: 'FACTURE' },
-                                        }}
-                                    >
-                                        <a href="#0">Mes factures</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        href={{
-                                            pathname: '/clientAccount',
-                                            query: { name: 'FORMULE' },
-                                        }}
-                                    >
-                                        <a href="#0">Mes formules d'abonnements</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        href={{
-                                            pathname: '/clientAccount',
-                                            query: { name: 'PAYMENT' },
-                                        }}
-                                    >
-                                        <a href="#0">Mes détails de paiement</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        href={{
-                                            pathname: '/clientAccount',
-                                            query: { name: 'TEAM' },
-                                        }}
-                                    >
-                                        <a href="#0">Mon équipe</a>
-                                    </Link>
-                                </li>
-                                <div className="last-li text-center text-white" style={{ color: "white !important" }}><a href="#">Déconnexion</a></div>
-
-
-                            </ul>
+                        <li>
+                            <Link href="/auth">
+                                <Buttonsmall text="Connexion" height="27px" fontSize="12px" fontWeight="300" padding="7px" paddingLeft="12px" paddingRight="13px" shape="round" color="#fff" bgColor={colors.primary} />
+                            </Link>
                         </li>
                         <li>
                             <Dropdownbutton flag={french} list={flags} arrowColor="white" />

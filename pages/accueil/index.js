@@ -36,14 +36,8 @@ const Accueil = () => {
 
         <div>
 
-            <Head>
-                <link
-                    href="https://fonts.googleapis.com/css2?family=Inter&display=optional"
-                    rel="stylesheet"
-                />
-            </Head>
             {top > 0 ? <Stickynavbar /> : <Navbar />}
-                <Banner title="Les meilleures photos, d'images vectorielles et de vidéos libres de droits 100% africain avec licence" />
+            <Banner title="Les meilleures photos, d'images vectorielles et de vidéos libres de droits 100% africain avec licence" dropDownText="Images" />
 
                 <h5 className="text-center mt-5 mb-5" >Les contenues les plus inspirantes de nos auteurs</h5>
                 <div className="container">
@@ -57,11 +51,15 @@ const Accueil = () => {
                             <Listgridsimple />
                         </div>
 
-                    </div>
+                </div>
+                <div className="col-lg-12">
+                    <p> Des séquences <a>Vidéos</a> 100% africain qui stimuleront votre créativité  </p>
+                </div>
                 <div className="containeur ">
-                        <p> Des <a>photos</a> qui expriment la culture africaine  </p>
                     <div className=" row mb-5 ">
+
                         <div className="video-gallery ">
+
                             <div className="image-container ">
                                     <Image
                                         src={"https://images.unsplash.com/photo-1548407260-da850faa41e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"}
@@ -95,7 +93,7 @@ const Accueil = () => {
                                 </div>
                             <div className="image-container  ">
                                     <Image
-                                    src={"https://images.unsplash.com/photo-1547903006-2045abe6e3c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"}
+                                    src={"https://images.unsplash.com/photo-1545844895-1bf88a0213a8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"}
                                         alt="Picture of the author"
                                         width={400}
                                         height={250}
@@ -140,7 +138,7 @@ const Accueil = () => {
                             </div>
                             <div className="image-container  ">
                                 <Image
-                                    src={"https://images.unsplash.com/photo-1547903006-2045abe6e3c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"}
+                                    src={"https://images.unsplash.com/photo-1545844895-1bf88a0213a8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"}
                                     alt="Picture of the author"
                                     width={400}
                                     height={250}
@@ -213,11 +211,11 @@ const Accueil = () => {
                 <div className="call_section image_bg">
                     <div className="wrapper wrapper_second">
                         <div className="container margin_80_55 d-flex flex-row flex-wrap">
-                            <div className="main_title_2 col-md-8">
+                        <div className="main_title_2 col-md-8 col-sm-8 col-lg-8 col-xs-12">
                                 <h4>ÊTES VOUS PHOTOGRAPHE , ILLUSTRATEUR, OU VIDEOGRAPHE</h4>
                                 <h6 className="mt-3 subtitle">Rejoignez notre communauté et gagnez de l'argent en faisant ce que vous aimez</h6>
                             </div>
-                            <div className="col-md-4">
+                        <div className="col-md-4 col-sm-4 col-lg-4 col-xs-12">
                                 <Button text='Rejoignez-nous' height='52px' color="#ffff" isFlex={true} shape='round' />
                             </div>
                         </div>

@@ -9,7 +9,7 @@ const Dropdownbutton = ({ page, title, flag, arrowColor, list = [] }) => {
             <div className="dropdown d-flex">
                 <button className="dropbtn " style={{ fontSize: page ? '8px' : '13px' }}>{title}
                     {flag &&
-                        <span className="mr-1 mt-2">
+                        <span className="mr-1">
                             <Image
                                 src={flag}
                                 alt="Picture of the author"

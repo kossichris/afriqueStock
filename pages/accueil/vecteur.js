@@ -36,7 +36,7 @@ const Vecteur = () => {
 
             {top > 0 ? <Stickynavbar /> : <Navbar />}
             <main className="pattern">
-                <Banner title="Des vecteurs & Illustrations authentiques qui réflètent toute la diversité de l'Afrique" bgColor={colors.transparent_gray} />
+                <Banner title="Des vecteurs & Illustrations authentiques qui réflètent toute la diversité de l'Afrique" dropDownText="Vecteurs" h4ClassName="h5-photo" showBtn={false} bgColor={colors.transparent_gray} />
 
                 <h2 className="text-center mt-5" >Nos Catégories de vecteurs & illustration</h2>
                 <h4 className="text-center mt-2 mb-5 text-black" >Des Vecteurs & Illustrations qui expriment la culture africaine </h4>

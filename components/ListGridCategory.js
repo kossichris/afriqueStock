@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image'
-import ligStyles from '../components/css/ListImgGrid.css'
+import ligStyles from '../components/css/ListGridImgWith.css'
 
 const Listimggridcategory = () => {
     return (

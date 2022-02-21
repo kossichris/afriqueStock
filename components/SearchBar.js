@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import searchStyles from '../components/css/SearchBar.css'
 import { colors } from '../constants/colors';
@@ -7,7 +8,7 @@ const styles = {
 
     }
 }
-const Searchbar = ({ page, hasFilter }) => {
+const Searchbar = ({ page, hasFilter, dropDownText }) => {
 
     const list = [
         "Photo 1",
@@ -22,7 +23,7 @@ const Searchbar = ({ page, hasFilter }) => {
 
             <div className="container">
                     <div className="row">
-                    <div className="search-container  mt-5">
+                    <div className="search-container  mt-3">
                         <form className=" d-flex flex-row justify-content-center">
                             <div className="box d-block d-sm-none col-xs-2">
                                 <select className="mobile-select">
@@ -32,11 +33,18 @@ const Searchbar = ({ page, hasFilter }) => {
                                     <option>Option 4</option>
                                     <option>Option 5</option>
                                 </select>
+                                <span className='caret-d-container'>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="3" stroke={colors.primary} fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
+                                </span>
+
                             </div>
                             <div className=" d-flex flex-row col-lg-9 col-md-9 col-sm-9 col-xs-12">
                                 <div className="box  d-none d-sm-block">
                                     <select>
-                                        <option>Toutes les images</option>
+                                        <option>{dropDownText}</option>
                                         <option>Option 2</option>
                                         <option>Option 3</option>
                                         <option>Option 4</option> 
@@ -44,17 +52,21 @@ const Searchbar = ({ page, hasFilter }) => {
                                     </select>
                                 </div>
                                 <input type="text" placeholder="Rechercher des oeuvres créatives Photos Vecteurs Illustrations et Vidéos.." name="search" />
-                                <button type="submit" className="btn_1">
+                                <Link href="/photo">
+                                    <button type="submit" className="btn_1">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-search" width="38" height="38" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#fff" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                         <circle cx="10" cy="10" r="7" />
                                         <line x1="21" y1="21" x2="15" y2="15" />
                                     </svg>
                                 </button>
+                                </Link>                               
+
 
                             </div>
                             <div className="col-lg-3 col-md-3 col-sm-3 col-xs-12 d-none d-sm-block btn_2_container">
-                                <button type="submit" className="btn_2 d-flex flex-row justify-content-center">
+
+                                <button className="btn_2 d-flex flex-row justify-content-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-camera-rotate mt-2" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke={colors.primary} fill="none" strokeLinecap="round" strokeLinejoin="round">
                                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                         <path d="M5 7h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2" />
