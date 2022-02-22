@@ -23,7 +23,7 @@ const Searchbar = ({ page, hasFilter, dropDownText }) => {
 
             <div className="container">
                     <div className="row">
-                    <div className="search-container  mt-3">
+                    <div className="search-container  mt-5">
                         <form className=" d-flex flex-row justify-content-center">
                             <div className="box d-block d-sm-none col-xs-2">
                                 <select className="mobile-select">
@@ -42,13 +42,17 @@ const Searchbar = ({ page, hasFilter, dropDownText }) => {
                             </div>
                             <div className="back d-flex flex-row col-lg-9 col-md-9 col-sm-9 col-xs-12">
                                 <div className="box  d-none d-sm-block ">
-                                    <select>
+                                    <select className='desktop-select'>
                                         <option>{dropDownText}</option>
                                         <option>Option 2</option>
                                         <option>Option 3</option>
                                         <option>Option 4</option> 
                                         <option>Option 5</option>
                                     </select>
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-chevron-down caret-down" width="20" height="20" viewBox="0 0 24 24" strokeWidth="3" stroke={colors.primary} fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg>
                                 </div>
                                 <div className='line-v'></div>
                                 <input type="text" placeholder="Rechercher des oeuvres créatives Photos Vecteurs Illustrations et Vidéos.." name="search" />

@@ -54,7 +54,8 @@ html, body {
 
 .form-sm-title{margin-bottom: 23px;}
 .badge{background-color: #49B521;color: #fff;}
-.stickynav-font li a{color: #ffffff !important;}
+.stickynav-font li a{color: #ffffff ;}
+.stickynav-font li a:hover{color: #409920 ;}
 .stickynav-font li .btn{color: #000 !important;}
 .btn{font-weight: 300 !important; color: #000 !important;}
 
@@ -167,6 +168,7 @@ html, body {
     color: #fff;
   }
 
+
   .left{
 float:left
 }
@@ -195,16 +197,30 @@ float:left
     font-size: 0.71rem;
     font-weight: 600;
   }
+
+@media screen and (min-width: 992px){
+  .main-menu > ul > li span > a:hover {
+    color: #49B521;
+    padding: 0 8px 15px 8px;
+    font-size: 14px;
+    font-size: 0.71rem;
+    font-weight: 600;
+  }
+}
+
+
   .main-menu > ul > li span:hover > a {
     opacity: 0.7;
   }
 
   header.sticky .main-menu > ul > li span > a, header.header_in .main-menu > ul > li span > a {
-    color: #444;
+    color: #fff;
   }
+
+
   header.sticky .main-menu > ul > li span:hover > a, header.header_in .main-menu > ul > li span:hover > a {
     opacity: 1;
-    color: #004dda;
+    color: #409920;
   }
 
   .main-menu ul ul {
@@ -8610,7 +8626,7 @@ a.social_bt.google:before {
 
 .divider {
   text-align: center;
-  height: 1px;
+  height: 0.1px;
   margin: 13px 0 20px 0;
   background-color: #e1e8ed;
 }

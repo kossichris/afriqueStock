@@ -72,7 +72,7 @@ color: ${colors.primary};
 
 .containeur{
     width: 94%;
-    margin: 2rem auto;
+    margin: 0 auto;
 }
 
 .block{
@@ -131,7 +131,7 @@ p{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 41px;
     height: 100%;
-    padding: 2em;
+    padding: 2em 2em 0em 2em;
     flex-wrap: wrap;
     line-height: 39px;
 }

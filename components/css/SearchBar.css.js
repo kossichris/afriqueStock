@@ -7,9 +7,28 @@ input::placeholder {
     color: ${colors.grey_dark};
 }
 
+.box{
+  background: white
+}
+.caret-down{
+    position: absolute;
+    top: 32%;
+    right: 2%;
+    margin-right: 9%;
+}
+
+select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
+.mobile-select{
+      width: 100% !important;
+}
 form{
     margin: 24px !important;
     width: 100%;
@@ -20,6 +39,18 @@ input{
 }
 
 
+}
+
+/* Extra small devices (phones, 996px and down) */
+@media only screen and (max-width: 996px) {
+
+.mobile-select{
+      width: 100% !important;
+      display: block
+}
+.desktop-select{
+      display: none
+}
 }
 
 .box{
@@ -67,6 +98,8 @@ select{
     font-size: 12px;
     color: #7a6868;
     text-align: center;
+    width: 88%;
+    padding-left: 2%;
 }
 
 .btn_1{
@@ -95,11 +128,11 @@ border-radius: 0;
 }
 input{
     height: 42px;
-    width: 100%;
     border: 1px solid #49b620;
     border-left: none;
     padding: 7px;
     font-size: 13px;
+    width: 74%;
 }
 
 .topnav {

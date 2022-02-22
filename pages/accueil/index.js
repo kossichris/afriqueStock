@@ -49,12 +49,11 @@ const Accueil = () => {
                         <div className="col-lg-6 col-md-6">
                         <p className="ml-3"> Des <a>Vecteurs&illustrations</a> qui font ressortir la beauté de l'Afrique  </p>
                             <Listgridsimple />
-                        </div>
-
+                    </div>
                 </div>
 
                 <div className="containeur ">
-                    <div className=" row mb-5 ">
+                    <div className="row mb-5 ">
                         <p> Des séquences <a>Vidéos</a> 100% africain qui stimuleront votre créativité  </p>
                         <div className="video-gallery ">
 
