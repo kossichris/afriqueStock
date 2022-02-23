@@ -127,7 +127,7 @@ const Editorial = () => {
                                     <li><a href="#0">Tourisme</a></li>
                                     <li><a href="#0">Sports</a></li>
                                 </ul>
-                                <ul className="links">
+                                <ul className="links"> 
                                     <li><a href="#0">Restaurants</a></li>
                                     <li><a href="#0">Réligion endogène </a></li>
                                     <li><a href="#0">Photographe</a></li>
