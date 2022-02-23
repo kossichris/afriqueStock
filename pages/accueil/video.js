@@ -41,19 +41,15 @@ const Video = () => {
                     <Banner title="Des vidéos authentiques qui réflètent toute la diversité de l'Afrique" dropDownText="Vidéo" h4ClassName="h6-photo" showBtn={false} bgColor={colors.transparent_blue} />
                 </div>
 
-                <h2 className="text-center mt-5 mb-5" ><strong> Nos Catégories de vidéos</strong></h2>
+                <h2 className="text-center mt-5" ><strong> Nos Catégories de vidéos</strong></h2>
+                <h4 className="text-center mb-5 text-black" >Des Vidéos qui expriment la culture africaine </h4>
+
                 <div className="container">
                     <div className="row">
-                        <div className="row mt-3 mb-5 ">
-                            <div className="col-lg-12">
-                                <p> Des <a>vidéos</a> qui expriment la culture africaine  </p>
-                            </div>
+                        <div className="row mt-3 ">
                             <ListGridVideo />
                         </div>
-                        <div className="row mt-3 mb-5 ">
-                            <div className="col-lg-12">
-                                <p> Des <a>vidéos</a> qui expriment la culture africaine  </p>
-                            </div>
+                        <div className="row mb-5 ">
                             <ListGridVideo />
                         </div>
 
@@ -61,8 +57,8 @@ const Video = () => {
                 </div>
 
                 <div className="bg_color_1">
-                    <div className="container margin_60_35">
-                        <h5 className="text-center mt-5 mb-3" >Les recherches populaires de vidéos</h5>
+                    <div className="container ">
+                        <h5 className="text-center mt-5 pt-5 mb-3" >Les recherches populaires de vidéos</h5>
 
                         <div className="row">
                             <div className="ul-container mb-5">

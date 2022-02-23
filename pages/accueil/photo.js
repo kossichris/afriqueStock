@@ -6,9 +6,7 @@ import Stickynavbar from '../../components/StickyNavbar';
 import Banner from '../../components/Banner';
 import Footer from '../../components/Footer';
 import accueilStyles from '../../ComponentsStyled/accueil.css'
-import Offerhome from '../../components/OfferHome';
 import Button from '../../components/Button';
-import Listgridsimple from '../../components/ListGridSimple';
 import { colors } from '../../constants/colors';
 import Listimggridcategory from '../../components/ListGridCategory';
 
@@ -62,22 +60,22 @@ const Photo = () => {
                 <Banner showBtn={false} dropDownText="Photos" title="Découvrez des photos gratuites, 100% africain libres de droit  pour un usage personnel et commercial" h4ClassName="h4-photo" bgColor={colors.transparent_gray} />
 
                 <h2 className="text-center mt-5" >Nos Categories de photos</h2>
+
                 <h3 className="col-lg-12 col-md-12 ">
                     <p className="text-center"> Des photos qui expriment la culture africaine  </p>
                 </h3>
 
                 <div className="container">
                     <div className="row">
-
                         <Listimggridcategory />
                     </div>
                 </div>
                 <div className="bg_color_1">
-                    <div className="container margin_60_35">
-                        <h5 className="text-center mt-5 mb-3" >Découvrez nos Categories d'images</h5>
+                    <div className="container ">
+                        <h5 className="text-center mt-5 pt-5 mb-3" >Les recherches populaires d'images</h5>
 
                         <div className="row">
-                            <div className="ul-container mb-5">
+                            <div className="ul-container">
                                 <ul className="links">
                                     <li><a href="#0">Eouvres d'art</a></li>
                                     <li><a href="#0">Ville</a></li>

@@ -26,6 +26,10 @@ font-weight: 300
 
 }
 
+.boxed_list h3{
+    text-align: left
+}
+
 .boxed_list span{
     margin-left: -18px;
     margin-bottom: -18px;

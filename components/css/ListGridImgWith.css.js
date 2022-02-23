@@ -7,26 +7,9 @@ export default css.lig`
   margin: 2rem auto;
 }
 
-figure{
+li{
 position: relative
 
-}
-.read_more{
-position: absolute;
-    z-index: 1;
-    background-color: ${colors.primary};
-    padding: 7px 10px;
-    display: inline-block;
-    color: #fff;
-    left: 7px;
-    line-height: 1;
-    top: 18px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    border-radius: 3px;
-    border-radius: 57px;
-    font-size: 10px;
 }
 
 .read_more_cat{
@@ -40,7 +23,6 @@ position: absolute;
     width: auto;
     text-align: center;
     line-height: 1;
-    bottom: 4%;
     border: 1px solid #ffff;
   -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -48,6 +30,7 @@ position: absolute;
     border-radius: 3px;
     border-radius: 57px;
     font-size: 10px;
+    bottom: 6%;
 }
 
 .read_more_cat:hover{
@@ -70,103 +53,71 @@ position: absolute;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
-    border-radius: 3px;
     border-radius: 57px;
 }
 
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 5vw);
-    grid-gap: 1.1rem;
-    grid-row-gap: 1px;
 
+// BASIC
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+ margin: 0.5vmin;
 }
 
-.gallery__img {
-  width: 100%;
-  height: 100%;
+li {
+  height: 40vh;
+  flex-grow: 1;
+  margin: 0.5vmin;
+}
+
+li:last-child {
+  // There's no science in using "10" here. In all my testing, this delivered the best results.
+  flex-grow: 10;
+}
+
+img {
+  max-height: 100%;
+  min-width: 100%;
   object-fit: cover;
-  display: block; 
+  vertical-align: bottom;
 }
 
-.gallery__item--1 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
+// ADVANCED
 
-  /** Alternative Syntax **/
-  /* grid-column: 1 / span 2;  */
-  /* grid-row: 1 / span 2; */
+// Portrait
+
+@media (max-aspect-ratio: 1/1) {
+  li {
+    height: 30vh;
+  }
 }
 
-.gallery__item--2 {
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 1;
-  grid-row-end: 3;
+// Short screens
 
-  /** Alternative Syntax **/
-  /* grid-column: 3 / span 2;  */
-  /* grid-row: 1 / span 2; */
+@media (max-height: 480px) {
+  li {
+    height: 80vh;
+  }
 }
 
-.gallery__item--3 {
-  grid-column-start: 5;
-  grid-column-end: 9;
-  grid-row-start: 1;
-  grid-row-end: 6;
+// Smaller screens in portrait
 
-  /** Alternative Syntax **/
-  /* grid-column: 5 / span 4;
-  grid-row: 1 / span 5; */
+@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+  ul {
+    flex-direction: row;
+  }
+
+  li {
+    height: auto;
+    width: 100%;
+  }
+  img {
+    width: 100%;
+    max-height: 75vh;
+    min-width: 0;
+  }
 }
-
-.gallery__item--4 {
-  grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row-start: 3;
-  grid-row-end: 6;
-
-  /** Alternative Syntax **/
-  /* grid-column: 1 / span 4;  */
-  /* grid-row: 3 / span 3; */
-}
-
-.gallery__item--5 {
-  grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row-start: 6;
-  grid-row-end: 9;
-
-  /** Alternative Syntax **/
-  /* grid-column: 1 / span 4; */
-  /* grid-row: 6 / span 3; */
-}
-
-.gallery__item--6 {
-  grid-column-start: 5;
-  grid-column-end: 9;
-  grid-row-start: 6;
-  grid-row-end: 9;
-
-  /** Alternative Syntax **/
-  /* grid-column: 5 / span 4; */
-  /* grid-row: 6 / span 3; */
-}
-
-.gallery__item--7 {
-  grid-column-start: 5;
-  grid-column-end: 9;
-  grid-row-start: 6;
-  grid-row-end: 9;
-
-  /** Alternative Syntax **/
-  /* grid-column: 5 / span 4; */
-  /* grid-row: 6 / span 3; */
-}
-
 
 `

@@ -6,9 +6,7 @@ import Stickynavbar from '../../components/StickyNavbar';
 import Banner from '../../components/Banner';
 import Footer from '../../components/Footer';
 import accueilStyles from '../../ComponentsStyled/accueil.css'
-import Offerhome from '../../components/OfferHome';
 import Button from '../../components/Button';
-import Listgridsimple from '../../components/ListGridSimple';
 import { colors } from '../../constants/colors';
 
 const myLoader = ({ src, width, quality }) => {
@@ -117,10 +115,10 @@ const Editorial = () => {
 
                 <div className="bg_color_1">
                     <div className="container margin_60_35">
-                        <h5 className="text-center mt-5 mb-3" >Les recherches populaires d'images éditoriales</h5>
+                        <h5 className="text-center mt-3 mb-2" >Les recherches populaires d'images éditoriales</h5>
 
                         <div className="row">
-                            <div className="ul-container mb-5">
+                            <div className="ul-container">
                                 <ul className="links">
                                     <li><a href="#0">Eouvres d'art</a></li>
                                     <li><a href="#0">Ville</a></li>

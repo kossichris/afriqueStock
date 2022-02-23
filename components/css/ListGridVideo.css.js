@@ -12,7 +12,7 @@ export default css.lig`
 
 }
 .clock-icon{
-     position: relative;
+    position: relative;
     left: 3%;
     bottom: 16%;
     box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%);
@@ -20,6 +20,8 @@ export default css.lig`
     border-radius: 7px;
     padding: 5px;
     font-weight: 300;
+    width: 38%;
+    text-align: center;
 }
 
 .image-container{
