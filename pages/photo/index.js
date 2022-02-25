@@ -2,6 +2,7 @@ import React from 'react';
 import Button from '../../components/Button';
 import Buttonsmall from '../../components/ButtonSmall';
 import Footer from '../../components/Footer';
+import Listimggridcategory from '../../components/ListGridCategory';
 import Listgridphotos from '../../components/ListGridPhotos';
 import ListImagegrid from '../../components/ListImgGrid';
 import Searchbar from '../../components/SearchBar';
@@ -38,7 +39,7 @@ const Index = () => {
 
             </div>
             <div className="col-lg-12 mt-5 mb-5  mx-auto">
-                <ListImagegrid />
+                <Listimggridcategory />
             </div>
             <Footer />
         </>

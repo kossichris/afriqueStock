@@ -42,9 +42,13 @@ const Stickywhitenavbar = () => {
                                     <polyline points="15 5 15 9 19 9" />
                                 </svg>
                             </span></li>
-                        <li><span><span href="" className={styles.lang}>Changer la langue
-                            <Dropdownbutton flag={french} list={flags} arrowColor="grey" />
-                        </span></span></li>
+                        <li><span href="" className={styles.lang}>Changer la langue
+
+                        </span>
+                            { /* <span>
+                                <Dropdownbutton flag={french} list={flags} arrowColor="grey" />
+                            </span>*/}
+                        </li>
                     </ul>
                 </nav>
             </header>

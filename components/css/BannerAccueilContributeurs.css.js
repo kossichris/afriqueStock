@@ -7,13 +7,15 @@ export default css.bannerAccueilContributeurs`
     text-align: start;
 }
 .text{ 
-    width: 46%
+    width: 46%;
+    text-align: start;
 }
 
 .text div{
     color: ${colors.primary};
-    font-size: 45px;
     font-weight: 700;
+    font-size: 36px;
+    text-align: start;
 }
 
 .text span{

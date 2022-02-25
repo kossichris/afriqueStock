@@ -11,7 +11,9 @@ const Index = () => {
 
             <Stickynavbar />
             <main className="" style={{ background: "#ffff" }}>
-                <div className="searchbar-container">  <Searchbar /></div>
+                <div className="searchbar-cont mt-1">
+                    <Searchbar dropDownText="Images" />
+                </div>
                 <div className="container margin_60_35 mt-5">
                     <div className="row">
                         <div className="col-lg-1" ></div>

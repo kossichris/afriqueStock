@@ -4,6 +4,7 @@ import Footercopyrightwhitebg from '../../components/FooterCopyrightWhiteBg';
 import Navbar from '../../components/Navbar';
 import Navbarmobile from '../../components/NavBarMobile';
 import Sidemenu from '../../components/SideMenu';
+import Styles from '../../ComponentsStyled/dash.css'
 
 const Index = () => {
     return (

@@ -47,11 +47,14 @@ html, body {
   background-size: cover;
   background-position: center;
   height: 101px;
-  width: 95%;
+  width: 97%;
   margin: auto;
   padding: 29px
 }
 
+.searchbar-cont{
+  background-color: #e8ebef;
+}
 .form-sm-title{margin-bottom: 23px;}
 .badge{background-color: #49B521;color: #fff;}
 .stickynav-font li a{color: #ffffff ;}

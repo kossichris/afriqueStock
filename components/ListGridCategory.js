@@ -5,49 +5,6 @@ import ligStyles from '../components/css/ListGridImgWith.css'
 const Listimggridcategory = () => {
     return (
         <>
-            {/*<div classNameName="container mt-4">
-                <div classNameName="big">
-                    <img src="https://images.unsplash.com/photo-1556783900-2ebe375c20fd?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="Picture of the author" />
-                </div>
-                <div classNameName="vertical">
-                    <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="Picture of the author" />
-                </div>
-                <div>
-                    <img src="https://images.unsplash.com/photo-1548407260-da850faa41e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="Picture of the author" />
-                </div>
-                <div classNameName="horizontal">
-                    <img src="https://images.unsplash.com/photo-1548506923-99f6e89852fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="Picture of the author" />
-                </div>
-                <div classNameName="vertical">
-                    <img src="https://images.unsplash.com/photo-1547903006-2845abe6e3c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="Picture of the author" />
-                </div>
-                <div>
-                    <img src="https://images.unsplash.com/photo-1547707981-eeb6a7ac3c25?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="Picture of the author" />
-                </div>
-                <div classNameName="horizontal">
-                    <img src="https://images.unsplash.com/photo-1547297355-7d839b27ffb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="Picture of the author" />
-                </div>
-                <div classNameName="big">
-                    <img src="https://images.unsplash.com/photo-1511534520542-e0fb6d4a4df6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="Picture of the author" />
-                </div>
-                <div>
-                    <img src="https://images.unsplash.com/photo-1546213642-d79f08fa2169?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="Picture of the author" />
-                </div>
-                <div classNameName="vertical">
-                    <img src="https://images.unsplash.com/photo-1546260863-51e27ff43c68?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="Picture of the author" />
-                </div>
-                <div>
-                    <img src="https://images.unsplash.com/photo-1546046142-8f8fae7de558?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="Picture of the author" />
-                </div>
-                <div>
-                    <img src="https://images.unsplash.com/photo-1545844895-1bf88a0213a8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="Picture of the author" />
-                </div>
-                <div>
-                    <img src="https://images.unsplash.com/photo-1545862434-853c6375b9f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="Picture of the author" />
-                </div>
-            </div>*/}
-
-
             {/* <div className="container mt-5">
                 <div className="gallery">
                     <figure className="gallery__item d-flex flex-row justify-content-center">

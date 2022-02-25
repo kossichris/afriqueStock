@@ -36,8 +36,8 @@ const Index = () => {
 
             <main>
                 <Stickynavbar />
-                <div className="searchbar-cont mt-5">
-                    <Searchbar />
+                <div className="searchbar-cont mt-1">
+                    <Searchbar dropDownText="Images" />
                 </div>
 
                 <div className={styles.tabwrap + " " + "mt-5 mb-5   "} >
