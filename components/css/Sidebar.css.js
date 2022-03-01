@@ -5,44 +5,68 @@ import css from 'styled-jsx/css'
 import { colors } from '../../constants/colors'
 
 export default css.styles`
-
-body {
-  overflow-x: hidden;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-}
-
 .profile-container{
-    background: #e7e5e2;
-    height: 106px;
-    padding: 10px;
-    position: absolute;
-    width: 100%;
-    top: -23px;
+  background: #f3f3f3;
+  padding: 25px
+}
+h6
+{
+  font-size: 2rem
 }
 
-  .pseudo{
-    color: #00000 !important
+.btn_add span 
+{
+  font-size: 18px
+}
+
+section{
+  background: white
+}
+b{
+  color:  ${colors.primary}
+}
+
+.img-card{
+  margin-bottom: 8%;
+  flex: 0 0 25%;
+    max-width: 24%;
+}
+.card .text{
+  color: ${colors.blue_light_3x}
+}
+.btn{
+  background:  ${colors.blue_light_3x};
+  color: white !important;
+  cursor: pointer;
+    display: flex;
+    width: 80%;
+    margin-left: -29px;
+    flex-direction: row;
+    font-size: 14px;
+    justify-content: space-evenly;
+}
+.btn:hover{
+  background:  ${colors.yellow};
+  color: white !important;
+}
+
+  .pseudo div{
+    color: #00000 !important;
+    font-size: 1.6em;
+    font-weight: 300;
+
   }
-/* Toggle Styles */
 
-#viewport {
-  padding-left: 250px;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
+  .pseudo span{
+    color: #00000 !important;
+    font-size: 1em;
+    font-weight: 300;
 
-#content {
-  position: relative;
-  margin-top: 2%;
-  width: 100%;
-}
+  }
+
 
 .container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl{
-    width: 95%;
-    float: right;
+    width: 100%;
 }
 .strip{
   padding: 8px;
@@ -53,74 +77,49 @@ select{
 }
 
 .price-container h4,h6{
-    color: ${colors.primary}
+    color: ${colors.primary};
+    letter-spacing: 1px;
+}
+
+.price-container{
+  margin-top: 9px;
 }
 
 small{
-  font-size: 59%;
+  font-size: 71%;
   color: grey;
 }
-/* Sidebar Styles */
 
-#sidebar {
-  z-index: 1000;
-  position: fixed;
-  left: 250px;
-  width: 312px;
-  height: 100%;
-  margin-left: -250px;
-  overflow-y: auto;
-  background: #f9f9f9;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+.form-control
+{
+  padding: 21px;
+  height: 50px;
 }
 
-#sidebar header {
-  background-color: #263238;
-  font-size: 20px;
-  line-height: 22px;
-  text-align: center;
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
 }
 
-#sidebar header a {
-  display: block;
-  text-decoration: none;
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-#sidebar header a:hover {
-  color: #fff;
+/* Add some padding inside the card container */
+.containere {
+  padding: 2px 16px;
 }
 
-#sidebar .nav{
-    position: absolute;
-    top: 6%;
-    flex-direction: column;
-    line-height: 49px;
-    padding: 0px;
-    text-align: start;
-}
-
-#sidebar .nav a{
-  background: none;
- color: ${colors.blue_light};
-  font-size: 14px;
-  padding: 13px 21px;
-}
-
-#sidebar .nav a:hover{
-  background: none;
-  color: #ECEFF1;
-}
-
-#sidebar .nav a i{
-  margin-right: 46px;
+.payment-card
+{
+  padding: 9px;
 }
 
 ul{
-    padding: 12px;
-    width: 319px;
+  padding: 21px;
+  text-align: left;
 }
 
 ul li:hover{
@@ -161,7 +160,7 @@ a:hover{
 .icon-tabler-search{
    position: absolute;
     right: 15px;
-    top: 7px;
+    top: 16px;
 }
 .search{
     border-radius: 42px;
@@ -176,18 +175,18 @@ a:hover{
     margin-top: 8px;
 }
 .contenues-text{
-  font-size: 12px;
+  font-size: 14px;
   color:  ${colors.blue_light_3x};
   padding: 13px;
 }
 
 #contenues-list li{
   font-size: 10px !important;
-    width: 100%;
   margin-top: 0
 }
 .contenues-list li:hover{
-  color: ${colors.primary}
+  color: ${colors.primary};
+  background: white
 }
 .float-right{
   float: right
@@ -196,6 +195,134 @@ a:hover{
 .loc_open{
     color: #49b620;
     font-size: 25px;
+}
+
+
+
+/////////
+
+/* The side navigation menu */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 23%;
+
+    background-color: #fff;
+    position: fixed;
+    height: 94%;
+    overflow: auto;
+    top: 6%;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: ${colors.blue};
+    padding: 16px;
+    text-decoration: none;
+    font-size: 21px !important;
+    font-weight: 300 !important;
+    line-height: 52px !important;
+    padding-left: 22%;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    color: white;
+    background-color: ${colors.primary};
+
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: ${colors.primary};
+    color: white;
+  }
+
+
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .img-card{
+    margin-bottom: 8%;
+    flex: 0 0 83%;
+      max-width: 83%;
+  }
+  div.content {
+    margin-left: 0 !important;
+    flex: 0 0 83%;
+    max-width: 83%;
+  }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .img-card{
+    margin-bottom: 8%;
+    flex: 0 0 83%;
+      max-width: 83%;
+  }
+  div.content {margin-left: 0 !important;}
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 995px) {
+  .sidebar {
+    width: 77%;
+  }
+  .profile-container
+  {
+    justify-content: center
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    text-align: center;
+  }
+  div.content {margin-left: 0 !important;}
+ 
+  .sidebar a {
+    line-height: 25px !important;
+    padding-left: 0%;
+  }
+
+  .img-card{
+    margin-bottom: 8%;
+    flex: 0 0 83%;
+      max-width: 83%;
+  }
+  
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1245px) {
+  .sidebar a span {
+    font-size: 13px
+  }
+
+  .img-card{
+    margin-bottom: 8%;
+    flex: 0 0 55%;
+      max-width: 48%;
+  }
+}
+
+@media only screen and (min-width: 1270px) {
+  div.content {
+    margin-left: 22% !important;
+    padding: 1px 16px;
+    height: 100%;
+    position: relative;
+    margin-top: 3%;
+  }
 }
 
 

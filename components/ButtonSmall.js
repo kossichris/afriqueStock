@@ -2,7 +2,7 @@ import React from 'react';
 import Styles from '../components/css/Button.css'
 import { icons } from '../constants/icons';
 
-const Buttonsmall = ({ text, hasIcon, shape, color, bgColor, height, fontSize, fontWeight, isFlex, isTop, width, padding, paddingLeft, paddingRight }) => {
+const Buttonsmall = ({ text, hasIcon, shape, iconName, color, bgColor, height, fontSize, fontWeight, isFlex, isTop, width, padding, paddingLeft, paddingRight }) => {
     const borderShapper = (shape) => { return shape === 'round' ? '40px' : '0px' }
     const isFlexAndTopF = (isFlex) => { return isFlex === true ? "d-flex justify-content-center mt-4" : '' }
     const isTopF = (isTop) => { return isTop === true ? "mt-4" : '' }
@@ -11,7 +11,7 @@ const Buttonsmall = ({ text, hasIcon, shape, color, bgColor, height, fontSize, f
     return (
         <>
             <div className={"text-center d-flex flex-row justify-content-between " + isFlexAndTopF(isFlex)} >
-                {hasIcon && <svg xmlns="http://www.w3.org/2000/svg" className={`icon icon-tabler icon-tabler-${icons.user}`} style={{
+                {hasIcon && <svg xmlns="http://www.w3.org/2000/svg" className={`icon icon-tabler icon-tabler-${iconName}`} style={{
                     position: "relative",
                     left: "21%",
                     marginTop: "12px"

@@ -17,7 +17,7 @@ const Navbarmobile = () => {
     // console.log(router)
     return (
         <div>
-            <div className="container d-none d-md-block d-lg-none d-sm-block d-md-none d-block d-sm-none">
+            <div className="container 	d-block d-sm-none d-none d-sm-block d-md-none d-none d-md-block d-lg-none d-none d-lg-block d-xl-none">
                 <div className="phone">
                     <div className="content">
                         <nav role="navigation">

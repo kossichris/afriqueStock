@@ -11,6 +11,7 @@ export const colors = {
     blue_light_2x: "#3CC2CE",
     blue_light_3x: "#4A4AAE",
     bleu_dark: "#031339",
+    dash_blue: "#4A4AAE",
     grey: "#8B959E",
     grey_light: "#E4E9EC",
     grey_dark: "#D4D9DE",

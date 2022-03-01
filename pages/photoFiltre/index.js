@@ -10,7 +10,7 @@ const Index = () => {
     return (
         <>
             <Stickynavbar />
-            <Searchbar hasFilter={true} />
+            <Searchbar dropDownText="Images" hasFilter={true} />
 
             <div className="row">
                 <aside className="col-lg-3" id="sidebar">
