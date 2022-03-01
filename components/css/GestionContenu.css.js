@@ -327,13 +327,21 @@ p{
 }
 
 .reject-block{
-    width: 38% !important;
+    width: 31% !important;
     margin-left: 2%;
     background: #f8f8f8;
     padding: 25px;
     margin-right: 2%;
 }
-
+.text-cont small strong {
+    color: ${colors.primary}
+}
+p{
+    font-size: 12px
+}
+p strong {
+    color: #525252;
+}
 .price span{
     width: 100%
 }

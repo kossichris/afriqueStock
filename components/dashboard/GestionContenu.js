@@ -65,14 +65,14 @@ const GestionContenu = () => {
                         <div className={tabsStyles.tabwrap} >
 
                             <input type="radio" id="tab1" name="tabGroup1"  value={"DRAFT"} onChange={e => onTabChange(e)}  className={tabsStyles.tab} checked={tab==="DRAFT"} />
-                            <label htmlFor="tab1">Brouillon</label>
+                            <label htmlFor="tab1">Brouillon  <span className="badge badge-light">9</span></label>
 
                             <input type="radio" id="tab2" name="tabGroup1"  value={"PENDING"} onChange={e => onTabChange(e)} className={tabsStyles.tab}  checked={tab==="PENDING"}/>
-                            <label htmlFor="tab2">En attente de validation</label>
+                            <label htmlFor="tab2">En attente de validation  <span className="badge badge-light">19</span></label>
 
                                 
                             <input type="radio" id="tab3" name="tabGroup1"  value={"REJECT"} onChange={e =>  onTabChange(e)} className={tabsStyles.tab} checked={tab==="REJECT"} />
-                            <label htmlFor="tab3">Rejeté</label>
+                            <label htmlFor="tab3">Rejeté  <span className="badge badge-light">3</span></label>
 
                             <div className={tabsStyles.tab__content}>
 
@@ -88,7 +88,7 @@ const GestionContenu = () => {
                              <div className=' row flex-wrap '>
                                 <div className='col-lg-6 col-sm-12 col-md-12 col-xs-12'>
                                     Description
-                                    <div class="form-group mb-1">
+                                    <div className="form-group mb-1">
                                         <input type="text" className="form-control input-block-2" placeholder='Femme Médécin' name="email" id="email" />
                                     <input type="text" className="form-control input-block-2" placeholder='Mots clés' name="email" id="email"/>
                                         
@@ -343,7 +343,7 @@ const GestionContenu = () => {
                                
                             </div>
                             </> }
-                            {tab === "REJECT" && <>   <div className='box_booking mt-4 block-2 reject-block'>
+                            { tab === "REJECT" && <>   <div className='box_booking mt-4 block-2 reject-block'>
 
                            
                                     <div>
@@ -384,7 +384,63 @@ const GestionContenu = () => {
                             </div>
                             </>
 
-}
+                            }
+                            
+                            { tab === "PENDING" && <>   <div className='box_booking mt-4 block-2 reject-block'>
+
+                                                    
+                            <div className='text-cont'>
+                                    <small> <strong>INFORMATION SUR LE CONTENU</strong> </small>
+                                    <div>
+                                    <small>Envoyé il y a 19heures</small>
+                                    </div>
+                                <p className='mt-4'>
+                                        <strong> Type de support : </strong>
+                                        <span>Photos</span>
+                                </p>
+                                <p className='mt-4'>
+                                        <strong> Titre : </strong>
+                                        <span>Design Coffee Shop</span>
+                                </p>
+                                <p className='mt-4'>
+                                        <strong> Langues des mots clés : </strong>
+                                        <span>Français</span>
+                                </p>
+                                <p className='mt-4'>
+                                        <strong> Mots clés : </strong>
+                                        <span>3d rendering, mockups, poster, canvas , frame, Coffee Shop, bar , restaurant, local, interior Design</span>
+                                </p>
+                                <p className='mt-4'>
+                                        <strong> Catégorie : </strong>
+                                        <span>Batiments & architecture</span>
+                                </p>
+
+                                <p className='mt-4'>
+                                    Autorisations de droit à l'image : assagba-monica.pdf
+                                    </p>
+                                    
+                                    <p className='mt-4'>
+                                           <strong> ID de fichier :</strong> 4201923300 
+                                        </p>
+
+                                        <p className='mt-4'>
+                                          <strong>  Nom d'origine :</strong> blurred-library-bookselevs.jpg 
+                                        </p>
+                                <span>
+                                
+                                    <div className='d-flex flex-row flex-wrap'>
+                                    <input type="submit" value="Supprimer le fichier" className="btn_1 delete-btn mt-2" id="submit-review" />
+                                    <input type="submit" value="Modifier" className="btn_1 delete-btn mt-2" id="submit-review" />
+                                            
+                                    </div>  
+
+                                </span>
+                            </div>
+
+                            </div>
+                            </>
+
+                        }
                         </div>
                             
 			</div>
