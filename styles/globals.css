@@ -132,6 +132,52 @@ body {
   color: #000 !important;
 }
 
+/**
+ checkbox
+*/
+
+input[type="radio"] {
+  appearance: none;
+  background-color: #fff;
+  margin: 0.9em;
+  font: inherit;
+  color: #5ab622;
+  width: 1.35em;
+  height: 1.35em;
+  border: 1px solid #5ab622;
+  border-radius: 50%;
+  -webkit-transform: translateY(-0.075em);
+  transform: translateY(-0.075em);
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 575px) {
+  input[type="radio"] {
+    appearance: none;
+    background-color: #fff;
+    margin: -26px;
+    font: inherit;
+    color: #5ab622;
+    width: 1.35em;
+    height: 1.35em;
+    border: 1px solid #5ab622;
+    border-radius: 50%;
+    -webkit-transform: translateY(-0.075em);
+    transform: translateY(-0.075em);
+  }
+
+  .radio-group {
+    margin-top: 4rem;
+  }
+  .conteneur {
+    margin: 0%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
 /*mode de paiement*/
 
 /* redevance */

@@ -44,7 +44,49 @@ const Sidemenu = () => {
                 <a href="#about"> <span>Informations pour les contributeus</span> </a>
                 <a href="#about"> <span>Paramètres de compte</span> </a>
 
-                </div>
+            </div>
+            {
+                /**
+                 * 
+                 * <div class="main_categories">
+			<div class="container">
+				<ul class="clearfix">
+					<li>
+						<a href="grid-listings-filterscol.html">
+							<i class="icon-shop"></i>
+							<h3>Shops</h3>
+						</a>
+					</li>
+					<li>
+						<a href="grid-listings-filterscol.html">
+							<i class="icon-lodging"></i>
+							<h3>Hotels</h3>
+						</a>
+					</li>
+					<li>
+						<a href="grid-listings-filterscol.html">
+							<i class="icon-restaurant"></i>
+							<h3>Restaurants</h3>
+						</a>
+					</li>
+					<li>
+						<a href="grid-listings-filterscol.html">
+							<i class="icon-bar"></i>
+							<h3>Bars</h3>
+						</a>
+					</li>
+					<li>
+						<a href="grid-listings-filterscol.html">
+							<i class="icon-dot-3"></i>
+							<h3>More</h3>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- /container -->
+		</div>
+                 */
+            }
             <style jsx>
                 {Styles}
             </style>
