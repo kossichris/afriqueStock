@@ -2,6 +2,9 @@ import css from "styled-jsx/css";
 import { colors } from "../../constants/colors";
 
 export default css.stats`
+.containeur{
+    max-width: 100%
+}
 h1{
     font-size: 6em;
     text-align: center
@@ -10,7 +13,7 @@ h1 span{
     font-weight: 200
 }
 .box_booking{
-    width: 77%;
+    width: 98%;
     margin: auto;
     padding: 3%
 }

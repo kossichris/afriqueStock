@@ -3,8 +3,11 @@ import { colors } from "../../constants/colors";
 import { imagesUrl } from "../../constants/images";
 
 export default css.account`
+.containeur{
+    width: 100%
+}
 .box_booking{
-    width: 76%;
+    width: 96%;
     margin: auto;
 }
 

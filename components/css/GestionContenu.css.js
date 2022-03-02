@@ -1,11 +1,10 @@
-
-import css from 'styled-jsx/css'
-import { colors } from '../../constants/colors'
+import css from "styled-jsx/css";
+import { colors } from "../../constants/colors";
 
 export default css.gc`
 .containeur
 {
-    max-width: 77%;
+    max-width: 95%;
     margin: auto
 } 
 .small-txt{
@@ -225,13 +224,13 @@ label{
 .edit-btn{
     width: 47%;
     height: 37px;
-    font-size: 12px;
+    font-size: 11px;
     margin: 3px;
 }
 .delete-btn{
     width: 47%;
     height: 37px;
-    font-size: 12px;
+    font-size: 11px;
     margin: 3px;
     background: black;
     color: white !important;
@@ -351,4 +350,4 @@ p strong {
 }
 
 
-`
+`;

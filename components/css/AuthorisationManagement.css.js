@@ -5,7 +5,7 @@ import { imagesUrl } from "../../constants/images";
 export default css.authorisation`
 .containeur
 {
-    max-width: 77%;
+    max-width: 95%;
     margin: auto
 } 
 
@@ -51,6 +51,11 @@ export default css.authorisation`
     padding-right: 16px;
     font-weight: 300;
 }
+
+input::placeholder{
+    color: #c6cacd;
+    font-weight: 300
+  }
 
 .download-btn{
     padding: 7px;

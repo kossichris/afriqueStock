@@ -5,7 +5,7 @@ import Styles from "../css/AuthorisationManagement.css";
 const AuthorisationManagement = () => {
   return (
     <>
-      <div className="containeur margin_60_35 mt-5">
+      <div className="containeur  mt-5">
         <div className="row  mt-5">
           <div className="box_booking">
             <div className="row">

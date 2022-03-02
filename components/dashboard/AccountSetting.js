@@ -14,7 +14,7 @@ const AccountSetting = () => {
 
   return (
     <>
-      <div className="containeur margin_60_35 mt-5">
+      <div className="containeur  mt-5">
         <div className="row  mt-5">
           <div className="box_booking">
             <div className="ml-5 mt-5 light-txt">Paramètre du compte</div>

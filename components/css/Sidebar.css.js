@@ -1,8 +1,6 @@
-
-
 // styles/global.js
-import css from 'styled-jsx/css'
-import { colors } from '../../constants/colors'
+import css from "styled-jsx/css";
+import { colors } from "../../constants/colors";
 
 export default css.styles`
 .profile-container{
@@ -111,6 +109,7 @@ small{
 .containere {
   padding: 2px 16px;
 }
+
 
 .payment-card
 {
@@ -327,4 +326,4 @@ a:hover{
 
 
 
-`
+`;
