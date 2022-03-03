@@ -9,12 +9,12 @@ const AuthorisationManagement = () => {
         <div className="row  mt-5">
           <div className="box_booking">
             <div className="row">
-              <div className="col-lg-12">
+              <div className="colLg-12">
                 <span>Gérer les autorisations</span>
               </div>
             </div>
-            <div className="row flex-wrap">
-              <div className="col-md-12 col-lg-6 col-sm-12 col-xs-12">
+            <div className="row flexWrap">
+              <div className="col-md-12 colLg-6 col-sm-12 col-xs-12">
                 <div className="form-group mt-3">
                   <input
                     className="form-input"
@@ -41,8 +41,8 @@ const AuthorisationManagement = () => {
                   </svg>
                 </div>
               </div>
-              <div className="col-md-12 col-lg-6 col-sm-12 col-xs-12">
-                <p className="mt-3 btns d-flex flex-row flex-wrap justify-content-end">
+              <div className="col-md-12 colLg-6 col-sm-12 col-xs-12">
+                <p className="mt-3 btns d-flex flex-row flexWrap justify-content-end">
                   <input
                     type="submit"
                     value="Télécharger une autorisation"
@@ -58,9 +58,9 @@ const AuthorisationManagement = () => {
                 </p>
               </div>
 
-              <div className="col-lg-12">
+              <div className="colLg-12">
                 <div className="table-block">
-                  <div className="table-wrapper mt-1 mb-5">
+                  <div className="tableWrapper mt-1 mb-5">
                     <table className="fl-table">
                       <thead>
                         <tr>
@@ -110,11 +110,11 @@ const AuthorisationManagement = () => {
                                 width="16"
                                 height="16"
                                 viewBox="0 0 24 24"
-                                stroke-width="1.5"
+                                strokeWidth="1.5"
                                 stroke="#2c3e50"
                                 fill="none"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
                               >
                                 <path
                                   stroke="none"
@@ -165,11 +165,11 @@ const AuthorisationManagement = () => {
                                 width="16"
                                 height="16"
                                 viewBox="0 0 24 24"
-                                stroke-width="1.5"
+                                strokeWidth="1.5"
                                 stroke="#2c3e50"
                                 fill="none"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
                               >
                                 <path
                                   stroke="none"
@@ -220,11 +220,11 @@ const AuthorisationManagement = () => {
                                 width="16"
                                 height="16"
                                 viewBox="0 0 24 24"
-                                stroke-width="1.5"
+                                strokeWidth="1.5"
                                 stroke="#2c3e50"
                                 fill="none"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
                               >
                                 <path
                                   stroke="none"
@@ -275,11 +275,11 @@ const AuthorisationManagement = () => {
                                 width="16"
                                 height="16"
                                 viewBox="0 0 24 24"
-                                stroke-width="1.5"
+                                strokeWidth="1.5"
                                 stroke="#2c3e50"
                                 fill="none"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
                               >
                                 <path
                                   stroke="none"
@@ -330,11 +330,11 @@ const AuthorisationManagement = () => {
                                 width="16"
                                 height="16"
                                 viewBox="0 0 24 24"
-                                stroke-width="1.5"
+                                strokeWidth="1.5"
                                 stroke="#2c3e50"
                                 fill="none"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
                               >
                                 <path
                                   stroke="none"
@@ -385,11 +385,11 @@ const AuthorisationManagement = () => {
                                 width="16"
                                 height="16"
                                 viewBox="0 0 24 24"
-                                stroke-width="1.5"
+                                strokeWidth="1.5"
                                 stroke="#2c3e50"
                                 fill="none"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
                               >
                                 <path
                                   stroke="none"
@@ -440,11 +440,11 @@ const AuthorisationManagement = () => {
                                 width="16"
                                 height="16"
                                 viewBox="0 0 24 24"
-                                stroke-width="1.5"
+                                strokeWidth="1.5"
                                 stroke="#2c3e50"
                                 fill="none"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
                               >
                                 <path
                                   stroke="none"
@@ -495,11 +495,11 @@ const AuthorisationManagement = () => {
                                 width="16"
                                 height="16"
                                 viewBox="0 0 24 24"
-                                stroke-width="1.5"
+                                strokeWidth="1.5"
                                 stroke="#2c3e50"
                                 fill="none"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
                               >
                                 <path
                                   stroke="none"
@@ -550,11 +550,11 @@ const AuthorisationManagement = () => {
                                 width="16"
                                 height="16"
                                 viewBox="0 0 24 24"
-                                stroke-width="1.5"
+                                strokeWidth="1.5"
                                 stroke="#2c3e50"
                                 fill="none"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
                               >
                                 <path
                                   stroke="none"
@@ -605,11 +605,11 @@ const AuthorisationManagement = () => {
                                 width="16"
                                 height="16"
                                 viewBox="0 0 24 24"
-                                stroke-width="1.5"
+                                strokeWidth="1.5"
                                 stroke="#2c3e50"
                                 fill="none"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
                               >
                                 <path
                                   stroke="none"

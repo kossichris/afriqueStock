@@ -1,6 +1,5 @@
-
-import css from 'styled-jsx/css'
-import { colors } from '../constants/colors'
+import css from "styled-jsx/css";
+import { colors } from "../constants/colors";
 
 export default css.dash`
 
@@ -72,6 +71,13 @@ export default css.dash`
       float: none;
     }
   }
+
+  @media screen and (max-width: 992px) {
+    div.content {
+    min-width: 100%;
+    margin-left: 0 !important
+    }
+  }
   div.content {
     margin-left: 22%;
     padding: 1px 16px;
@@ -84,4 +90,4 @@ export default css.dash`
 
 
 
-`
+`;

@@ -71,7 +71,7 @@ const AccountSetting = () => {
                           method="post"
                           action="assets/contact.php"
                           id="contactform"
-                          autocomplete="off"
+                          autoComplete="off"
                         >
                           <div className="row">
                             <div className="col-md-6">
@@ -235,7 +235,7 @@ const AccountSetting = () => {
                           <fieldset>
                             <label
                               className="d-flex flex-row ml-1 mr-2"
-                              for="radio-1"
+                              htmlFor="radio-1"
                             >
                               <input
                                 type="radio"
@@ -256,7 +256,7 @@ const AccountSetting = () => {
 
                             <label
                               className="d-flex flex-row ml-1 mr-2 "
-                              for="radio-2"
+                              htmlFor="radio-2"
                             >
                               <input
                                 type="radio"
@@ -277,7 +277,7 @@ const AccountSetting = () => {
 
                             <label
                               className="d-flex flex-row ml-1 mr-2"
-                              for="radio-3"
+                              htmlFor="radio-3"
                             >
                               <input
                                 type="radio"
@@ -298,7 +298,7 @@ const AccountSetting = () => {
 
                             <label
                               className="d-flex flex-row ml-1 mr-2"
-                              for="radio-4"
+                              htmlFor="radio-4"
                             >
                               <input
                                 type="radio"
@@ -319,7 +319,7 @@ const AccountSetting = () => {
 
                             <label
                               className="d-flex flex-row ml-1 mr-2"
-                              for="radio-5"
+                              htmlFor="radio-5"
                             >
                               <input
                                 type="radio"

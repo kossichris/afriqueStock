@@ -18,7 +18,7 @@ const Sidemenu = ({ onPageChange }) => {
         <div className="profile-container d-flex flex-row">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-user-circle"
+            className="icon icon-tabler icon-tabler-user-circle"
             width="150"
             height="150"
             viewBox="0 0 24 24"
@@ -43,7 +43,7 @@ const Sidemenu = ({ onPageChange }) => {
           <a href="account.html" className="btn_add round-radius btn ml-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-cloud-upload"
+              className="icon icon-tabler icon-tabler-cloud-upload"
               width="34"
               height="34"
               viewBox="0 0 24 24"
@@ -87,36 +87,36 @@ const Sidemenu = ({ onPageChange }) => {
       </div>
       {/**
                  * 
-                 * <div class="main_categories">
-			<div class="container">
-				<ul class="clearfix">
+                 * <div className="main_categories">
+			<div className="container">
+				<ul className="clearfix">
 					<li>
 						<a href="grid-listings-filterscol.html">
-							<i class="icon-shop"></i>
+							<i className="icon-shop"></i>
 							<h3>Shops</h3>
 						</a>
 					</li>
 					<li>
 						<a href="grid-listings-filterscol.html">
-							<i class="icon-lodging"></i>
+							<i className="icon-lodging"></i>
 							<h3>Hotels</h3>
 						</a>
 					</li>
 					<li>
 						<a href="grid-listings-filterscol.html">
-							<i class="icon-restaurant"></i>
+							<i className="icon-restaurant"></i>
 							<h3>Restaurants</h3>
 						</a>
 					</li>
 					<li>
 						<a href="grid-listings-filterscol.html">
-							<i class="icon-bar"></i>
+							<i className="icon-bar"></i>
 							<h3>Bars</h3>
 						</a>
 					</li>
 					<li>
 						<a href="grid-listings-filterscol.html">
-							<i class="icon-dot-3"></i>
+							<i className="icon-dot-3"></i>
 							<h3>More</h3>
 						</a>
 					</li>

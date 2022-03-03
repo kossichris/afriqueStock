@@ -45,7 +45,7 @@ const ImportContent = () => {
                     <span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="icon icon-tabler icon-tabler-check"
+                        className="icon icon-tabler icon-tabler-check"
                         width="13"
                         height="13"
                         viewBox="0 0 24 24"
@@ -67,7 +67,7 @@ const ImportContent = () => {
                   <li>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="icon icon-tabler icon-tabler-check"
+                      className="icon icon-tabler icon-tabler-check"
                       width="13"
                       height="13"
                       viewBox="0 0 24 24"
@@ -86,7 +86,7 @@ const ImportContent = () => {
                   <li>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="icon icon-tabler icon-tabler-check"
+                      className="icon icon-tabler icon-tabler-check"
                       width="13"
                       height="13"
                       viewBox="0 0 24 24"
@@ -105,7 +105,7 @@ const ImportContent = () => {
                   <li>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="icon icon-tabler icon-tabler-check"
+                      className="icon icon-tabler icon-tabler-check"
                       width="13"
                       height="13"
                       viewBox="0 0 24 24"

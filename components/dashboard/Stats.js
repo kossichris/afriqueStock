@@ -6,7 +6,7 @@ const Stats = () => {
     <>
       <div className="containeur margin_60_35 mt-5">
         <div className="box_booking">
-          <div className="col-lg-12">
+          <div className="colLg-12">
             <h1>
               1200,1 <span>$</span>
             </h1>
@@ -98,7 +98,7 @@ const Stats = () => {
               </div>
             </div>
             <div className="table-block">
-              <div className="table-wrapper mt-5 mb-5">
+              <div className="tableWrapper mt-5 mb-5">
                 <table className="fl-table">
                   <thead>
                     <tr>
@@ -147,11 +147,11 @@ const Stats = () => {
                             width="16"
                             height="16"
                             viewBox="0 0 24 24"
-                            stroke-width="1.5"
+                            strokeWidth="1.5"
                             stroke="#2c3e50"
                             fill="none"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
                           >
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <circle cx="12" cy="12" r="2" />
@@ -168,7 +168,7 @@ const Stats = () => {
 
             <div className="bottom-table">
               <div className="table-block">
-                <div className="table-wrapper mt-5 mb-5">
+                <div className="tableWrapper mt-5 mb-5">
                   <table className="fl-table fl-table-bottom ">
                     <thead>
                       <tr>
