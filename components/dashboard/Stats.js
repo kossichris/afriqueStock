@@ -6,7 +6,7 @@ const Stats = () => {
     <>
       <div className="containeur margin_60_35 mt-5">
         <div className="box_booking">
-          <div className="colLg-12">
+          <div className="col-lg-12">
             <h1>
               1200,1 <span>$</span>
             </h1>

@@ -9,7 +9,7 @@ const AuthorisationManagement = () => {
         <div className="row  mt-5">
           <div className="box_booking">
             <div className="row">
-              <div className="colLg-12">
+              <div className="col-lg-12">
                 <span>Gérer les autorisations</span>
               </div>
             </div>
@@ -58,7 +58,7 @@ const AuthorisationManagement = () => {
                 </p>
               </div>
 
-              <div className="colLg-12">
+              <div className="col-lg-12">
                 <div className="table-block">
                   <div className="tableWrapper mt-1 mb-5">
                     <table className="fl-table">
